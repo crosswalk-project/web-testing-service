@@ -1,0 +1,11 @@
+Copyright (c) 2014 Intel Corporation.
+Except as noted, this software is licensed in LICENSE file.
+
+Following scripts which come from serve.py and config.default.json
+of https://github.com/w3c/web-platform-tests
+(commit 09686a27a24834df34b5cd9c3741c312732cff9a) are licensed
+under its own license.
+wts-serve.py,
+config.json:
+They are covered by the dual-licensing approach described in:
+http://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright.html

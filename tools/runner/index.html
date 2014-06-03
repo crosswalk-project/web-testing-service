@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang=en>
+<meta charset=UTF-8>
+<title>Crosswalk Tests Runner</title>
+<meta name="viewport" content="width=device-width"></meta>
+<link rel='stylesheet' href='css/bootstrap.min.css'>
+<link rel='stylesheet' href='css/bootstrap-theme.min.css'>
+<link rel=stylesheet href=runner.css>
+<script src=runner.js></script>
+<header class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src='logo.svg' width='50' height='50' alt='Logo for the WPT Runner'> Crosswalk Tests Runner</a>
+      <a class="navbar-brand pull-right info-a"><button id='show_info' class="btn btn-primary">Help</button></a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div id='help'>
+    <h3>Running Tests</h3>
+    <p>
+      This Tests Runner runs some set of
+      <a href="https://github.com/crosswalk-project/crosswalk-test-suite">Crosswalk tests</a> and the tests will run in a "new window" or "iframe". The set of tests available to run can be found in the <a href="/tests">test repository</a>, current tests version is <code><em id="version" >N/A</em></code>.
+    </p>
+    <p>
+      The set of tests run is configurable via the spec name inputting or selection. Some examples of spec name values for input area are:
+    <p>
+      <ul>
+        <li><code>cors</code> - runs all of the <a href="/tests/cors/">cors</a> tests</li>
+        <li><code>cors, canvas, webaudio</code>: run all tests of <a href="/tests/cors/">cors</a>, <a href="/tests/canvas/">canvas</a> and <a href="/tests/webaudio/">webaudio</a></li>
+      </ul>
+    <p>
+  </div>
+
+  <div id="testControl" class="panel panel-default">
+    <div class='panel-heading'>
+      <h2 class='panel-title'>Runner Options</h2>
+    </div>
+    <div class="panel-body">
+      <div id='options' class='horizontal-form' >
+        <div class="form-group">
+          <label for="path" class="col-sm-3 control-label">Test specifications</label>
+          <div id="sepcinput" class="input-group col-sm-9 sepc-input">
+            <span class="input-group-btn">
+              <button id='select_tests' class="btn btn-primary" type="button">Select test specs</button>
+            </span>
+            <input id='input_tests' placeholder='Input test specs'  class='form-control' >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="th" class="col-sm-3 control-label">JavaScript tests</label>
+          <label class="col-sm-9">
+            <input type=checkbox checked value="testharness" id='th' class='test-type'>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="ref" class="col-sm-3 control-label">Reference tests</label>
+          <label class="col-sm-9" >
+            <input type=checkbox checked value="reftest" id='ref' class='test-type'>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="man" class="col-sm-3 control-label">Manual tests</label>
+          <label class="col-sm-9">
+            <input type=checkbox checked value="manual" id='man' class='test-type'>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="timeout_multiplier" class="col-sm-3 control-label">Timeout multiplier</label>
+          <div class="col-sm-9">
+            <span class="input-group-addon hide-span"></span>
+            <input type=number value="1" id='timeout_multiplier' class='timeout_multiplier form-control'>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="iframe" class="col-sm-3 control-label">Run tests in iframe</label>
+          <label class="col-sm-9">
+            <input type=checkbox checked value="iframe" class='iframe' id='iframe'>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="render" class="col-sm-3 control-label">Show output (debug)</label>
+          <label class="col-sm-9">
+            <input type=checkbox id='render' value='render' class='render'>
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="dumpit" class="col-sm-3 control-label">Dump JSON (debug)</label>
+          <label class="col-sm-9">
+            <input type=checkbox id='dumpit'>
+          </label>
+        </div>
+        <div class="form-group contrl-btn">
+          <div class="col-sm-offset-3 col-sm-9">
+            <button type="button" class="btn btn-primary toggleStart" disabled>Start</button>
+            <button type='button' class="btn btn-primary togglePause" disabled>Pause</button>
+          </div>
+        </div>
+        <div id="selectpackages">
+          <div id="selectpackages-in">
+          <div class='panel panel-primary'>
+            <div class='panel-heading'>
+              <h4 class='panel-title'>Select test specs</h4>
+            </div>
+            <div class="panel-body">
+             <label><input type=checkbox id='selectall'> Select all specs</label>
+              <div class='well suitslist'>
+              </div>
+            </div>
+            <div class="panel-footer ">
+              <div class='row ok-root'>
+                <button class="btn btn-primary pull-right selcted-tests">OK</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div id="output">
+    <div class="summary clearfix">
+      <h4>Progress</h4>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar"
+             aria-valuenow="0" aria-valuemin="0" aria-valuemax="0">
+          0%
+        </div>
+      </div>
+      <div id='test_url'></div>
+      <table class='table'>
+        <thead>
+          <tr>
+            <th>Passed</th>
+            <th>Failed</th>
+            <th>Blocked</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class='PASS'>0
+            <td class='FAIL'>0
+            <td class='BLOCK'>0
+          </tr>
+        </tbody>
+      </table>
+      <a class="jsonResults btn btn-primary pull-right">Download JSON results</a>
+    </div>
+    <div id="runMode" >
+      <iframe id="testFrame" ></iframe>
+    </div>
+    <div class="results">
+      <div id="manualUI">
+        <div class='panel panel-primary'>
+          <div class="panel-body mantestUI">The current test requires manual result marking.
+          </div>
+          <div class="panel-body reftestUI">
+            <p>
+              The current test requires manual result marking.
+              Test and ref should compare <strong class="refType text-primary"></strong>
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary test">Show Test</button>
+              <button class="btn btn-primary ref">Show Reference</button>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="btn-group">
+              <button class="btn btn-primary prev"><</button>
+              <button class="btn btn-success pass">Pass</button>
+              <button class="btn btn-danger fail">Fail</button>
+              <button class="btn btn-warning block">Block</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h4>Details</h4>
+      <div style='overflow-x: scroll;'>
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Test</th>
+              <th>Status</th>
+              <th>Message</th>
+              <th>Subtest Pass Rate</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
