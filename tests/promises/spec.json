@@ -1,0 +1,7 @@
+{
+ "promises": {
+  "spec_url": "http://dom.spec.whatwg.org/#promises",
+  "spec_desc": "Promises",
+  "spec_category": "nonw3c"
+ }
+}

@@ -1,0 +1,18 @@
+This wptserve comes from
+https://github.com/w3c/wptserve(commit cfc61924eeabab7460459199447c2570c3694c0a)
+with modification:
+
+wptserve/handlers.py
+
+  add two new handlers
+  add view port to tests browser page to support mobile device
+
+
+
+These scripts are copyright by W3C and/or the author listed in the script
+file. The scripts are dual-licensed under the W3C Test Suite License:
+http://www.w3.org/Consortium/Legal/2008/04-testsuite-license
+and the BSD 3-clause License:
+http://www.w3.org/Consortium/Legal/2008/03-bsd-license
+under W3C's test suite licensing policy:
+http://www.w3.org/Consortium/Legal/2008/04-testsuite-copyright
