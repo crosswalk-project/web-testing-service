@@ -125,7 +125,7 @@ html.done section + section {
     box-shadow: 2px 2px 10px #666;
 }
 
-.pass,.block,.fail,.prev{
+.pass,.block,.fail,.prev,.fwd{
     margin: 2px;
 }
 
@@ -293,5 +293,15 @@ input#input_tests{
     div.sepc-input[class*="col-"]{
         padding-bottom: 15px;
         margin-bottom: 15px;
+    }
+}
+@media (max-width: 368px) {
+    #manualUI{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .panel-footer{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
