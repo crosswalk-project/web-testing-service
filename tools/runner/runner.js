@@ -304,6 +304,7 @@ function ManualUI(elem, runner) {
     this.elem = elem;
     this.runner = runner;
     this.prev_button = this.elem.querySelector("button.prev");
+    this.fwd_button = this.elem.querySelector("button.fwd");
     this.pass_button = this.elem.querySelector("button.pass");
     this.fail_button = this.elem.querySelector("button.fail");
     this.block_button = this.elem.querySelector("button.block");
@@ -321,6 +322,13 @@ function ManualUI(elem, runner) {
 
     this.prev_button.onclick = function() {
         this.runner.prev_flag = true;
+        this.runner.run_next_test();
+        this.disable_buttons();
+        setTimeout(this.enable_buttons.bind(this), 200);
+    }.bind(this);
+
+    this.fwd_button.onclick = function() {
+        this.runner.prev_flag = false;
         this.runner.run_next_test();
         this.disable_buttons();
         setTimeout(this.enable_buttons.bind(this), 200);
@@ -372,11 +380,13 @@ ManualUI.prototype = {
     disable_buttons: function() {
         this.pass_button.disabled = true;
         this.fail_button.disabled = true;
+        this.block_button.disabled = true;
     },
 
     enable_buttons: function() {
         this.pass_button.disabled = false;
         this.fail_button.disabled = false;
+        this.block_button.disabled = false;
     },
 
     on_test_start: function(test) {
@@ -398,6 +408,12 @@ ManualUI.prototype = {
         }else{
             this.prev_button.disabled = true;
         }
+        if (run_index >= this.runner.manifest_iterator.filter_tests.length){
+            this.fwd_button.disabled = true;
+        }else{
+            this.fwd_button.disabled = false;
+        }
+
     },
 
     on_done: function() {
