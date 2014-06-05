@@ -23435,52 +23435,52 @@
         "path": "tests/pagevisibility/pagevisibility_DocumentVisibility_hidden_minimize-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_image/steps-manual.html", 
-        "path": "tests/presentation/Presentation_secondary_page_image/steps-manual.html"
+        "url": "/tests/presentation/presentation_secondary_page_image/steps-manual.html", 
+        "path": "tests/presentation/presentation_secondary_page_image/steps-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_message/steps-manual.html", 
-        "path": "tests/presentation/Presentation_secondary_page_message/steps-manual.html"
+        "url": "/tests/presentation/presentation_secondary_page_message/steps-manual.html", 
+        "path": "tests/presentation/presentation_secondary_page_message/steps-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_video/steps-manual.html", 
-        "path": "tests/presentation/Presentation_secondary_page_video/steps-manual.html"
+        "url": "/tests/presentation/presentation_secondary_page_video/steps-manual.html", 
+        "path": "tests/presentation/presentation_secondary_page_video/steps-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps01-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps01-manual.html"
+        "url": "/tests/presentation/presentation_test/steps01-manual.html", 
+        "path": "tests/presentation/presentation_test/steps01-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps02-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps02-manual.html"
+        "url": "/tests/presentation/presentation_test/steps02-manual.html", 
+        "path": "tests/presentation/presentation_test/steps02-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps03-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps03-manual.html"
+        "url": "/tests/presentation/presentation_test/steps03-manual.html", 
+        "path": "tests/presentation/presentation_test/steps03-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps04-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps04-manual.html"
+        "url": "/tests/presentation/presentation_test/steps04-manual.html", 
+        "path": "tests/presentation/presentation_test/steps04-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps05-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps05-manual.html"
+        "url": "/tests/presentation/presentation_test/steps05-manual.html", 
+        "path": "tests/presentation/presentation_test/steps05-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps06-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps06-manual.html"
+        "url": "/tests/presentation/presentation_test/steps06-manual.html", 
+        "path": "tests/presentation/presentation_test/steps06-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps07-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps07-manual.html"
+        "url": "/tests/presentation/presentation_test/steps07-manual.html", 
+        "path": "tests/presentation/presentation_test/steps07-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps08-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps08-manual.html"
+        "url": "/tests/presentation/presentation_test/steps08-manual.html", 
+        "path": "tests/presentation/presentation_test/steps08-manual.html"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/steps09-manual.html", 
-        "path": "tests/presentation/Presentation_test/steps09-manual.html"
+        "url": "/tests/presentation/presentation_test/steps09-manual.html", 
+        "path": "tests/presentation/presentation_test/steps09-manual.html"
       }, 
       {
         "url": "/tests/promises/Promises_list-manual.html", 
@@ -25481,40 +25481,40 @@
         "path": "tests/pagevisibility/w3c/resources/pagevistestharness.js"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_image/config.xml", 
-        "path": "tests/presentation/Presentation_secondary_page_image/config.xml"
+        "url": "/tests/presentation/presentation_secondary_page_image/config.xml", 
+        "path": "tests/presentation/presentation_secondary_page_image/config.xml"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_image/icon.png", 
-        "path": "tests/presentation/Presentation_secondary_page_image/icon.png"
+        "url": "/tests/presentation/presentation_secondary_page_image/icon.png", 
+        "path": "tests/presentation/presentation_secondary_page_image/icon.png"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_message/config.xml", 
-        "path": "tests/presentation/Presentation_secondary_page_message/config.xml"
+        "url": "/tests/presentation/presentation_secondary_page_message/config.xml", 
+        "path": "tests/presentation/presentation_secondary_page_message/config.xml"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_message/icon.png", 
-        "path": "tests/presentation/Presentation_secondary_page_message/icon.png"
+        "url": "/tests/presentation/presentation_secondary_page_message/icon.png", 
+        "path": "tests/presentation/presentation_secondary_page_message/icon.png"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_video/config.xml", 
-        "path": "tests/presentation/Presentation_secondary_page_video/config.xml"
+        "url": "/tests/presentation/presentation_secondary_page_video/config.xml", 
+        "path": "tests/presentation/presentation_secondary_page_video/config.xml"
       }, 
       {
-        "url": "/tests/presentation/Presentation_secondary_page_video/icon.png", 
-        "path": "tests/presentation/Presentation_secondary_page_video/icon.png"
+        "url": "/tests/presentation/presentation_secondary_page_video/icon.png", 
+        "path": "tests/presentation/presentation_secondary_page_video/icon.png"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/config.xml", 
-        "path": "tests/presentation/Presentation_test/config.xml"
+        "url": "/tests/presentation/presentation_test/config.xml", 
+        "path": "tests/presentation/presentation_test/config.xml"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/icon.png", 
-        "path": "tests/presentation/Presentation_test/icon.png"
+        "url": "/tests/presentation/presentation_test/icon.png", 
+        "path": "tests/presentation/presentation_test/icon.png"
       }, 
       {
-        "url": "/tests/presentation/Presentation_test/style.css", 
-        "path": "tests/presentation/Presentation_test/style.css"
+        "url": "/tests/presentation/presentation_test/style.css", 
+        "path": "tests/presentation/presentation_test/style.css"
       }, 
       {
         "url": "/tests/presentation/spec.json", 
