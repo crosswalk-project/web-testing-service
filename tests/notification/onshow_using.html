@@ -26,37 +26,38 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Fan,Weiwei <weiwix.fan@intel.com>
-        Xu,Yuhan <yuhanx.xu@intel.com>
+        Xinx, liu <xinx.liu@intel.com>
 
 -->
 
 <html>
   <head>
-    <title>WebStorage Test: StorageEvent_key_type</title>
-    <link rel="author" title="Intel" href="http://www.intel.com" />
-    <link rel="help" href="http://www.w3.org/TR/2011/CR-webstorage-20111208/#dom-storageevent-url" />
-    <meta name="flags" content="" />
-    <meta name="assert" content="Check if the value of StorageEvent.url is 'null' when set it null" />
-    <script src="support.js"></script>
+    <title>Notification Test: onshow_using</title>
+    <link rel="author" title="Intel" href="http://www.intel.com/"/>
+    <link rel="help" href="http://www.w3.org/TR/2012/WD-notifications-20120614/#api"/>
+    <meta name="flags" content=""/>
+    <script src="support/notifications.js"></script>
     <script src="../resources/testharness.js"></script>
     <script src="../resources/testharnessreport.js"></script>
   </head>
-  <body>
+  <body >
     <div id="log"></div>
     <script>
-        var t = async_test(document.title);
+      t = async_test(document.title, { timeout: 3000 });
+      t.step(function () {
+        getnotification();
+        notification.show();
+      });
 
-        function RunTest(store) {
-            var storageEvent = new StorageEvent("StorageEvent", {key : "key", oldValue : "oldValue", newValue : "newValue", url : null, storageArea : store});
-            if ((storageEvent.url == "null")) {
-                PassTest();
-            } else {
-                FailTest("StorageEvent.url is not 'null'");
-            }
-        }
-
-        RunTest(sessionStorage);
+      notification.onshow = function() {
+        t.done();
+      }
+      setTimeout(function() {
+        t.step(function() {
+          assert_unreached("timeout should not be fired");
+        });
+        t.done();
+      }, 1000)
     </script>
   </body>
 </html>
