@@ -11464,6 +11464,10 @@
         "path": "tests/notification/notification_requestPermission.html"
       }, 
       {
+        "url": "/tests/notification/onshow_using.html", 
+        "path": "tests/notification/onshow_using.html"
+      }, 
+      {
         "url": "/tests/pagevisibility/w3c/idlharness.html", 
         "path": "tests/pagevisibility/w3c/idlharness.html"
       }, 
@@ -12940,14 +12944,6 @@
         "path": "tests/typedarrays/Uint8ClampedArray_subarray_exist.html"
       }, 
       {
-        "url": "/tests/typedarrays/tools/template-dataview.html", 
-        "path": "tests/typedarrays/tools/template-dataview.html"
-      }, 
-      {
-        "url": "/tests/typedarrays/tools/template.html", 
-        "path": "tests/typedarrays/tools/template.html"
-      }, 
-      {
         "url": "/tests/typedarrays/w3c/constructors.html", 
         "path": "tests/typedarrays/w3c/constructors.html"
       }, 
@@ -13754,18 +13750,6 @@
       {
         "url": "/tests/webaudio/audiobuffersourcenode_stop_type.html", 
         "path": "tests/webaudio/audiobuffersourcenode_stop_type.html"
-      }, 
-      {
-        "url": "/tests/webaudio/audiocontext_activeSourceCount_exists.html", 
-        "path": "tests/webaudio/audiocontext_activeSourceCount_exists.html"
-      }, 
-      {
-        "url": "/tests/webaudio/audiocontext_activeSourceCount_readonly.html", 
-        "path": "tests/webaudio/audiocontext_activeSourceCount_readonly.html"
-      }, 
-      {
-        "url": "/tests/webaudio/audiocontext_activeSourceCount_type.html", 
-        "path": "tests/webaudio/audiocontext_activeSourceCount_type.html"
       }, 
       {
         "url": "/tests/webaudio/audiocontext_createAnalyser_exists.html", 
@@ -19956,16 +19940,8 @@
         "path": "tests/webstorage/StorageEvent_constructor_base.html"
       }, 
       {
-        "url": "/tests/webstorage/StorageEvent_constructor_key_null.html", 
-        "path": "tests/webstorage/StorageEvent_constructor_key_null.html"
-      }, 
-      {
         "url": "/tests/webstorage/StorageEvent_constructor_key_undefined.html", 
         "path": "tests/webstorage/StorageEvent_constructor_key_undefined.html"
-      }, 
-      {
-        "url": "/tests/webstorage/StorageEvent_constructor_newValue_null.html", 
-        "path": "tests/webstorage/StorageEvent_constructor_newValue_null.html"
       }, 
       {
         "url": "/tests/webstorage/StorageEvent_constructor_newValue_undefined.html", 
@@ -19988,20 +19964,8 @@
         "path": "tests/webstorage/StorageEvent_constructor_no_url.html"
       }, 
       {
-        "url": "/tests/webstorage/StorageEvent_constructor_oldValue_null.html", 
-        "path": "tests/webstorage/StorageEvent_constructor_oldValue_null.html"
-      }, 
-      {
         "url": "/tests/webstorage/StorageEvent_constructor_oldValue_undefined.html", 
         "path": "tests/webstorage/StorageEvent_constructor_oldValue_undefined.html"
-      }, 
-      {
-        "url": "/tests/webstorage/StorageEvent_constructor_type_null.html", 
-        "path": "tests/webstorage/StorageEvent_constructor_type_null.html"
-      }, 
-      {
-        "url": "/tests/webstorage/StorageEvent_constructor_url_null.html", 
-        "path": "tests/webstorage/StorageEvent_constructor_url_null.html"
       }, 
       {
         "url": "/tests/webstorage/StorageEvent_constructor_url_undefined.html", 
@@ -20384,16 +20348,8 @@
         "path": "tests/webstorage/w3c/storage_local_clear.html"
       }, 
       {
-        "url": "/tests/webstorage/w3c/storage_local_clear_js.html", 
-        "path": "tests/webstorage/w3c/storage_local_clear_js.html"
-      }, 
-      {
         "url": "/tests/webstorage/w3c/storage_local_getitem.html", 
         "path": "tests/webstorage/w3c/storage_local_getitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_local_getitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_local_getitem_js.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_local_in_js.html", 
@@ -20412,16 +20368,8 @@
         "path": "tests/webstorage/w3c/storage_local_length.html"
       }, 
       {
-        "url": "/tests/webstorage/w3c/storage_local_length_js.html", 
-        "path": "tests/webstorage/w3c/storage_local_length_js.html"
-      }, 
-      {
         "url": "/tests/webstorage/w3c/storage_local_removeitem.html", 
         "path": "tests/webstorage/w3c/storage_local_removeitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_local_removeitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_local_removeitem_js.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_local_security.html", 
@@ -20430,10 +20378,6 @@
       {
         "url": "/tests/webstorage/w3c/storage_local_setitem.html", 
         "path": "tests/webstorage/w3c/storage_local_setitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_local_setitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_local_setitem_js.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_local_setitem_quotaexceedederr.html", 
@@ -20448,16 +20392,8 @@
         "path": "tests/webstorage/w3c/storage_session_clear.html"
       }, 
       {
-        "url": "/tests/webstorage/w3c/storage_session_clear_js.html", 
-        "path": "tests/webstorage/w3c/storage_session_clear_js.html"
-      }, 
-      {
         "url": "/tests/webstorage/w3c/storage_session_getitem.html", 
         "path": "tests/webstorage/w3c/storage_session_getitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_session_getitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_session_getitem_js.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_session_in_js.html", 
@@ -20476,32 +20412,16 @@
         "path": "tests/webstorage/w3c/storage_session_length.html"
       }, 
       {
-        "url": "/tests/webstorage/w3c/storage_session_length_js.html", 
-        "path": "tests/webstorage/w3c/storage_session_length_js.html"
-      }, 
-      {
         "url": "/tests/webstorage/w3c/storage_session_removeitem.html", 
         "path": "tests/webstorage/w3c/storage_session_removeitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_session_removeitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_session_removeitem_js.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_session_setitem.html", 
         "path": "tests/webstorage/w3c/storage_session_setitem.html"
       }, 
       {
-        "url": "/tests/webstorage/w3c/storage_session_setitem_js.html", 
-        "path": "tests/webstorage/w3c/storage_session_setitem_js.html"
-      }, 
-      {
         "url": "/tests/webstorage/w3c/storage_session_setitem_quotaexceedederr.html", 
         "path": "tests/webstorage/w3c/storage_session_setitem_quotaexceedederr.html"
-      }, 
-      {
-        "url": "/tests/webstorage/window_localStorage_clear_base.html", 
-        "path": "tests/webstorage/window_localStorage_clear_base.html"
       }, 
       {
         "url": "/tests/webstorage/window_localStorage_enumerate_storage.html", 
@@ -20594,10 +20514,6 @@
       {
         "url": "/tests/webstorage/window_localStorage_type.html", 
         "path": "tests/webstorage/window_localStorage_type.html"
-      }, 
-      {
-        "url": "/tests/webstorage/window_sessionStorage_clear_base.html", 
-        "path": "tests/webstorage/window_sessionStorage_clear_base.html"
       }, 
       {
         "url": "/tests/webstorage/window_sessionStorage_enumerate_storage.html", 
@@ -23423,10 +23339,6 @@
         "path": "tests/notification/notification_tag-manual.html"
       }, 
       {
-        "url": "/tests/notification/onshow_using-manual.html", 
-        "path": "tests/notification/onshow_using-manual.html"
-      }, 
-      {
         "url": "/tests/pagevisibility/pagevisibility_DocumentVisibility_hidden_lockScreen-manual.html", 
         "path": "tests/pagevisibility/pagevisibility_DocumentVisibility_hidden_lockScreen-manual.html"
       }, 
@@ -25721,14 +25633,6 @@
         "path": "tests/sse/w3c/resources/cache-control.event_stream"
       }, 
       {
-        "url": "/tests/sse/w3c/resources/cors-cookie.py", 
-        "path": "tests/sse/w3c/resources/cors-cookie.py"
-      }, 
-      {
-        "url": "/tests/sse/w3c/resources/cors.py", 
-        "path": "tests/sse/w3c/resources/cors.py"
-      }, 
-      {
         "url": "/tests/sse/w3c/resources/last-event-id.py", 
         "path": "tests/sse/w3c/resources/last-event-id.py"
       }, 
@@ -25823,18 +25727,6 @@
       {
         "url": "/tests/typedarrays/spec.json", 
         "path": "tests/typedarrays/spec.json"
-      }, 
-      {
-        "url": "/tests/typedarrays/tools/README", 
-        "path": "tests/typedarrays/tools/README"
-      }, 
-      {
-        "url": "/tests/typedarrays/tools/data.yaml", 
-        "path": "tests/typedarrays/tools/data.yaml"
-      }, 
-      {
-        "url": "/tests/typedarrays/tools/gentest.py", 
-        "path": "tests/typedarrays/tools/gentest.py"
       }, 
       {
         "url": "/tests/typedarrays/w3c/COPYING", 
