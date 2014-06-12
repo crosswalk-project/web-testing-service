@@ -8916,6 +8916,10 @@
         "path": "tests/fullscreen/FullScreen_requestFullScreen_exists.html"
       }, 
       {
+        "url": "/tests/gamepad/GamepadEvent_basic.html", 
+        "path": "tests/gamepad/GamepadEvent_basic.html"
+      }, 
+      {
         "url": "/tests/geoallow/Coordinates_accuracy.html", 
         "path": "tests/geoallow/Coordinates_accuracy.html"
       }, 
@@ -11352,6 +11356,222 @@
         "path": "tests/multicolumn/CSS3Multicolumn_columns_shorthand.html"
       }, 
       {
+        "url": "/tests/nativefilesystem/DirectoryEntry_createReader_exist.html", 
+        "path": "tests/nativefilesystem/DirectoryEntry_createReader_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/DirectoryEntry_getDirectory_exist.html", 
+        "path": "tests/nativefilesystem/DirectoryEntry_getDirectory_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/DirectoryEntry_getFile_base.html", 
+        "path": "tests/nativefilesystem/DirectoryEntry_getFile_base.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/DirectoryEntry_getFile_exist.html", 
+        "path": "tests/nativefilesystem/DirectoryEntry_getFile_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/DirectoryEntry_removeRecursively_exist.html", 
+        "path": "tests/nativefilesystem/DirectoryEntry_removeRecursively_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/DirectoryReader_readEntries_exist.html", 
+        "path": "tests/nativefilesystem/DirectoryReader_readEntries_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/EntriesCallback_handleEvent_entries_type.html", 
+        "path": "tests/nativefilesystem/EntriesCallback_handleEvent_entries_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/EntriesCallback_handleEvent_exist.html", 
+        "path": "tests/nativefilesystem/EntriesCallback_handleEvent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/EntryCallback_handleEvent_entry_type.html", 
+        "path": "tests/nativefilesystem/EntryCallback_handleEvent_entry_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/EntryCallback_handleEvent_exist.html", 
+        "path": "tests/nativefilesystem/EntryCallback_handleEvent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_copyTo_base.html", 
+        "path": "tests/nativefilesystem/Entry_copyTo_base.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_copyTo_exist.html", 
+        "path": "tests/nativefilesystem/Entry_copyTo_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_fullPath_exist.html", 
+        "path": "tests/nativefilesystem/Entry_fullPath_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_fullPath_readonly.html", 
+        "path": "tests/nativefilesystem/Entry_fullPath_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_fullPath_type.html", 
+        "path": "tests/nativefilesystem/Entry_fullPath_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_getMetadata_exist.html", 
+        "path": "tests/nativefilesystem/Entry_getMetadata_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_getParent_exist.html", 
+        "path": "tests/nativefilesystem/Entry_getParent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isDirectory_exist.html", 
+        "path": "tests/nativefilesystem/Entry_isDirectory_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isDirectory_false.html", 
+        "path": "tests/nativefilesystem/Entry_isDirectory_false.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isDirectory_readonly.html", 
+        "path": "tests/nativefilesystem/Entry_isDirectory_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isDirectory_true.html", 
+        "path": "tests/nativefilesystem/Entry_isDirectory_true.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isDirectory_type.html", 
+        "path": "tests/nativefilesystem/Entry_isDirectory_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isFile_exist.html", 
+        "path": "tests/nativefilesystem/Entry_isFile_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isFile_false.html", 
+        "path": "tests/nativefilesystem/Entry_isFile_false.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isFile_readonly.html", 
+        "path": "tests/nativefilesystem/Entry_isFile_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isFile_true.html", 
+        "path": "tests/nativefilesystem/Entry_isFile_true.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_isFile_type.html", 
+        "path": "tests/nativefilesystem/Entry_isFile_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_moveTo_exist.html", 
+        "path": "tests/nativefilesystem/Entry_moveTo_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_name_exist.html", 
+        "path": "tests/nativefilesystem/Entry_name_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_name_readonly.html", 
+        "path": "tests/nativefilesystem/Entry_name_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_name_type.html", 
+        "path": "tests/nativefilesystem/Entry_name_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_nativefilesystem_exist.html", 
+        "path": "tests/nativefilesystem/Entry_nativefilesystem_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_nativefilesystem_readonly.html", 
+        "path": "tests/nativefilesystem/Entry_nativefilesystem_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_nativefilesystem_type.html", 
+        "path": "tests/nativefilesystem/Entry_nativefilesystem_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_remove_exist.html", 
+        "path": "tests/nativefilesystem/Entry_remove_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Entry_toURL_exist.html", 
+        "path": "tests/nativefilesystem/Entry_toURL_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/FileCallback_handleEvent_exist.html", 
+        "path": "tests/nativefilesystem/FileCallback_handleEvent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/FileEntry_createWriter_exist.html", 
+        "path": "tests/nativefilesystem/FileEntry_createWriter_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/FileEntry_file_exist.html", 
+        "path": "tests/nativefilesystem/FileEntry_file_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/FileWriterCallback_handleEvent_exist.html", 
+        "path": "tests/nativefilesystem/FileWriterCallback_handleEvent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/MetadataCallback_handleEvent_exist.html", 
+        "path": "tests/nativefilesystem/MetadataCallback_handleEvent_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/MetadataCallback_handleEvent_metadata_type.html", 
+        "path": "tests/nativefilesystem/MetadataCallback_handleEvent_metadata_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Metadata_modificationTime.html", 
+        "path": "tests/nativefilesystem/Metadata_modificationTime.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/Metadata_size.html", 
+        "path": "tests/nativefilesystem/Metadata_size.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_name_base.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_name_base.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_name_exist.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_name_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_name_readonly.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_name_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_name_type.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_name_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_requestNativeFileSystem_base.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_requestNativeFileSystem_base.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_requestNativeFileSystem_exist.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_requestNativeFileSystem_exist.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_root_base.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_root_base.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_root_readonly.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_root_readonly.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/NativeFileSystem_root_type.html", 
+        "path": "tests/nativefilesystem/NativeFileSystem_root_type.html"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/VoidCallback_handleEvent_exists.html", 
+        "path": "tests/nativefilesystem/VoidCallback_handleEvent_exists.html"
+      }, 
+      {
         "url": "/tests/navigationtiming/test_navigationtiming_attributes_type.html", 
         "path": "tests/navigationtiming/test_navigationtiming_attributes_type.html"
       }, 
@@ -11486,6 +11706,14 @@
       {
         "url": "/tests/pagevisibility/w3c/test_read_only.html", 
         "path": "tests/pagevisibility/w3c/test_read_only.html"
+      }, 
+      {
+        "url": "/tests/performancetimeline/Performance.html", 
+        "path": "tests/performancetimeline/Performance.html"
+      }, 
+      {
+        "url": "/tests/performancetimeline/PerformanceEntry.html", 
+        "path": "tests/performancetimeline/PerformanceEntry.html"
       }, 
       {
         "url": "/tests/presentation/Presentation_attributes_basic.html", 
@@ -23143,6 +23371,58 @@
         "path": "tests/fonts/csswg/font-weight-rule-008-manual.htm"
       }, 
       {
+        "url": "/tests/gamepad/GamePadButton_basic-manual.html", 
+        "path": "tests/gamepad/GamePadButton_basic-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePadButton_function-manual.html", 
+        "path": "tests/gamepad/GamePadButton_function-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_axes-manual.html", 
+        "path": "tests/gamepad/GamePad_axes-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_basic-manual.html", 
+        "path": "tests/gamepad/GamePad_basic-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_buttons-manual.html", 
+        "path": "tests/gamepad/GamePad_buttons-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_connected-manual.html", 
+        "path": "tests/gamepad/GamePad_connected-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_id-manual.html", 
+        "path": "tests/gamepad/GamePad_id-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_index-manual.html", 
+        "path": "tests/gamepad/GamePad_index-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_mapping-manual.html", 
+        "path": "tests/gamepad/GamePad_mapping-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamePad_timestamp-manual.html", 
+        "path": "tests/gamepad/GamePad_timestamp-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/GamepadEvent_gamepad-manual.html", 
+        "path": "tests/gamepad/GamepadEvent_gamepad-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/Navigator_getGamepads_basic-manual.html", 
+        "path": "tests/gamepad/Navigator_getGamepads_basic-manual.html"
+      }, 
+      {
+        "url": "/tests/gamepad/Navigator_getGamepads_function-manual.html", 
+        "path": "tests/gamepad/Navigator_getGamepads_function-manual.html"
+      }, 
+      {
         "url": "/tests/geoallow/w3c/t-manual.html", 
         "path": "tests/geoallow/w3c/t-manual.html"
       }, 
@@ -25173,6 +25453,14 @@
         "path": "tests/fullscreen/spec.json"
       }, 
       {
+        "url": "/tests/gamepad/spec.json", 
+        "path": "tests/gamepad/spec.json"
+      }, 
+      {
+        "url": "/tests/gamepad/support/support.js", 
+        "path": "tests/gamepad/support/support.js"
+      }, 
+      {
         "url": "/tests/geoallow/spec.json", 
         "path": "tests/geoallow/spec.json"
       }, 
@@ -25391,6 +25679,10 @@
       {
         "url": "/tests/pagevisibility/w3c/resources/pagevistestharness.js", 
         "path": "tests/pagevisibility/w3c/resources/pagevistestharness.js"
+      }, 
+      {
+        "url": "/tests/performancetimeline/spec.json", 
+        "path": "tests/performancetimeline/spec.json"
       }, 
       {
         "url": "/tests/presentation/presentation_secondary_page_image/config.xml", 
