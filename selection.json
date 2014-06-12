@@ -184,6 +184,10 @@
       "spec_desc": "HTML5 FileWriter", 
       "spec_url": "http://www.w3.org/TR/2011/WD-file-writer-api-20110419/"
     }, 
+    "gamepad": {
+      "spec_desc": "Gamepad API", 
+      "spec_url": "http://www.w3.org/TR/gamepad/"
+    }, 
     "geoallow": {
       "spec_desc": "Geolocation", 
       "spec_url": "http://www.w3.org/TR/2012/PR-geolocation-API-20120510/"
@@ -223,6 +227,10 @@
     "pagevisibility": {
       "spec_desc": "W3C Page Visibility API", 
       "spec_url": "http://www.w3.org/TR/2013/REC-page-visibility-20130514/"
+    }, 
+    "performancetimeline": {
+      "spec_desc": "Performance Timeline", 
+      "spec_url": "http://www.w3.org/TR/performance-timeline/"
     }, 
     "presentation": {
       "spec_desc": "Presentation API", 

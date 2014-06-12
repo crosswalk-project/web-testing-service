@@ -4,4 +4,4 @@
           "wss":[8002]},
  "log_level":"debug",
  "bind_hostname": true,
- "tests_version":"WW23.4"}
+ "tests_version":"WW24.4"}
