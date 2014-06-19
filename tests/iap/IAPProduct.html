@@ -26,24 +26,45 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Wang, Hongjuan <hongjuanx.wang@intel.com>
+        Liu,Yun <yunx.liu@intel.com>
 
 -->
 
 <meta charset="utf-8">
-<title>Nacl: api Var Distionary</title>
+<title>IAP Test: IAPProduct</title>
 <link rel="author" title="Intel" href="http://www.intel.com">
-<body>
-  <p>Test Purpose: </p>
-  <p>Verifies the example shows how to use the pp::VarDictionary var type</p>
-  <p>Test Steps: </p>
-  <ol>
-    <li>Execute command on IVI device with "app" user: "xwalk 'http://your_server:5103/api/var_distionary/index.html?tc=pnacl'"</li>
-    <li>Follow the opened index.html description to execute all steps</li>
-  </ol>
-  <p>Expected Result: </p>
-  <ol>
-    <li>The command execute successfully</li>
-    <li>The NaCL module's dictionary will be displayed on the right after every function called</li>
-  </ol>
-</body>
+<link rel="help" href="https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<div id="log"></div>
+<script>
+
+setup({explicit_done: true});
+
+navigator.iap.queryProductDetails(["gas"]).then(
+function(products) {
+  [
+    //attributes of the IAPProduct interface
+    ["string", "id"],
+    ["string", "price"],
+    ["string", "title"],
+    ["string", "type"],
+    ["string", "description"]
+  ].forEach(function(attr) {
+    var type = attr[0];
+    var name = attr[1];
+
+    test(function () {
+      assert_true(name in products[0], name + " attribute in IAPProduct");
+      assert_equals(typeof products[0][name], type, name + " attribute of type");
+    }, "Check if IAPProduct." + name + " exists and type of " + type);
+
+    test(function () {
+      assert_not_equals(products[0][name], null, name + " attribute of IAPProduct");
+    }, "Check if IAPProduct." + name + " is valid");
+  });
+  done();
+},
+function(error) {});
+
+</script>

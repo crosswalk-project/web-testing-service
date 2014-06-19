@@ -560,6 +560,10 @@
         "path": "tests/2dtransforms/2dtransform_property_exist.html"
       }, 
       {
+        "url": "/tests/2dtransforms/csswg/2d-transforms.html", 
+        "path": "tests/2dtransforms/csswg/2d-transforms.html"
+      }, 
+      {
         "url": "/tests/3dtransforms/CSS33Dtransform_backface-visibility.html", 
         "path": "tests/3dtransforms/CSS33Dtransform_backface-visibility.html"
       }, 
@@ -582,6 +586,10 @@
       {
         "url": "/tests/3dtransforms/CSS33Dtransform_transform.html", 
         "path": "tests/3dtransforms/CSS33Dtransform_transform.html"
+      }, 
+      {
+        "url": "/tests/3dtransforms/csswg/3d-transforms.html", 
+        "path": "tests/3dtransforms/csswg/3d-transforms.html"
       }, 
       {
         "url": "/tests/animations/CSS3Animations_animation-delay_exists.html", 
@@ -818,10 +826,6 @@
       {
         "url": "/tests/appcache/appcache_update_exist.html", 
         "path": "tests/appcache/appcache_update_exist.html"
-      }, 
-      {
-        "url": "/tests/appuri/URI.html", 
-        "path": "tests/appuri/URI.html"
       }, 
       {
         "url": "/tests/audio/audio_MediaController_buffered_exists.html", 
@@ -9882,6 +9886,22 @@
       {
         "url": "/tests/hrtime/w3c/test_cross_frame_start.html", 
         "path": "tests/hrtime/w3c/test_cross_frame_start.html"
+      }, 
+      {
+        "url": "/tests/iap/IAPProduct.html", 
+        "path": "tests/iap/IAPProduct.html"
+      }, 
+      {
+        "url": "/tests/iap/IAPTransactionDetails.html", 
+        "path": "tests/iap/IAPTransactionDetails.html"
+      }, 
+      {
+        "url": "/tests/iap/InAppPurchase.html", 
+        "path": "tests/iap/InAppPurchase.html"
+      }, 
+      {
+        "url": "/tests/iap/Navigator_iap.html", 
+        "path": "tests/iap/Navigator_iap.html"
       }, 
       {
         "url": "/tests/indexeddb/IDBCursorWithValue_value_exist.html", 
@@ -23941,6 +23961,14 @@
     ], 
     "helper": [
       {
+        "url": "/tests/2dtransforms/csswg/COPYING", 
+        "path": "tests/2dtransforms/csswg/COPYING"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transforms.js", 
+        "path": "tests/2dtransforms/csswg/transforms.js"
+      }, 
+      {
         "url": "/tests/2dtransforms/spec.json", 
         "path": "tests/2dtransforms/spec.json"
       }, 
@@ -23999,18 +24027,6 @@
       {
         "url": "/tests/appcache/spec.json", 
         "path": "tests/appcache/spec.json"
-      }, 
-      {
-        "url": "/tests/appuri/image/COPYING", 
-        "path": "tests/appuri/image/COPYING"
-      }, 
-      {
-        "url": "/tests/appuri/image/test.png", 
-        "path": "tests/appuri/image/test.png"
-      }, 
-      {
-        "url": "/tests/appuri/spec.json", 
-        "path": "tests/appuri/spec.json"
       }, 
       {
         "url": "/tests/audio/media/COPYING", 
@@ -25539,6 +25555,10 @@
       {
         "url": "/tests/hrtime/w3c/COPYING", 
         "path": "tests/hrtime/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/iap/spec.json", 
+        "path": "tests/iap/spec.json"
       }, 
       {
         "url": "/tests/indexeddb/spec.json", 
