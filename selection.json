@@ -130,10 +130,6 @@
     }
   }, 
   "sysapps": {
-    "appuri": {
-      "spec_desc": "App URI", 
-      "spec_url": "https://dvcs.w3.org/2012/sysapps/app-uri/"
-    }, 
     "contactsmanager": {
       "spec_desc": "Contacts Manager", 
       "spec_url": "http://www.w3.org/2012/sysapps/contacts-manager-api/"
@@ -303,6 +299,12 @@
     "xmlhttprequest": {
       "spec_desc": "XMLHttpRequest Level 2", 
       "spec_url": "http://www.w3.org/TR/2012/WD-XMLHttpRequest-20121206/"
+    }
+  }, 
+  "xwalk": {
+    "iap": {
+      "spec_desc": "IAP", 
+      "spec_url": "https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP"
     }
   }
 }

@@ -26,24 +26,43 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Wang, Hongjuan <hongjuanx.wang@intel.com>
+        Liu,Yun <yunx.liu@intel.com>
 
 -->
 
 <meta charset="utf-8">
-<title>Nacl: api Core</title>
+<title>IAP Test: IAPTransactionDetails</title>
 <link rel="author" title="Intel" href="http://www.intel.com">
-<body>
-  <p>Test Purpose: </p>
-  <p>Verifies the Core API example demonstrates the basic use of the Time and Callback functions</p>
-  <p>Test Steps: </p>
-  <ol>
-    <li>Execute command on IVI device with "app" user: "xwalk 'http://your_server:5103/api/core/index.html?tc=pnacl'"</li>
-    <li>Follow the opened index.html description to execute all steps</li>
-  </ol>
-  <p>Expected Result: </p>
-  <ol>
-    <li>The command execute successfully</li>
-    <li>The modules will immediately post a message back if the delay is zero, otherwise, it will issue a CallOnMainThread with the delay specified</li>
-  </ol>
-</body>
+<link rel="help" href="https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<div id="log"></div>
+<script>
+
+setup({explicit_done: true});
+
+navigator.iap.purchase("gas").then(
+function(transaction) {
+  [
+    //attributes of the IAPTransactionDetails interface
+    ["string", "id"],
+    ["number", "time"],
+    ["string", "token"]
+  ].forEach(function(attr) {
+    var type = attr[0];
+    var name = attr[1];
+
+    test(function () {
+      assert_true(name in transaction, name + " attribute in IAPTransactionDetails");
+      assert_equals(typeof transaction[name], type, name + " attribute of type");
+    }, "Check if IAPTransactionDetails." + name + " exists and type of " + type);
+
+    test(function () {
+      assert_not_equals(transaction[name], null, name + " attribute of IAPTransactionDetails");
+    }, "Check if IAPTransactionDetails." + name + " is valid");
+  });
+  done();
+},
+function(error) {});
+
+</script>
