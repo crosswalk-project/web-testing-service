@@ -25021,6 +25021,10 @@
         "path": "tests/colors/support/cssstyle.js"
       }, 
       {
+        "url": "/tests/config.json", 
+        "path": "tests/config.json"
+      }, 
+      {
         "url": "/tests/contactsmanager/spec.json", 
         "path": "tests/contactsmanager/spec.json"
       }, 
@@ -25815,6 +25819,10 @@
       {
         "url": "/tests/screenorientation/spec.json", 
         "path": "tests/screenorientation/spec.json"
+      }, 
+      {
+        "url": "/tests/selection.json", 
+        "path": "tests/selection.json"
       }, 
       {
         "url": "/tests/selectorslevel1/spec.json", 

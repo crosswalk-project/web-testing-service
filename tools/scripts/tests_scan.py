@@ -11,7 +11,7 @@ ref_suffixes = ["_ref", "-ref"]
 blacklist = ["/", "/common/", "/resources/"]
 
 logging.basicConfig()
-logger = logging.getLogger("Web platform tests")
+logger = logging.getLogger("wts-tests")
 logger.setLevel(logging.DEBUG)
 
 class ManifestItem(object):
@@ -248,7 +248,7 @@ def get_manifest_items(rel_path):
         timeout = None
 
         if file_markup_type == 'py':
-            with open(rel_path) as f:
+            with open(path) as f:
                 if f.read().find('testharness.js') != -1:
                     return [TestharnessTest(rel_path, url, timeout=timeout)]
                 else:
@@ -312,7 +312,7 @@ def abs_path(path):
 
 def get_root():
     file_path = os.path.abspath(__file__)
-    file_path = os.path.split(file_path)[0] + '/../..'
+    file_path = os.path.split(file_path)[0] + '/../../wts'
     return file_path
 
 
@@ -344,7 +344,7 @@ def update(manifest, path):
     for root, dirs, files in os.walk(path):
         for fn in files: 
             full_path = "%s/%s" % (root, fn)
-            relative_path = full_path.split('/../../')[1]
+            relative_path = full_path.split('/../../wts/')[1]
             manifest.extend(get_manifest_items(relative_path))
 
 
@@ -354,35 +354,24 @@ def write(manifest, manifest_path):
 
 
 def update_manifest(opts):
-    if not opts.rebuild:
-        manifest = load(opts.path)
-    else:
-        manifest = Manifest()
-
-    logger.info("Updating manifest")
+    logger.info("Generating manifest json")
+    manifest = Manifest()
     tests_path = get_root() + '/tests'
     update(manifest, tests_path)
-    write(manifest, opts.path)
+    write(manifest, os.path.join(opts.path, "MANIFEST.json"))
 
 
 def get_parser():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--path", default=os.path.join(get_root(),  "MANIFEST.json"),
-                        help="Mainifest path")
-    parser.add_argument("--rebuild", action="store_true", default=False,
-                        help="Force a full rebuild of the manifest rather than updating incrementally.")
-
+    parser.add_argument("--path", default=os.path.join(get_root(),  "tests"),
+                        help="JSON path")
     return parser
 
 
-def generate_manifest_json():
-    opts = get_parser().parse_args()
-    update_manifest(opts)
-
-
-def generate_selection_json():
-    logger.info("Generating selection.json")
+def update_selection(opts):
+    logger.info("Generating selection json")
+    selection_json = os.path.join(opts.path, "selection.json")
     selection_info_dic = {}
     path = get_root()
     for spec_item in os.listdir("%s/tests" % path):
@@ -399,15 +388,19 @@ def generate_selection_json():
                     selection_info_dic[category] = {}
                 selection_info_dic[category][spec_item] = spec_info
 
-    selection_json = open("%s/selection.json" % path, 'w')
+    selection_json = open(selection_json, 'w')
     content = json.dumps(selection_info_dic, sort_keys=True, indent=2)
     selection_json.write(content)
     selection_json.close()
 
 
+def generate_json():
+    opts = get_parser().parse_args()
+    update_manifest(opts)
+    update_selection(opts)
+
 def main():
-    generate_manifest_json()
-    generate_selection_json()
+    generate_json()
 
 if __name__ == "__main__":
     main()

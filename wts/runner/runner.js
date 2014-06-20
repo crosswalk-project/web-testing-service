@@ -780,7 +780,7 @@ Results.prototype = {
 function Runner(manifest_path) {
     this.server = location.protocol + "//" + location.host;
     this.manifest = new Manifest(manifest_path);
-    this.select_json = new Manifest('/selection.json');
+    this.select_json = new Manifest('/tests/selection.json');
     this.filter_array = null;
     this.test_types = null;
     this.manifest_iterator = null;
@@ -1011,8 +1011,8 @@ function setup() {
             run_info.style.display = "none";
         }
     } , false);
-    loadconfig("/config.json",version_dom);
-    runner = new Runner("/MANIFEST.json", options);
+    loadconfig("/tests/version.json",version_dom);
+    runner = new Runner("/tests/MANIFEST.json", options);
     var test_control = new TestControl(document.getElementById("testControl"), runner);
     new ManualUI(document.getElementById("manualUI"), runner);
     new VisualOutput(document.getElementById("output"), runner);

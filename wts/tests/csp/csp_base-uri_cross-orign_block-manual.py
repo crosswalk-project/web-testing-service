@@ -1,12 +1,12 @@
 def main(request, response):
     import simplejson as json
-    f = file('config.json')
+    f = file('wts/config.json')
     source = f.read()
     s = json.JSONDecoder().decode(source)
     url1 = "http://" + s['host'] + ":" + str(s['ports']['http'][1])
-    response.headers.set("Content-Security-Policy", "default-src 'self' 'unsafe-inline'")
-    response.headers.set("X-Content-Security-Policy", "default-src 'self' 'unsafe-inline'")
-    response.headers.set("X-WebKit-CSP", "default-src 'self' 'unsafe-inline'")
+    response.headers.set("Content-Security-Policy", "base-uri http://www.w3.org 'unsafe-inline'")
+    response.headers.set("X-Content-Security-Policy", "base-uri http://www.w3.org 'unsafe-inline'")
+    response.headers.set("X-WebKit-CSP", "base-uri http://www.w3.org 'unsafe-inline'")
     return """<!DOCTYPE html>
 <!--
 Copyright (c) 2013 Intel Corporation.
@@ -35,33 +35,22 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Hao, Yunfei <yunfeix.hao@intel.com>
+        Xu, Jianfeng <jianfengx.xu@intel.com>
 
 -->
 
 <html>
   <head>
-    <title>CSP Test: csp_default-src_self_script</title>
+    <title>CSP Test: csp_base-uri_cross-orign</title>
     <link rel="author" title="Intel" href="http://www.intel.com"/>
-    <link rel="help" href="http://www.w3.org/TR/2012/CR-CSP-20121115/#default-src"/>
+    <link rel="help" href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html#base-uri"/>
     <meta name="flags" content=""/>
-    <meta name="assert" content="default-src 'self' 'unsafe-inline'"/>
+    <meta name="assert" content="base-uri http://www.w3.org"/>
     <meta charset="utf-8"/>
-    <script src="../resources/testharness.js"></script>
-    <script src="../resources/testharnessreport.js"></script>
+    <base id="test" href='""" + url1 +"""/tests/csp/support/'/>
   </head>
   <body>
-    <div id="log"></div>
-    <script src="support/csp.js"></script>
-    <script src='""" + url1 + """/tests/csp/support/test.js'></script>
-    <script>
-        test(function() {
-            assert_true(typeof X == "number", "attribute defined internal");
-        }, document.title + "_allowed");
-
-        test(function() {
-            assert_true(typeof getVideoURI != "function", "Function getVideoURI is defined");
-        }, document.title + "_blocked");
-    </script>
+    <p>Test passes if there is no blue.</p>
+    <img src="blue-100x100.png"/>
   </body>
 </html> """

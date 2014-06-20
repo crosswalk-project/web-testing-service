@@ -13,6 +13,7 @@ import uuid
 import argparse
 
 repo_root = os.path.abspath(os.path.split(__file__)[0])
+service_doc_root = os.path.join(repo_root, "wts")
 
 sys.path.insert(1, os.path.join(repo_root, "tools", "wptserve"))
 from wptserve import server as wptserve, handlers
@@ -26,9 +27,9 @@ routes = [(any_method, "*.py", handlers.python_script_handler),
           ("GET", "/tests", handlers.show_tests_dir_handler),
           ("GET", "/tests/*", handlers.file_handler),
           ("GET", "/", handlers.show_index_handler),
-          ("GET", "/tools/runner", handlers.show_index_handler),
-          ("GET", "/tools/runner/", handlers.show_index_handler),
-          ("GET", "/tools/runner/*", handlers.file_handler),
+          ("GET", "/runner", handlers.show_index_handler),
+          ("GET", "/runner/", handlers.show_index_handler),
+          ("GET", "/runner/*", handlers.file_handler),
           (any_method, "/*", handlers.ErrorHandler(404)),
           ("GET", "*", handlers.file_handler),
           ]
@@ -36,7 +37,7 @@ routes = [(any_method, "*.py", handlers.python_script_handler),
 logger = None
 
 def default_logger(level):
-    logger = logging.getLogger("web-platform-tests")
+    logger = logging.getLogger("wts-tests")
     logging.basicConfig(level=getattr(logging, level.upper()))
     return logger
 
@@ -210,11 +211,11 @@ def set_computed_defaults(config):
         if value_set(config, "doc_root"):
             root = config["doc_root"]
         else:
-            root = repo_root
-        config["ws_doc_root"] = os.path.join(repo_root, "websockets", "handlers")
+            root = service_doc_root
+        config["ws_doc_root"] = os.path.join(service_doc_root, "tests", "websocket", "handlers")
 
     if not value_set(config, "doc_root"):
-        config["doc_root"] = repo_root
+        config["doc_root"] = service_doc_root
 
 def load_config(path):
     if os.path.exists(path):
@@ -229,7 +230,7 @@ def load_config(path):
 def main():
     global logger
 
-    config = load_config("config.json")
+    config = load_config(os.path.join(repo_root, "config.json"))
 
     logger = default_logger(config["log_level"])
 
