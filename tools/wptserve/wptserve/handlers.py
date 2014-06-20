@@ -41,14 +41,10 @@ class ShowIndexHandler(object):
     <meta http-equiv="Refresh" content="0; url=%s">
 </head>"""
 
-        config_file = path + "/config.json"
-
-        if os.path.isfile(config_file):
-            response.content = jump_index % "tools/runner/index.html"
-        elif path.endswith("/tools/runner/"):
-            response.content = jump_index % "index.html"
-        elif path.endswith("/tools/runner"):
-            response.content = jump_index % "runner/index.html"
+        if request.url_parts.path.endswith("/"):
+            response.content = jump_index % "/runner/index.html"
+        elif request.url_parts.path.endswith("/runner") or request.url_parts.path.endswith("/runner/"):
+            response.content = jump_index % "/runner/index.html"
 
 
 show_index_handler = ShowIndexHandler()

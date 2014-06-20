@@ -26069,6 +26069,10 @@
         "path": "tests/usertiming/w3c/resources/webperftestharnessextension.js"
       }, 
       {
+        "url": "/tests/version.json", 
+        "path": "tests/version.json"
+      }, 
+      {
         "url": "/tests/vibration/spec.json", 
         "path": "tests/vibration/spec.json"
       }, 

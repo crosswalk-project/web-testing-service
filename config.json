@@ -1,7 +1,6 @@
-{"host": "web-platform.test",
+{"host": "wts.test",
  "ports":{"http":[80, 8000],
           "ws":[8001],
           "wss":[8002]},
  "log_level":"debug",
- "bind_hostname": true,
- "tests_version":"WW25.4"}
+ "bind_hostname": true}
