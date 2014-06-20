@@ -1,8 +1,5 @@
-import os
-
 def main(request, response):
     import simplejson as json
-    print os.path.abspath(__file__)
     f = file('config.json')
     source = f.read()
     s = json.JSONDecoder().decode(source)

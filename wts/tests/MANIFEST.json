@@ -25021,10 +25021,6 @@
         "path": "tests/colors/support/cssstyle.js"
       }, 
       {
-        "url": "/tests/config.json", 
-        "path": "tests/config.json"
-      }, 
-      {
         "url": "/tests/contactsmanager/spec.json", 
         "path": "tests/contactsmanager/spec.json"
       }, 
@@ -25821,10 +25817,6 @@
         "path": "tests/screenorientation/spec.json"
       }, 
       {
-        "url": "/tests/selection.json", 
-        "path": "tests/selection.json"
-      }, 
-      {
         "url": "/tests/selectorslevel1/spec.json", 
         "path": "tests/selectorslevel1/spec.json"
       }, 
@@ -26075,6 +26067,10 @@
       {
         "url": "/tests/usertiming/w3c/resources/webperftestharnessextension.js", 
         "path": "tests/usertiming/w3c/resources/webperftestharnessextension.js"
+      }, 
+      {
+        "url": "/tests/version.json", 
+        "path": "tests/version.json"
       }, 
       {
         "url": "/tests/vibration/spec.json", 

@@ -1,6 +1,6 @@
 def main(request, response):
     import simplejson as json
-    f = file('wts/config.json')
+    f = file('config.json')
     source = f.read()
     s = json.JSONDecoder().decode(source)
     url1 = "http://" + s['host'] + ":" + str(s['ports']['http'][1])

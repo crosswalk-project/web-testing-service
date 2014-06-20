@@ -1,4 +1,4 @@
-{"host": "web-platform.test",
+{"host": "wts.test",
  "ports":{"http":[8080, 8000],
           "ws":[8001],
           "wss":[8002]},
