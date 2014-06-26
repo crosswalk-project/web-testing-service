@@ -125,13 +125,13 @@
         "url": "/tests/backgrounds/csswg/background-016.htm", 
         "path": "tests/backgrounds/csswg/background-016.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-017.htm", 
         "path": "tests/backgrounds/csswg/background-017.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-018.htm", 
@@ -143,13 +143,13 @@
         "url": "/tests/backgrounds/csswg/background-020.htm", 
         "path": "tests/backgrounds/csswg/background-020.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-021.htm", 
         "path": "tests/backgrounds/csswg/background-021.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-022.htm", 
@@ -161,13 +161,13 @@
         "url": "/tests/backgrounds/csswg/background-024.htm", 
         "path": "tests/backgrounds/csswg/background-024.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-025.htm", 
         "path": "tests/backgrounds/csswg/background-025.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/../reference/ref-nothing-below.xht"
+        "ref_url": "/tests/backgrounds/csswg/reference/ref-nothing-below.xht"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-clip-008.html", 
@@ -179,7 +179,7 @@
         "url": "/tests/backgrounds/csswg/background-image-first-letter.html", 
         "path": "tests/backgrounds/csswg/background-image-first-letter.html", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/reftest/background-image-first-letter-ref.html"
+        "ref_url": "/tests/backgrounds/csswg/reference/background-image-first-letter-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-intrinsic-001.htm", 
@@ -12196,56 +12196,24 @@
         "path": "tests/sandbox/w3c/sandbox_030.htm"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_exists.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_exists.html"
+        "url": "/tests/screenorientation/Screen_attributes_tests.html", 
+        "path": "tests/screenorientation/Screen_attributes_tests.html"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_parameter_not_in_allowed_orientations.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_parameter_not_in_allowed_orientations.html"
+        "url": "/tests/screenorientation/Screen_lockOrientation_orientation_invalid.html", 
+        "path": "tests/screenorientation/Screen_lockOrientation_orientation_invalid.html"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_parameter_null.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_parameter_null.html"
+        "url": "/tests/screenorientation/Screen_lockOrientation_orientation_null.html", 
+        "path": "tests/screenorientation/Screen_lockOrientation_orientation_null.html"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_parameter_rigth.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_parameter_rigth.html"
+        "url": "/tests/screenorientation/blink/lockOrientation-basic.html", 
+        "path": "tests/screenorientation/blink/lockOrientation-basic.html"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_return_type.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_return_type.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_onorientationchange_exists.html", 
-        "path": "tests/screenorientation/Screen_onorientationchange_exists.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_onorientationchange_return_type.html", 
-        "path": "tests/screenorientation/Screen_onorientationchange_return_type.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_orientation_exists.html", 
-        "path": "tests/screenorientation/Screen_orientation_exists.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_orientation_in_currentorientation.html", 
-        "path": "tests/screenorientation/Screen_orientation_in_currentorientation.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_orientation_readonly.html", 
-        "path": "tests/screenorientation/Screen_orientation_readonly.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_orientation_return_type.html", 
-        "path": "tests/screenorientation/Screen_orientation_return_type.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_unlockOrientation_base.html", 
-        "path": "tests/screenorientation/Screen_unlockOrientation_base.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_unlockOrientation_exists.html", 
-        "path": "tests/screenorientation/Screen_unlockOrientation_exists.html"
+        "url": "/tests/screenorientation/window_onorientationchange_basic.html", 
+        "path": "tests/screenorientation/window_onorientationchange_basic.html"
       }, 
       {
         "url": "/tests/selectorslevel1/selectors1_document_queryselector_exists.html", 
@@ -25813,6 +25781,10 @@
         "path": "tests/sandbox/w3c/support/green-at-15.mp4"
       }, 
       {
+        "url": "/tests/screenorientation/blink/COPYING", 
+        "path": "tests/screenorientation/blink/COPYING"
+      }, 
+      {
         "url": "/tests/screenorientation/spec.json", 
         "path": "tests/screenorientation/spec.json"
       }, 
@@ -26067,10 +26039,6 @@
       {
         "url": "/tests/usertiming/w3c/resources/webperftestharnessextension.js", 
         "path": "tests/usertiming/w3c/resources/webperftestharnessextension.js"
-      }, 
-      {
-        "url": "/tests/version.json", 
-        "path": "tests/version.json"
       }, 
       {
         "url": "/tests/vibration/spec.json", 
