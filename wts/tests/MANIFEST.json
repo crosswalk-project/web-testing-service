@@ -26049,12 +26049,8 @@
         "path": "tests/vibration/w3c/COPYING"
       }, 
       {
-        "url": "/tests/vibration/w3c/feature-detection.js", 
-        "path": "tests/vibration/w3c/feature-detection.js"
-      }, 
-      {
-        "url": "/tests/vibration/w3c/helpers.js", 
-        "path": "tests/vibration/w3c/helpers.js"
+        "url": "/tests/vibration/w3c/vendor-prefix.js", 
+        "path": "tests/vibration/w3c/vendor-prefix.js"
       }, 
       {
         "url": "/tests/video/media/COPYING", 
