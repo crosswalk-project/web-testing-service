@@ -209,7 +209,7 @@ def value_set(config, key):
 
 def set_computed_defaults(config):
     if not value_set(config, "ws_doc_root"):
-        config["ws_doc_root"] = os.path.join(service_doc_root, "tests", "websocket", "handlers")
+        config["ws_doc_root"] = os.path.join(service_doc_root, "tests", "websocket", "w3c", "handlers")
 
     if not value_set(config, "doc_root"):
         config["doc_root"] = service_doc_root
