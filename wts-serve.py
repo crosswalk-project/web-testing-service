@@ -1,4 +1,4 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import sys
 import os
 import logging
@@ -122,6 +122,7 @@ class WebSocketDaemon(object):
         opts, args = pywebsocket._parse_args_and_config(cmd_args)
         opts.cgi_directories = []
         opts.is_executable_method = None
+        os.chdir(opts.document_root)
         self.server = pywebsocket.WebSocketServer(opts)
         ports = [item[0].getsockname()[1] for item in self.server._sockets]
         assert all(item == ports[0] for item in ports)
@@ -160,7 +161,7 @@ class WebSocketDaemon(object):
 def start_ws_server(config, paths, port, bind_hostname):
     return WebSocketDaemon(config["host"],
                            str(port),
-                           repo_root,
+                           paths["doc_root"],
                            paths["ws_doc_root"],
                            "debug",
                            bind_hostname)
@@ -208,10 +209,6 @@ def value_set(config, key):
 
 def set_computed_defaults(config):
     if not value_set(config, "ws_doc_root"):
-        if value_set(config, "doc_root"):
-            root = config["doc_root"]
-        else:
-            root = service_doc_root
         config["ws_doc_root"] = os.path.join(service_doc_root, "tests", "websocket", "handlers")
 
     if not value_set(config, "doc_root"):
