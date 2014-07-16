@@ -161,8 +161,8 @@ class WebSocketDaemon(object):
 def start_ws_server(config, paths, port, bind_hostname):
     return WebSocketDaemon(config["host"],
                            str(port),
-                           paths["doc_root"],
                            paths["ws_doc_root"],
+                           paths["ws_handlers_root"],
                            "debug",
                            bind_hostname)
 
@@ -190,7 +190,8 @@ def start(config):
     bind_hostname = config["bind_hostname"]
 
     paths = {"doc_root": config["doc_root"],
-             "ws_doc_root": config["ws_doc_root"]}
+             "ws_doc_root": config["ws_doc_root"],
+             "ws_handlers_root": config["ws_handlers_root"]}
 
     config_ = normalise_config(config, ports)
 
@@ -209,7 +210,10 @@ def value_set(config, key):
 
 def set_computed_defaults(config):
     if not value_set(config, "ws_doc_root"):
-        config["ws_doc_root"] = os.path.join(service_doc_root, "tests", "websocket", "w3c", "handlers")
+        config["ws_doc_root"] = os.path.join(service_doc_root, "tmp")
+
+    if not value_set(config, "ws_handlers_root"):
+        config["ws_handlers_root"] = os.path.join(service_doc_root, "tests", "websocket", "w3c", "handlers")
 
     if not value_set(config, "doc_root"):
         config["doc_root"] = service_doc_root
