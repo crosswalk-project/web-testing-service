@@ -26321,6 +26321,86 @@
         "path": "tests/websocket/w3c/cookies/support/set-cookie.py"
       }, 
       {
+        "url": "/tests/websocket/w3c/handlers/echo-cookie_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo-cookie_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo-query_v13_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo-query_v13_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo-query_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo-query_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo_close_data_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo_close_data_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo_exit_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo_exit_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo_raw_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo_raw_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/echo_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/echo_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/empty-message_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/empty-message_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/handshake_no_protocol_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/handshake_no_protocol_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/handshake_protocol_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/handshake_protocol_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/handshake_sleep_1_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/handshake_sleep_1_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/invalid_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/invalid_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/origin_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/origin_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/protocol_array_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/protocol_array_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/protocol_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/protocol_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/set-cookie_http_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/set-cookie_http_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/set-cookie_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/set-cookie_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/simple_handshake_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/simple_handshake_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/sleep_10_v13_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/sleep_10_v13_wsh.py"
+      }, 
+      {
+        "url": "/tests/websocket/w3c/handlers/wrong_accept_key_wsh.py", 
+        "path": "tests/websocket/w3c/handlers/wrong_accept_key_wsh.py"
+      }, 
+      {
         "url": "/tests/websocket/w3c/websocket.js", 
         "path": "tests/websocket/w3c/websocket.js"
       }, 
