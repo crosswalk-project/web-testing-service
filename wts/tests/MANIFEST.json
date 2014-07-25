@@ -12460,14 +12460,6 @@
         "path": "tests/sessionhistory/w3c/012.html"
       }, 
       {
-        "url": "/tests/simd/float32x4.html", 
-        "path": "tests/simd/float32x4.html"
-      }, 
-      {
-        "url": "/tests/simd/int32x4.html", 
-        "path": "tests/simd/int32x4.html"
-      }, 
-      {
         "url": "/tests/sse/sse_EventSource_CLOSED_default_value.html", 
         "path": "tests/sse/sse_EventSource_CLOSED_default_value.html"
       }, 
@@ -23669,6 +23661,18 @@
       {
         "url": "/tests/sessionhistory/history_forward_basic-manual.html", 
         "path": "tests/sessionhistory/history_forward_basic-manual.html"
+      }, 
+      {
+        "url": "/tests/simd/float32x4-manual.html", 
+        "path": "tests/simd/float32x4-manual.html"
+      }, 
+      {
+        "url": "/tests/simd/float64x2-manual.html", 
+        "path": "tests/simd/float64x2-manual.html"
+      }, 
+      {
+        "url": "/tests/simd/int32x4-manual.html", 
+        "path": "tests/simd/int32x4-manual.html"
       }, 
       {
         "url": "/tests/svg/svg_label_inline-manual.html", 
