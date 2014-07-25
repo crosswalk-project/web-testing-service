@@ -23663,6 +23663,18 @@
         "path": "tests/sessionhistory/history_forward_basic-manual.html"
       }, 
       {
+        "url": "/tests/simd/float32x4-manual.html", 
+        "path": "tests/simd/float32x4-manual.html"
+      }, 
+      {
+        "url": "/tests/simd/float64x2-manual.html", 
+        "path": "tests/simd/float64x2-manual.html"
+      }, 
+      {
+        "url": "/tests/simd/int32x4-manual.html", 
+        "path": "tests/simd/int32x4-manual.html"
+      }, 
+      {
         "url": "/tests/svg/svg_label_inline-manual.html", 
         "path": "tests/svg/svg_label_inline-manual.html"
       }, 
