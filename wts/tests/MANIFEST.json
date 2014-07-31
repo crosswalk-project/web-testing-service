@@ -10692,8 +10692,8 @@
         "path": "tests/messaging/MessagingManager_method_conversation.html"
       }, 
       {
-        "url": "/tests/messaging/MessagingMnanger_method_message.html", 
-        "path": "tests/messaging/MessagingMnanger_method_message.html"
+        "url": "/tests/messaging/MessagingManager_method_message.html", 
+        "path": "tests/messaging/MessagingManager_method_message.html"
       }, 
       {
         "url": "/tests/messaging/Messaging_idlharness.html", 
@@ -11734,6 +11734,10 @@
       {
         "url": "/tests/presentation/Presentation_idlharness.html", 
         "path": "tests/presentation/Presentation_idlharness.html"
+      }, 
+      {
+        "url": "/tests/promises/Promises_then.html", 
+        "path": "tests/promises/Promises_then.html"
       }, 
       {
         "url": "/tests/rawsockets/RawSockets_idlharness.html", 
@@ -23647,14 +23651,6 @@
         "path": "tests/presentation/presentation_test/steps09-manual.html"
       }, 
       {
-        "url": "/tests/promises/Promises_list-manual.html", 
-        "path": "tests/promises/Promises_list-manual.html"
-      }, 
-      {
-        "url": "/tests/promises/Promises_single-manual.html", 
-        "path": "tests/promises/Promises_single-manual.html"
-      }, 
-      {
         "url": "/tests/sandbox/w3c/sandbox_007-manual.htm", 
         "path": "tests/sandbox/w3c/sandbox_007-manual.htm"
       }, 
@@ -23793,10 +23789,6 @@
       {
         "url": "/tests/video/w3c/video_000-manual.htm", 
         "path": "tests/video/w3c/video_000-manual.htm"
-      }, 
-      {
-        "url": "/tests/video/w3c/video_007-manual.htm", 
-        "path": "tests/video/w3c/video_007-manual.htm"
       }, 
       {
         "url": "/tests/video/w3c/video_011-manual.htm", 
