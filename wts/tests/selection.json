@@ -114,7 +114,7 @@
     }, 
     "promises": {
       "spec_desc": "Promises", 
-      "spec_url": "http://dom.spec.whatwg.org/#promises"
+      "spec_url": "http://promises-aplus.github.io/promises-spec/"
     }, 
     "simd": {
       "spec_desc": "SIMD", 
