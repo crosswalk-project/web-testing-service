@@ -8120,6 +8120,22 @@
         "path": "tests/extra/semantics/text-level-semantics/the-wbr-element/grouping-wbr.html"
       }, 
       {
+        "url": "/tests/extra/w3c/collections/htmlallcollection.html", 
+        "path": "tests/extra/w3c/collections/htmlallcollection.html"
+      }, 
+      {
+        "url": "/tests/extra/w3c/collections/htmlformcontrolscollection.html", 
+        "path": "tests/extra/w3c/collections/htmlformcontrolscollection.html"
+      }, 
+      {
+        "url": "/tests/extra/w3c/collections/htmloptionscollection.html", 
+        "path": "tests/extra/w3c/collections/htmloptionscollection.html"
+      }, 
+      {
+        "url": "/tests/extra/w3c/collections/radionodelist.html", 
+        "path": "tests/extra/w3c/collections/radionodelist.html"
+      }, 
+      {
         "url": "/tests/extra/w3c/dom/documents/resource-metadata-management/document-compatmode-01.html", 
         "path": "tests/extra/w3c/dom/documents/resource-metadata-management/document-compatmode-01.html"
       }, 
@@ -9992,8 +10008,8 @@
         "path": "tests/indexeddb/IDBIndex_keyPath_exists.html"
       }, 
       {
-        "url": "/tests/indexeddb/IDBIndex_multientry_exist.html", 
-        "path": "tests/indexeddb/IDBIndex_multientry_exist.html"
+        "url": "/tests/indexeddb/IDBIndex_multiEntry_exist.html", 
+        "path": "tests/indexeddb/IDBIndex_multiEntry_exist.html"
       }, 
       {
         "url": "/tests/indexeddb/IDBIndex_name_exist.html", 
@@ -11736,8 +11752,20 @@
         "path": "tests/presentation/Presentation_idlharness.html"
       }, 
       {
-        "url": "/tests/promises/Promises_then.html", 
-        "path": "tests/promises/Promises_then.html"
+        "url": "/tests/promises/Promises_then_onFulfilled.html", 
+        "path": "tests/promises/Promises_then_onFulfilled.html"
+      }, 
+      {
+        "url": "/tests/promises/Promises_then_onRejected.html", 
+        "path": "tests/promises/Promises_then_onRejected.html"
+      }, 
+      {
+        "url": "/tests/promises/Promises_then_resolution_fulfill.html", 
+        "path": "tests/promises/Promises_then_resolution_fulfill.html"
+      }, 
+      {
+        "url": "/tests/promises/Promises_then_resolution_reject.html", 
+        "path": "tests/promises/Promises_then_resolution_reject.html"
       }, 
       {
         "url": "/tests/rawsockets/RawSockets_idlharness.html", 
@@ -23961,8 +23989,8 @@
         "path": "tests/animations/spec.json"
       }, 
       {
-        "url": "/tests/animations/support/user.js", 
-        "path": "tests/animations/support/user.js"
+        "url": "/tests/animations/support/support.js", 
+        "path": "tests/animations/support/support.js"
       }, 
       {
         "url": "/tests/animationtiming/spec.json", 
@@ -24101,8 +24129,8 @@
         "path": "tests/backgrounds/support/background_border_test.js"
       }, 
       {
-        "url": "/tests/backgrounds/support/cssstyle.js", 
-        "path": "tests/backgrounds/support/cssstyle.js"
+        "url": "/tests/backgrounds/support/support.js", 
+        "path": "tests/backgrounds/support/support.js"
       }, 
       {
         "url": "/tests/backgrounds/support/swatch-orange.png", 
@@ -24981,8 +25009,8 @@
         "path": "tests/colors/spec.json"
       }, 
       {
-        "url": "/tests/colors/support/cssstyle.js", 
-        "path": "tests/colors/support/cssstyle.js"
+        "url": "/tests/colors/support/support.js", 
+        "path": "tests/colors/support/support.js"
       }, 
       {
         "url": "/tests/contactsmanager/spec.json", 
@@ -25585,12 +25613,8 @@
         "path": "tests/multicolumn/support/cat.png"
       }, 
       {
-        "url": "/tests/multicolumn/support/cssstyle.js", 
-        "path": "tests/multicolumn/support/cssstyle.js"
-      }, 
-      {
-        "url": "/tests/multicolumn/support/user.js", 
-        "path": "tests/multicolumn/support/user.js"
+        "url": "/tests/multicolumn/support/support.js", 
+        "path": "tests/multicolumn/support/support.js"
       }, 
       {
         "url": "/tests/navigationtiming/spec.json", 
@@ -25937,8 +25961,8 @@
         "path": "tests/text/spec.json"
       }, 
       {
-        "url": "/tests/text/support/user.js", 
-        "path": "tests/text/support/user.js"
+        "url": "/tests/text/support/support.js", 
+        "path": "tests/text/support/support.js"
       }, 
       {
         "url": "/tests/text/webkit/COPYING", 
@@ -25973,8 +25997,8 @@
         "path": "tests/transitions/spec.json"
       }, 
       {
-        "url": "/tests/transitions/support/user.js", 
-        "path": "tests/transitions/support/user.js"
+        "url": "/tests/transitions/support/support.js", 
+        "path": "tests/transitions/support/support.js"
       }, 
       {
         "url": "/tests/transitions/webkit/COPYING", 
@@ -26013,12 +26037,8 @@
         "path": "tests/ui/support/cat.png"
       }, 
       {
-        "url": "/tests/ui/support/cssstyle.js", 
-        "path": "tests/ui/support/cssstyle.js"
-      }, 
-      {
-        "url": "/tests/ui/support/user.js", 
-        "path": "tests/ui/support/user.js"
+        "url": "/tests/ui/support/support.js", 
+        "path": "tests/ui/support/support.js"
       }, 
       {
         "url": "/tests/usertiming/spec.json", 
