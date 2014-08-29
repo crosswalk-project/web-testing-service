@@ -25855,10 +25855,6 @@
         "path": "tests/sandbox/w3c/support/green-at-15.mp4"
       }, 
       {
-        "url": "/tests/screenorientation/blink/COPYING", 
-        "path": "tests/screenorientation/blink/COPYING"
-      }, 
-      {
         "url": "/tests/screenorientation/spec.json", 
         "path": "tests/screenorientation/spec.json"
       }, 
