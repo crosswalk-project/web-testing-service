@@ -8666,16 +8666,16 @@
         "path": "tests/filesystemapi/window_LocalFileSystem_requestFileSystem_exist.html"
       }, 
       {
-        "url": "/tests/filewriterapi/BlobBuilder_append_blob_size.html", 
-        "path": "tests/filewriterapi/BlobBuilder_append_blob_size.html"
+        "url": "/tests/filewriterapi/Blob_append_blob_size.html", 
+        "path": "tests/filewriterapi/Blob_append_blob_size.html"
       }, 
       {
-        "url": "/tests/filewriterapi/BlobBuilder_constructor_visible_in_window.html", 
-        "path": "tests/filewriterapi/BlobBuilder_constructor_visible_in_window.html"
+        "url": "/tests/filewriterapi/Blob_constructor_visible_in_window.html", 
+        "path": "tests/filewriterapi/Blob_constructor_visible_in_window.html"
       }, 
       {
-        "url": "/tests/filewriterapi/BlobBuilder_getBlob_string_type.html", 
-        "path": "tests/filewriterapi/BlobBuilder_getBlob_string_type.html"
+        "url": "/tests/filewriterapi/Blob_getBlob_string_type.html", 
+        "path": "tests/filewriterapi/Blob_getBlob_string_type.html"
       }, 
       {
         "url": "/tests/filewriterapi/FileSaver_DONE_exist.html", 
