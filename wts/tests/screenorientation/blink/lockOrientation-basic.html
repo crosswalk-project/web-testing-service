@@ -8,25 +8,25 @@ https://chromium.googlesource.com/chromium/blink/+/master/LICENSE
 -->
 
 <meta charset="utf-8">
-<title>Screen Test: lockOrientation-basic</title>
-<link rel="help" href="https://w3c.github.io/screen-orientation/#screenorientation-interface">
+<title>Screen Orientation API Test: basic lock/unlock</title>
+<link rel="help" href="https://w3c.github.io/screen-orientation/">
 <script src="../../resources/testharness.js"></script>
 <script src="../../resources/testharnessreport.js"></script>
 
 <div id="log"></div>
 <script>
-var t = async_test("Basic screen.lockOrientation() and screen.unlockOrientation() testing", {timeout: 2000});
+var t = async_test("Basic screen.orientation.lock() and screen.orientation.unlock() testing", {timeout: 2000});
 var orientation_num = 0;
 
 t.step(function () {
-  screen.unlockOrientation();
+  screen.orientation.unlock();
   [
     "any", "landscape", "portrait", "portrait-primary", "portrait-secondary",
     "landscape-primary", "landscape-secondary", "0",  "90", "180", "270"
   ].forEach(function(orientation) {
     orientation_num++;
-    screen.lockOrientation(orientation).then(t.step_func(function(e) {
-      if(orientation_num == 11) {
+    screen.orientation.lock(orientation).then(t.step_func(function(e) {
+      if (orientation_num == 11) {
         t.done();
       }
     }), t.unreached_func("Unexpected error callback"));
