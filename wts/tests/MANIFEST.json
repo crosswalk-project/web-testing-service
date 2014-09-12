@@ -12342,24 +12342,24 @@
         "path": "tests/sandbox/w3c/sandbox_030.htm"
       }, 
       {
+        "url": "/tests/screenorientation/ScreenOrientation_lock_orientation_invalid.html", 
+        "path": "tests/screenorientation/ScreenOrientation_lock_orientation_invalid.html"
+      }, 
+      {
+        "url": "/tests/screenorientation/ScreenOrientation_lock_orientation_null.html", 
+        "path": "tests/screenorientation/ScreenOrientation_lock_orientation_null.html"
+      }, 
+      {
+        "url": "/tests/screenorientation/ScreenOrientation_onchange_basic.html", 
+        "path": "tests/screenorientation/ScreenOrientation_onchange_basic.html"
+      }, 
+      {
         "url": "/tests/screenorientation/Screen_attributes_tests.html", 
         "path": "tests/screenorientation/Screen_attributes_tests.html"
       }, 
       {
-        "url": "/tests/screenorientation/Screen_lockOrientation_orientation_invalid.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_orientation_invalid.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_lockOrientation_orientation_null.html", 
-        "path": "tests/screenorientation/Screen_lockOrientation_orientation_null.html"
-      }, 
-      {
         "url": "/tests/screenorientation/blink/lockOrientation-basic.html", 
         "path": "tests/screenorientation/blink/lockOrientation-basic.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/window_onorientationchange_basic.html", 
-        "path": "tests/screenorientation/window_onorientationchange_basic.html"
       }, 
       {
         "url": "/tests/selectorslevel1/selectors1_document_queryselector_exists.html", 
