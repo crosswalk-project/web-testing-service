@@ -932,16 +932,10 @@
         "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-applies-to-001.htm", 
-        "path": "tests/fonts/csswg/font-family-applies-to-001.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.xht"
-      }, 
-      {
         "url": "/tests/fonts/csswg/font-family-applies-to-002.htm", 
         "path": "tests/fonts/csswg/font-family-applies-to-002.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.xht"
+        "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.htm"
       }, 
       {
         "url": "/tests/fonts/csswg/font-family-applies-to-016.htm", 
@@ -953,7 +947,7 @@
         "url": "/tests/fonts/csswg/font-family-applies-to-017.htm", 
         "path": "tests/fonts/csswg/font-family-applies-to-017.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.xht"
+        "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.htm"
       }, 
       {
         "url": "/tests/fonts/csswg/font-family-invalid-characters-001.htm", 
@@ -25913,6 +25907,10 @@
       {
         "url": "/tests/fonts/csswg/support/COPYING", 
         "path": "tests/fonts/csswg/support/COPYING"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/support/black96x96.png", 
+        "path": "tests/fonts/csswg/support/black96x96.png"
       }, 
       {
         "url": "/tests/fonts/csswg/support/swatch-blue.png", 
