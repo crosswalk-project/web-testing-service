@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2012 Intel Corporation.
+Copyright (c) 2013 Intel Corporation.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -26,39 +26,37 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        haox,li <haox,li@intel.com>
+        Cui,Jieqiong <jieqiongx.cui@intel.com>
+        Xinx, liu <xinx.liu@intel.com>
+        Xu, Kang <kangx.xu@intel.com>
 
 -->
 
-<html>
-  <head>
-    <title>CSS3 Backgrounds Test: CSS3BG_box-decoration-break</title>
-    <link rel="author" title="Intel" href="http://www.intel.com/" />
-    <link rel="help" href="http://www.w3.org/TR/2012/CR-css3-background-20120724/#the-box-decoration-break" />
-    <meta name="assert" content="Check if the element box-decoration-break test expected 'clone'" />
-    <meta name="flags" content="" />
-    <script src="support/background_border_test.js" type="text/javascript"></script>
-    <script src="../resources/testharness.js" type="text/javascript"></script>
-    <script src="../resources/testharnessreport.js" type="text/javascript"></script>
-    <style>
-        #bg {
-            width:2000px;
-            height:200px;
-        }
-    </style>
-  </head>
-  <body>
-    <div id="log"></div>
-    <div id="bg" ></div>
-    <script>
-        var div = document.querySelector("#bg");
-        div.style[headProp("-webkit-box-decoration-break")] = "clone";
-        var boxDecorationBreak = GetCurrentStyle("-webkit-box-decoration-break");
-        var t = async_test(document.title, { timeout: 500 });
-        t.step(function () {
-            assert_equals(boxDecorationBreak, "clone", "The element box-decoration-break test")
-        });
-        t.done();
-    </script>
-  </body>
-</html>
+<meta charset="utf-8">
+<title>Battery Status Test: BatteryManager - onchargingtimechange</title>
+<link rel="author" title="Intel" href="http://www.intel.com">
+<link rel="help" href="https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html#the-batterymanager-interface">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<div id="log"></div>
+<script>
+
+async_test(function (t) {
+  navigator.getBattery().then(
+    function (battery) {
+      t.step(function () {
+        assert_true("onchargingtimechange" in battery, "the onchargingtimechange attribute exists");
+        assert_equals(typeof battery.onchargingtimechange, "object", "the type of onchargingtimechange attribute");
+      });
+      t.done();
+    },
+    function (error) {
+      t.step(function () {
+        assert_unreached(error.message);
+      });
+      t.done();
+    }
+  )
+}, "Check if the BatteryManager.onchargingtimechange attribute exists and typeof object");
+
+</script>

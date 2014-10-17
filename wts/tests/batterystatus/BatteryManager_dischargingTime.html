@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2012 Intel Corporation.
+Copyright (c) 2013 Intel Corporation.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -26,42 +26,41 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        haox,li <haox,li@intel.com>
+        Cui,Jieqiong <jieqiongx.cui@intel.com>
+        Xinx, liu <xinx.liu@intel.com>
+        Xu, Kang <kangx.xu@intel.com>
 
 -->
 
-<html>
-  <head>
-    <title>CSS3 Backgrounds Test: CSS3BG_box-decoration-break_slice</title>
-    <link rel="author" title="Intel" href="http://www.intel.com/" />
-    <link rel="help" href="http://www.w3.org/TR/2012/CR-css3-background-20120724/#box-decoration-break" />
-    <meta name="assert" content="Check if the box-decoration-break value is slice" />
-    <script type="text/javascript" src="../resources/testharness.js"></script>
-    <script type="text/javascript" src="../resources/testharnessreport.js"></script>
-    <script type="text/javascript" src="support/support.js"></script>
-    <style>
-        #test{
-            height: 30px;
-            width: 80px;
-            padding: 5px;
-            border: 5px solid black;
-            margin: 5px;
-            background: blue;
-        }
-    </style>
-  </head>
-  <body>
-    <div id="log"></div>
-    <div id="test"></div>
-    <script type="text/javascript">
-        var div = document.querySelector("#test");
-        var t = async_test(document.title, { timeout: 500 });
-        t.step(function () {
-            div.style[headProp("box-decoration-break")] = "slice";
-            var propvalue = GetCurrentStyle("box-decoration-break");
-            assert_equals(propvalue, "slice", "The element box-decoration-break value ");
-        });
-        t.done();
-    </script>
-  </body>
-</html>
+<meta charset="utf-8">
+<title>Battery Status Test: BatteryManager - dischargingTime</title>
+<link rel="author" title="Intel" href="http://www.intel.com">
+<link rel="help" href="https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html#the-batterymanager-interface">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<div id="log"></div>
+<script>
+
+async_test(function (t) {
+  navigator.getBattery().then(
+    function (battery) {
+      t.step(function () {
+        assert_true("dischargingTime" in battery, "the dischargingTime attribute exists");
+        assert_equals(typeof battery.dischargingTime, "number", "the type of dischargingTime attribute");
+        var dischargingTime = battery.dischargingTime;
+        var offset = 1;
+        battery.dischargingTime = dischargingTime + offset;
+        assert_true(battery.dischargingTime == dischargingTime, "the dischargingTime attribute is readonly");
+      });
+      t.done();
+    },
+    function (error) {
+      t.step(function () {
+        assert_unreached(error.message);
+      });
+      t.done();
+    }
+  )
+}, "Check if the BatteryManager.dischargingTime attribute exists, readonly and typeof number");
+
+</script>
