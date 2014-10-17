@@ -4012,18 +4012,6 @@
         "path": "tests/backgrounds/CSS3BG_border_20px_groove_000.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_box-decoration-break.html", 
-        "path": "tests/backgrounds/CSS3BG_box-decoration-break.html"
-      }, 
-      {
-        "url": "/tests/backgrounds/CSS3BG_box-decoration-break_initial_value.html", 
-        "path": "tests/backgrounds/CSS3BG_box-decoration-break_initial_value.html"
-      }, 
-      {
-        "url": "/tests/backgrounds/CSS3BG_box-decoration-break_slice.html", 
-        "path": "tests/backgrounds/CSS3BG_box-decoration-break_slice.html"
-      }, 
-      {
         "url": "/tests/backgrounds/CSS3BG_box-shadow.html", 
         "path": "tests/backgrounds/CSS3BG_box-shadow.html"
       }, 
@@ -4092,104 +4080,40 @@
         "path": "tests/backgrounds/CSS3BG_box-shadow_50px_50px_inset_black.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_chargingTime_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_chargingTime_exists.html"
+        "url": "/tests/batterystatus/BatteryManager_charging.html", 
+        "path": "tests/batterystatus/BatteryManager_charging.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_chargingTime_readonly.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_chargingTime_readonly.html"
+        "url": "/tests/batterystatus/BatteryManager_chargingTime.html", 
+        "path": "tests/batterystatus/BatteryManager_chargingTime.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_chargingTime_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_chargingTime_type.html"
+        "url": "/tests/batterystatus/BatteryManager_dischargingTime.html", 
+        "path": "tests/batterystatus/BatteryManager_dischargingTime.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_charging_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_charging_exists.html"
+        "url": "/tests/batterystatus/BatteryManager_level.html", 
+        "path": "tests/batterystatus/BatteryManager_level.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_charging_readonly.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_charging_readonly.html"
+        "url": "/tests/batterystatus/BatteryManager_onchargingchange.html", 
+        "path": "tests/batterystatus/BatteryManager_onchargingchange.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_charging_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_charging_type.html"
+        "url": "/tests/batterystatus/BatteryManager_onchargingtimechange.html", 
+        "path": "tests/batterystatus/BatteryManager_onchargingtimechange.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_dischargingTime_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_dischargingTime_exists.html"
+        "url": "/tests/batterystatus/BatteryManager_ondischargingtimechange.html", 
+        "path": "tests/batterystatus/BatteryManager_ondischargingtimechange.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_dischargingTime_readonly.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_dischargingTime_readonly.html"
+        "url": "/tests/batterystatus/BatteryManager_onlevelchange.html", 
+        "path": "tests/batterystatus/BatteryManager_onlevelchange.html"
       }, 
       {
-        "url": "/tests/batterystatus/Battery_BatteryManager_dischargingTime_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_dischargingTime_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_level_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_level_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_level_readonly.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_level_readonly.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_level_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_level_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onchargingchange_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onchargingchange_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onchargingchange_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onchargingchange_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onchargingtimechange_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onchargingtimechange_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onchargingtimechange_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onchargingtimechange_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_ondischargingtimechange_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_ondischargingtimechange_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_ondischargingtimechange_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_ondischargingtimechange_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onlevelchange_exists.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onlevelchange_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_BatteryManager_onlevelchange_type.html", 
-        "path": "tests/batterystatus/Battery_BatteryManager_onlevelchange_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_NavigatorBattery_battery_exists.html", 
-        "path": "tests/batterystatus/Battery_NavigatorBattery_battery_exists.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_NavigatorBattery_battery_readonly.html", 
-        "path": "tests/batterystatus/Battery_NavigatorBattery_battery_readonly.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Battery_NavigatorBattery_battery_type.html", 
-        "path": "tests/batterystatus/Battery_NavigatorBattery_battery_type.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/w3c/battery-interface-idlharness.html", 
-        "path": "tests/batterystatus/w3c/battery-interface-idlharness.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/w3c/battery-interface.html", 
-        "path": "tests/batterystatus/w3c/battery-interface.html"
+        "url": "/tests/batterystatus/Navigator_getBattery.html", 
+        "path": "tests/batterystatus/Navigator_getBattery.html"
       }, 
       {
         "url": "/tests/browserstate/navigator_onLine_exists.html", 
@@ -24389,14 +24313,6 @@
         "path": "tests/batterystatus/spec.json"
       }, 
       {
-        "url": "/tests/batterystatus/w3c/COPYING", 
-        "path": "tests/batterystatus/w3c/COPYING"
-      }, 
-      {
-        "url": "/tests/batterystatus/w3c/battery-interface.js", 
-        "path": "tests/batterystatus/w3c/battery-interface.js"
-      }, 
-      {
         "url": "/tests/browserstate/spec.json", 
         "path": "tests/browserstate/spec.json"
       }, 
@@ -26939,10 +26855,6 @@
       {
         "url": "/tests/webstorage/spec.json", 
         "path": "tests/webstorage/spec.json"
-      }, 
-      {
-        "url": "/tests/webstorage/support.js", 
-        "path": "tests/webstorage/support.js"
       }, 
       {
         "url": "/tests/webstorage/w3c/COPYING", 
