@@ -878,12 +878,6 @@
         "ref_url": "/tests/fonts/csswg/reference/font-033-ref.html"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-044.htm", 
-        "path": "tests/fonts/csswg/font-044.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/reference/font-044-ref.html"
-      }, 
-      {
         "url": "/tests/fonts/csswg/font-applies-to-001.htm", 
         "path": "tests/fonts/csswg/font-applies-to-001.htm", 
         "ref_type": "==", 
@@ -950,12 +944,6 @@
         "ref_url": "/tests/fonts/csswg/font-family-applies-to-001-ref.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-invalid-characters-001.htm", 
-        "path": "tests/fonts/csswg/font-family-invalid-characters-001.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/reference/font-family-invalid-characters-001-ref.html"
-      }, 
-      {
         "url": "/tests/fonts/csswg/font-family-invalid-characters-002.htm", 
         "path": "tests/fonts/csswg/font-family-invalid-characters-002.htm", 
         "ref_type": "==", 
@@ -966,12 +954,6 @@
         "path": "tests/fonts/csswg/font-family-rule-001.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/fonts/csswg/reference/font-family-rule-001-ref.html"
-      }, 
-      {
-        "url": "/tests/fonts/csswg/font-family-rule-005.htm", 
-        "path": "tests/fonts/csswg/font-family-rule-005.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/reference/font-family-rule-005-ref.html"
       }, 
       {
         "url": "/tests/fonts/csswg/font-family-valid-characters-001.htm", 
@@ -14728,12 +14710,12 @@
         "path": "tests/webaudio/audiocontext_createConvolver_type.html"
       }, 
       {
-        "url": "/tests/webaudio/audiocontext_createDelayNode_exists.html", 
-        "path": "tests/webaudio/audiocontext_createDelayNode_exists.html"
+        "url": "/tests/webaudio/audiocontext_createDelay_exists.html", 
+        "path": "tests/webaudio/audiocontext_createDelay_exists.html"
       }, 
       {
-        "url": "/tests/webaudio/audiocontext_createDelayNode_type.html", 
-        "path": "tests/webaudio/audiocontext_createDelayNode_type.html"
+        "url": "/tests/webaudio/audiocontext_createDelay_type.html", 
+        "path": "tests/webaudio/audiocontext_createDelay_type.html"
       }, 
       {
         "url": "/tests/webaudio/audiocontext_createDynamicsCompressor_exists.html", 
@@ -23039,138 +23021,6 @@
         "path": "tests/csp/csp_script-src_unsafe-inline_blocked_int-manual.py"
       }, 
       {
-        "url": "/tests/deviceadaptation/height_one_value-manual.html", 
-        "path": "tests/deviceadaptation/height_one_value-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/height_two_value-manual.html", 
-        "path": "tests/deviceadaptation/height_two_value-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-height_auto-manual.html", 
-        "path": "tests/deviceadaptation/max-height_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-height_number-manual.html", 
-        "path": "tests/deviceadaptation/max-height_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-height_percentage-manual.html", 
-        "path": "tests/deviceadaptation/max-height_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-width_auto-manual.html", 
-        "path": "tests/deviceadaptation/max-width_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-width_number-manual.html", 
-        "path": "tests/deviceadaptation/max-width_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-width_percentage-manual.html", 
-        "path": "tests/deviceadaptation/max-width_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-zoom_auto-manual.html", 
-        "path": "tests/deviceadaptation/max-zoom_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-zoom_number-manual.html", 
-        "path": "tests/deviceadaptation/max-zoom_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/max-zoom_percentage-manual.html", 
-        "path": "tests/deviceadaptation/max-zoom_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-height_auto-manual.html", 
-        "path": "tests/deviceadaptation/min-height_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-height_number-manual.html", 
-        "path": "tests/deviceadaptation/min-height_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-height_percentage-manual.html", 
-        "path": "tests/deviceadaptation/min-height_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-width_auto-manual.html", 
-        "path": "tests/deviceadaptation/min-width_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-width_number-manual.html", 
-        "path": "tests/deviceadaptation/min-width_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-width_percentage-manual.html", 
-        "path": "tests/deviceadaptation/min-width_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-zoom_auto-manual.html", 
-        "path": "tests/deviceadaptation/min-zoom_auto-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-zoom_number-manual.html", 
-        "path": "tests/deviceadaptation/min-zoom_number-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/min-zoom_percentage-manual.html", 
-        "path": "tests/deviceadaptation/min-zoom_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/orientation_landscape-manual.html", 
-        "path": "tests/deviceadaptation/orientation_landscape-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/orientation_portrait-manual.html", 
-        "path": "tests/deviceadaptation/orientation_portrait-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/user-zoom_fixed-manual.html", 
-        "path": "tests/deviceadaptation/user-zoom_fixed-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/user-zoom_zoom-manual.html", 
-        "path": "tests/deviceadaptation/user-zoom_zoom-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/width_one_value-manual.html", 
-        "path": "tests/deviceadaptation/width_one_value-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/width_two_value-manual.html", 
-        "path": "tests/deviceadaptation/width_two_value-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_0_point_5-manual.html", 
-        "path": "tests/deviceadaptation/zoom_0_point_5-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_100_percentage-manual.html", 
-        "path": "tests/deviceadaptation/zoom_100_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_1_point_0-manual.html", 
-        "path": "tests/deviceadaptation/zoom_1_point_0-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_200_percentage-manual.html", 
-        "path": "tests/deviceadaptation/zoom_200_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_2_point_0-manual.html", 
-        "path": "tests/deviceadaptation/zoom_2_point_0-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_50_percentage-manual.html", 
-        "path": "tests/deviceadaptation/zoom_50_percentage-manual.html"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/zoom_auto-manual.html", 
-        "path": "tests/deviceadaptation/zoom_auto-manual.html"
-      }, 
-      {
         "url": "/tests/devicecapabilities/AudioCodec-manual.html", 
         "path": "tests/devicecapabilities/AudioCodec-manual.html"
       }, 
@@ -23455,6 +23305,10 @@
         "path": "tests/fonts/csswg/font-043-manual.htm"
       }, 
       {
+        "url": "/tests/fonts/csswg/font-044-manual.htm", 
+        "path": "tests/fonts/csswg/font-044-manual.htm"
+      }, 
+      {
         "url": "/tests/fonts/csswg/font-family-002-manual.htm", 
         "path": "tests/fonts/csswg/font-family-002-manual.htm"
       }, 
@@ -23473,6 +23327,14 @@
       {
         "url": "/tests/fonts/csswg/font-family-006-manual.htm", 
         "path": "tests/fonts/csswg/font-family-006-manual.htm"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-family-invalid-characters-001-manual.htm", 
+        "path": "tests/fonts/csswg/font-family-invalid-characters-001-manual.htm"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-family-rule-005-manual.htm", 
+        "path": "tests/fonts/csswg/font-family-rule-005-manual.htm"
       }, 
       {
         "url": "/tests/fonts/csswg/font-matching-rule-001-manual.htm", 
@@ -25351,10 +25213,6 @@
       {
         "url": "/tests/csp/w3c/CSP_passTest001.py", 
         "path": "tests/csp/w3c/CSP_passTest001.py"
-      }, 
-      {
-        "url": "/tests/deviceadaptation/spec.json", 
-        "path": "tests/deviceadaptation/spec.json"
       }, 
       {
         "url": "/tests/devicecapabilities/spec.json", 
