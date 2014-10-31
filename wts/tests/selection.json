@@ -20,10 +20,6 @@
       "spec_desc": "CSS3 Colors", 
       "spec_url": "http://www.w3.org/TR/2011/REC-css3-color-20110607/"
     }, 
-    "deviceadaptation": {
-      "spec_desc": "CSS Device Adaptation", 
-      "spec_url": "http://dev.w3.org/csswg/css-device-adapt/#the-lsquomin-widthrsquo-and-lsquomax-wid"
-    }, 
     "flexiblebox": {
       "spec_desc": "CSS3 Flexible Box Layout (Partial)", 
       "spec_url": "http://www.w3.org/TR/2012/WD-css3-flexbox-20120612/"
