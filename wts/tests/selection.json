@@ -210,7 +210,7 @@
     }, 
     "netinfo": {
       "spec_desc": "HTML5 NetworkInfo", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-netinfo-api-20121129/"
+      "spec_url": "http://w3c.github.io/netinfo/"
     }, 
     "notification": {
       "spec_desc": "Web Notifications", 
@@ -248,6 +248,10 @@
       "spec_desc": "Server-Sent Events", 
       "spec_url": "http://www.w3.org/TR/2011/WD-eventsource-20111020/"
     }, 
+    "sso": {
+      "spec_desc": "This test suite is for testing notifcation specification", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-ssos-20120614"
+    }, 
     "touchevent": {
       "spec_desc": "W3C TouchEvent module", 
       "spec_url": "http://www.w3.org/TR/2013/WD-touch-events-20130124/"
@@ -274,15 +278,11 @@
     }, 
     "webrtc": {
       "spec_desc": "WebRTC API", 
-      "spec_url": "http://dev.w3.org/2011/webrtc/editor/webrtc.html#rtcpeerconnection-interface"
+      "spec_url": "http://www.w3.org/TR/webrtc"
     }, 
     "websocket": {
       "spec_desc": "The WebSocket API", 
       "spec_url": "http://www.w3.org/TR/2012/CR-websockets-20120920/"
-    }, 
-    "webspeech": {
-      "spec_desc": "Web Speech API", 
-      "spec_url": "http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html"
     }, 
     "webstorage": {
       "spec_desc": "Web Storage", 
@@ -291,10 +291,6 @@
     "workers": {
       "spec_desc": "W3C Web Workers (Partial)", 
       "spec_url": "http://www.w3.org/TR/2012/CR-workers-20120501"
-    }, 
-    "xmlhttprequest": {
-      "spec_desc": "XMLHttpRequest Level 2", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-XMLHttpRequest-20121206/"
     }
   }, 
   "xwalk": {
