@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="./testcase.xsl"?>
+<test_definition>
+  <suite name="tct-netinfo-w3c-tests" category="W3C/HTML5 APIs">
+    <set name="NetworkInfo" type="js">
+      <testcase purpose="Check if the navigator.connection attribute exists, readonly and type of NetworkInformation" type="compliance" status="approved" component="WebAPI/Device/The Network Information API" execution_type="auto" priority="P1" id="Navigator_connection">
+        <description>
+          <test_script_entry>/opt/tct-netinfo-w3c-tests/netinfo/Navigator_connection.html</test_script_entry>
+        </description>
+        <specs>
+          <spec>
+            <spec_assertion element_type="attribute" element_name="connection" interface="Navigator" specification="The Network Information API" section="Device" category="Tizen W3C API Specifications"/>
+            <spec_url>http://w3c.github.io/netinfo/</spec_url>
+            <spec_statement/>
+          </spec>
+        </specs>
+      </testcase>
+      <testcase purpose="Check if the NetworkInformation.type attribute exists, readonly and type of string" type="compliance" status="approved" component="WebAPI/Device/The Network Information API" execution_type="auto" priority="P1" id="NetworkInformation_type">
+        <description>
+          <test_script_entry>/opt/tct-netinfo-w3c-tests/netinfo/NetworkInformation_type.html</test_script_entry>
+        </description>
+        <specs>
+          <spec>
+            <spec_assertion element_type="attribute" element_name="type" interface="NetworkInformation" specification="The Network Information API" section="Device" category="Tizen W3C API Specifications"/>
+            <spec_url>http://http://w3c.github.io/netinfo/</spec_url>
+            <spec_statement/>
+          </spec>
+        </specs>
+      </testcase>
+      <testcase purpose="Check if the NetworkInformation.onchange attribute exists, readonly and type of object" type="compliance" status="approved" component="WebAPI/Device/The Network Information API" execution_type="auto" priority="P1" id="NetworkInformation_onchange">
+        <description>
+          <test_script_entry>/opt/tct-netinfo-w3c-tests/netinfo/NetworkInformation_onchange.html</test_script_entry>
+        </description>
+        <specs>
+          <spec>
+            <spec_assertion element_type="attribute" element_name="onchange" interface="NetworkInformation" specification="The Network Information API" section="Device" category="Tizen W3C API Specifications"/>
+            <spec_url>http://http://w3c.github.io/netinfo/</spec_url>
+            <spec_statement/>
+          </spec>
+        </specs>
+      </testcase>
+      <testcase purpose="Check if the NetworkInformation.downlinkMax attribute exists, readonly and type of number" type="compliance" status="approved" component="WebAPI/Device/The Network Information API" execution_type="auto" priority="P1" id="NetworkInformation_downlinkMax">
+        <description>
+          <test_script_entry>/opt/tct-netinfo-w3c-tests/netinfo/NetworkInformation_downlinkMax.html</test_script_entry>
+        </description>
+        <specs>
+          <spec>
+            <spec_assertion element_type="attribute" element_name="downlinkMax" interface="NetworkInformation" specification="The Network Information API" section="Device" category="Tizen W3C API Specifications"/>
+            <spec_url>http://http://w3c.github.io/netinfo/</spec_url>
+            <spec_statement/>
+          </spec>
+        </specs>
+      </testcase>
+    </set>
+  </suite>
+</test_definition>

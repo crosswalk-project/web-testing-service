@@ -291,6 +291,10 @@
     "workers": {
       "spec_desc": "W3C Web Workers (Partial)", 
       "spec_url": "http://www.w3.org/TR/2012/CR-workers-20120501"
+    }, 
+    "xmlhttprequest": {
+      "spec_desc": "XMLHttpRequest Level 2", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-XMLHttpRequest-20121206/"
     }
   }, 
   "xwalk": {
