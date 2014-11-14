@@ -1,0 +1,91 @@
+{
+    "pkg-blacklist": [
+        "config.xml",
+        "pack.py",
+        "testcase.xsl",
+        "testresult.xsl",
+        "tests.css",
+        "icon.png",
+        "manifest.json",
+        "suite.json",
+        "inst.*"
+    ],
+    "pkg-list": {
+        "apk,cordova": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "bddrunner": "bddrunner",
+                "html5-extra-app/testscripts": "html5-extra-app/testscripts",
+                "inst.apk.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml"
+            },
+            "pkg-app": {
+                "apk-common-opts": "--enable-remote-debugging"
+            },
+            "subapp-list": {
+                "html5-extra-app": {
+                    "apk-common-opts": "--enable-remote-debugging"
+                }
+            }
+        },
+        "apk-aio": {
+            "blacklist": [],
+            "subapp-list": {
+                "html5-extra-app": {
+                    "apk-common-opts": "--enable-remote-debugging",
+                    "install-path": "app"
+                }
+            }
+        },
+        "wgt": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "inst.wgt.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml"
+            },
+            "pkg-app": {},
+            "subapp-list": {
+                "html5-extra-app": {
+                    "apk-icon-opt": "",
+                    "blacklist": [
+                        "manifest.json"
+                    ],
+                    "copylist": {
+                        "bdd.config.xml": "config.xml"
+                    }
+                }
+            }
+        },
+        "xpk": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "inst.xpk.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml"
+            },
+            "pkg-app": {
+                "blacklist": []
+            },
+            "subapp-list": {
+                "html5-extra-app": {
+                    "apk-icon-opt": "",
+                    "blacklist": [
+                        "manifest.json"
+                    ],
+                    "copylist": {
+                        "bdd.config.xml": "config.xml"
+                    }
+                }
+            }
+        }
+    },
+    "pkg-name": "tct-extra-html5-tests"
+}

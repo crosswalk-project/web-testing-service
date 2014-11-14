@@ -1,0 +1,92 @@
+{
+    "pkg-blacklist": [
+        "config.xml",
+        "pack.py",
+        "testcase.xsl",
+        "testresult.xsl",
+        "tests.css",
+        "icon.png",
+        "manifest.json",
+        "suite.json",
+        "inst.*"
+    ],
+    "pkg-list": {
+        "apk,cordova": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "bddrunner": "bddrunner",
+                "inst.apk.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml",
+                "w3c-webstorage-app/testscripts": "w3c-webstorage-app/testscripts"
+            },
+            "pkg-app": {
+                "apk-common-opts": "--enable-remote-debugging"
+            },
+            "subapp-list": {
+                "w3c-webstorage-app": {
+                    "apk-common-opts": "--enable-remote-debugging",
+                    "apk-icon-opt": ""
+                }
+            }
+        },
+        "apk-aio": {
+            "blacklist": [],
+            "subapp-list": {
+                "w3c-webstorage-app": {
+                    "apk-common-opts": "--enable-remote-debugging",
+                    "install-path": "app"
+                }
+            }
+        },
+        "wgt": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "inst.wgt.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml"
+            },
+            "pkg-app": {},
+            "subapp-list": {
+                "w3c-webstorage-app": {
+                    "apk-icon-opt": "",
+                    "blacklist": [
+                        "manifest.json"
+                    ],
+                    "copylist": {
+                        "bdd.config.xml": "config.xml"
+                    }
+                }
+            }
+        },
+        "xpk": {
+            "blacklist": [
+                "*"
+            ],
+            "copylist": {
+                "inst.xpk.py": "inst.py",
+                "tests.full.xml": "tests.full.xml",
+                "tests.xml": "tests.xml"
+            },
+            "pkg-app": {
+                "blacklist": []
+            },
+            "subapp-list": {
+                "w3c-webstorage-app": {
+                    "apk-icon-opt": "",
+                    "blacklist": [
+                        "manifest.json"
+                    ],
+                    "copylist": {
+                        "bdd.config.xml": "config.xml"
+                    }
+                }
+            }
+        }
+    },
+    "pkg-name": "tct-webstorage-w3c-tests"
+}
