@@ -147,6 +147,16 @@
       "spec_url": "http://www.w3.org/2012/sysapps/raw-sockets/"
     }
   }, 
+  "tizen": {
+    "audiosystem": {
+      "spec_desc": "This test suit is for AudioSystemAPI specification", 
+      "spec_url": "https://wiki.tizen.org/wiki/User:Tanuk/AudioSystemAPI"
+    }, 
+    "mediarenderer": {
+      "spec_desc": "This test suit is for Media Renderer API Specification", 
+      "spec_url": "http://01org.github.io/cloud-dleyna/mediarenderer.html#extensions-to-navigator-object"
+    }
+  }, 
   "w3c": {
     "animationtiming": {
       "spec_desc": "AnimationTiming API", 
@@ -215,6 +225,10 @@
     "netinfo": {
       "spec_desc": "HTML5 NetworkInfo", 
       "spec_url": "http://w3c.github.io/netinfo/"
+    }, 
+    "nfc": {
+      "spec_desc": "This test suit is for nfc specification", 
+      "spec_url": "http://www.w3.org/TR/nfc/"
     }, 
     "notification": {
       "spec_desc": "Web Notifications", 
@@ -305,6 +319,14 @@
     "iap": {
       "spec_desc": "IAP", 
       "spec_url": "https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP"
+    }, 
+    "nacl": {
+      "spec_desc": "Support for Native Client (NaCl)", 
+      "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-331"
+    }, 
+    "nativefilesystem": {
+      "spec_desc": "Capability to access native pure file system", 
+      "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-672"
     }
   }
 }
