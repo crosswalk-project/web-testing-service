@@ -89,49 +89,43 @@
         "url": "/tests/backgrounds/csswg/background-001.htm", 
         "path": "tests/backgrounds/csswg/background-001.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
-      }, 
-      {
-        "url": "/tests/backgrounds/csswg/background-002.htm", 
-        "path": "tests/backgrounds/csswg/background-002.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-006.htm", 
         "path": "tests/backgrounds/csswg/background-006.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-006-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-007.htm", 
         "path": "tests/backgrounds/csswg/background-007.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-008.htm", 
         "path": "tests/backgrounds/csswg/background-008.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-009.htm", 
         "path": "tests/backgrounds/csswg/background-009.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-010.htm", 
         "path": "tests/backgrounds/csswg/background-010.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-006-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-014.htm", 
         "path": "tests/backgrounds/csswg/background-014.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-016.htm", 
@@ -149,7 +143,7 @@
         "url": "/tests/backgrounds/csswg/background-018.htm", 
         "path": "tests/backgrounds/csswg/background-018.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-020.htm", 
@@ -167,7 +161,7 @@
         "url": "/tests/backgrounds/csswg/background-022.htm", 
         "path": "tests/backgrounds/csswg/background-022.htm", 
         "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-001-ref.xht"
+        "ref_url": "/tests/backgrounds/csswg/background-001-ref.html"
       }, 
       {
         "url": "/tests/backgrounds/csswg/background-024.htm", 
@@ -20018,10 +20012,6 @@
         "path": "tests/video/video_loop_false_loop_absent.html"
       }, 
       {
-        "url": "/tests/video/video_loop_no_effect_by_controller.html", 
-        "path": "tests/video/video_loop_no_effect_by_controller.html"
-      }, 
-      {
         "url": "/tests/video/video_loop_null.html", 
         "path": "tests/video/video_loop_null.html"
       }, 
@@ -31365,6 +31355,10 @@
         "path": "tests/backgrounds/CSS3BG_border-image-width_left_value_miss-manual.html"
       }, 
       {
+        "url": "/tests/backgrounds/csswg/background-002-manual.htm", 
+        "path": "tests/backgrounds/csswg/background-002-manual.htm"
+      }, 
+      {
         "url": "/tests/backgrounds/csswg/background-011-manual.htm", 
         "path": "tests/backgrounds/csswg/background-011-manual.htm"
       }, 
@@ -32729,8 +32723,28 @@
         "path": "tests/video/w3c/video_011-manual.htm"
       }, 
       {
+        "url": "/tests/video/w3c/video_controls_present-manual.html", 
+        "path": "tests/video/w3c/video_controls_present-manual.html"
+      }, 
+      {
         "url": "/tests/video/w3c/video_loop_current_media_controller-manual.html", 
         "path": "tests/video/w3c/video_loop_current_media_controller-manual.html"
+      }, 
+      {
+        "url": "/tests/video/w3c/video_muted_overriding_volume-manual.html", 
+        "path": "tests/video/w3c/video_muted_overriding_volume-manual.html"
+      }, 
+      {
+        "url": "/tests/video/w3c/video_muted_present-manual.html", 
+        "path": "tests/video/w3c/video_muted_present-manual.html"
+      }, 
+      {
+        "url": "/tests/video/w3c/video_volume_loudest-manual.html", 
+        "path": "tests/video/w3c/video_volume_loudest-manual.html"
+      }, 
+      {
+        "url": "/tests/video/w3c/video_volume_silent-manual.html", 
+        "path": "tests/video/w3c/video_volume_silent-manual.html"
       }, 
       {
         "url": "/tests/webcl/khronos/conformance/bindingTesting/contextAndCreate/cl_buffer_createSubBuffer.html", 
@@ -34735,6 +34749,10 @@
         "path": "tests/audio/w3c/support/media.js"
       }, 
       {
+        "url": "/tests/audiosystem/spec.json", 
+        "path": "tests/audiosystem/spec.json"
+      }, 
+      {
         "url": "/tests/audiosystem/support/sound_5.oga", 
         "path": "tests/audiosystem/support/sound_5.oga"
       }, 
@@ -34747,8 +34765,12 @@
         "path": "tests/backgrounds/csswg/COPYING"
       }, 
       {
-        "url": "tests/backgrounds/csswg/background-001-ref.xht", 
-        "path": "tests/backgrounds/csswg/background-001-ref.xht"
+        "url": "tests/backgrounds/csswg/background-001-ref.html", 
+        "path": "tests/backgrounds/csswg/background-001-ref.html"
+      }, 
+      {
+        "url": "tests/backgrounds/csswg/background-006-ref.html", 
+        "path": "tests/backgrounds/csswg/background-006-ref.html"
       }, 
       {
         "url": "tests/backgrounds/csswg/background-intrinsic-ref.xht", 
@@ -36759,6 +36781,10 @@
         "path": "tests/mediaqueries/spec.json"
       }, 
       {
+        "url": "/tests/mediarenderer/spec.json", 
+        "path": "tests/mediarenderer/spec.json"
+      }, 
+      {
         "url": "/tests/messaging/spec.json", 
         "path": "tests/messaging/spec.json"
       }, 
@@ -36795,6 +36821,14 @@
         "path": "tests/multicolumn/support/support.js"
       }, 
       {
+        "url": "/tests/nacl/spec.json", 
+        "path": "tests/nacl/spec.json"
+      }, 
+      {
+        "url": "/tests/nativefilesystem/spec.json", 
+        "path": "tests/nativefilesystem/spec.json"
+      }, 
+      {
         "url": "/tests/navigationtiming/spec.json", 
         "path": "tests/navigationtiming/spec.json"
       }, 
@@ -36821,6 +36855,10 @@
       {
         "url": "/tests/netinfo/spec.json", 
         "path": "tests/netinfo/spec.json"
+      }, 
+      {
+        "url": "/tests/nfc/spec.json", 
+        "path": "tests/nfc/spec.json"
       }, 
       {
         "url": "/tests/nfc/support/nfc_common.js", 
