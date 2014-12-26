@@ -2484,16 +2484,8 @@
         "path": "tests/audio/w3c/canPlayType_supported_but_no_codecs_parameter_2.html"
       }, 
       {
-        "url": "/tests/audio/w3c/currentSrc_empty_if_no_src.html", 
-        "path": "tests/audio/w3c/currentSrc_empty_if_no_src.html"
-      }, 
-      {
-        "url": "/tests/audio/w3c/currentSrc_nonempty_after_adding_source_child.html", 
-        "path": "tests/audio/w3c/currentSrc_nonempty_after_adding_source_child.html"
-      }, 
-      {
-        "url": "/tests/audio/w3c/currentSrc_nonempty_after_setting_src.html", 
-        "path": "tests/audio/w3c/currentSrc_nonempty_after_setting_src.html"
+        "url": "/tests/audio/w3c/currentSrc.html", 
+        "path": "tests/audio/w3c/currentSrc.html"
       }, 
       {
         "url": "/tests/audio/w3c/currentSrc_property_exists.html", 
@@ -13172,58 +13164,6 @@
         "path": "tests/gumallow/w3c/obtaining-local-multimedia-content/navigatorusermedia/unknownkey-option-param.html"
       }, 
       {
-        "url": "/tests/gumallow/w3c/stream-api/introduction/disabled-audio-silence.html", 
-        "path": "tests/gumallow/w3c/stream-api/introduction/disabled-audio-silence.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/introduction/disabled-video-black.html", 
-        "path": "tests/gumallow/w3c/stream-api/introduction/disabled-video-black.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/audio.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/audio.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/mediastream-addtrack.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/mediastream-addtrack.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/mediastream-finished-add.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/mediastream-finished-add.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/mediastream-gettrackid.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/mediastream-gettrackid.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/mediastream-idl.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/mediastream-idl.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/mediastream-removetrack.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/mediastream-removetrack.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/stream-ended.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/stream-ended.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastream/video.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastream/video.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-end.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-end.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-id.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-id.html"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-init.html", 
-        "path": "tests/gumallow/w3c/stream-api/mediastreamtrack/mediastreamtrack-init.html"
-      }, 
-      {
         "url": "/tests/hrtime/w3c/idlharness.html", 
         "path": "tests/hrtime/w3c/idlharness.html"
       }, 
@@ -20320,16 +20260,8 @@
         "path": "tests/video/w3c/canPlayType_two_implies_one_4.html"
       }, 
       {
-        "url": "/tests/video/w3c/currentSrc_empty_if_no_src.html", 
-        "path": "tests/video/w3c/currentSrc_empty_if_no_src.html"
-      }, 
-      {
-        "url": "/tests/video/w3c/currentSrc_nonempty_after_adding_source_child.html", 
-        "path": "tests/video/w3c/currentSrc_nonempty_after_adding_source_child.html"
-      }, 
-      {
-        "url": "/tests/video/w3c/currentSrc_nonempty_after_setting_src.html", 
-        "path": "tests/video/w3c/currentSrc_nonempty_after_setting_src.html"
+        "url": "/tests/video/w3c/currentSrc.html", 
+        "path": "tests/video/w3c/currentSrc.html"
       }, 
       {
         "url": "/tests/video/w3c/currentSrc_property_exists.html", 
@@ -32619,16 +32551,12 @@
         "path": "tests/touchevent/TouchEvent_shiftKey_exist-manual.html"
       }, 
       {
-        "url": "/tests/touchevent/w3c/multi-touch-manual.html", 
-        "path": "tests/touchevent/w3c/multi-touch-manual.html"
+        "url": "/tests/touchevent/w3c/multi-touch-interactions-manual.html", 
+        "path": "tests/touchevent/w3c/multi-touch-interactions-manual.html"
       }, 
       {
         "url": "/tests/touchevent/w3c/single-touch-manual.html", 
         "path": "tests/touchevent/w3c/single-touch-manual.html"
-      }, 
-      {
-        "url": "/tests/touchevent/w3c/submission/TouchEvent-001-manual.html", 
-        "path": "tests/touchevent/w3c/submission/TouchEvent-001-manual.html"
       }, 
       {
         "url": "/tests/transitions/webkit/background-transitions-manual.html", 
@@ -36713,12 +36641,8 @@
         "path": "tests/gumallow/w3c/COPYING"
       }, 
       {
-        "url": "/tests/gumallow/w3c/featuredetection.js", 
-        "path": "tests/gumallow/w3c/featuredetection.js"
-      }, 
-      {
-        "url": "/tests/gumallow/w3c/prefix.js", 
-        "path": "tests/gumallow/w3c/prefix.js"
+        "url": "/tests/gumallow/w3c/vendor-prefix.js", 
+        "path": "tests/gumallow/w3c/vendor-prefix.js"
       }, 
       {
         "url": "/tests/hrtime/spec.json", 
@@ -37249,8 +37173,8 @@
         "path": "tests/touchevent/w3c/COPYING"
       }, 
       {
-        "url": "/tests/touchevent/w3c/submission/COPYING", 
-        "path": "tests/touchevent/w3c/submission/COPYING"
+        "url": "/tests/touchevent/w3c/multi-touch-interactions.js", 
+        "path": "tests/touchevent/w3c/multi-touch-interactions.js"
       }, 
       {
         "url": "/tests/transitions/csswg/COPYING", 
