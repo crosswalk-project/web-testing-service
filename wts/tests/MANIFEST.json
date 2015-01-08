@@ -554,6 +554,18 @@
         "ref_url": "/tests/colors/csswg/reference/t44-currentcolor-border-b-ref.html"
       }, 
       {
+        "url": "/tests/extra/w3c/editing/the-hidden-attribute/hidden-1a.html", 
+        "path": "tests/extra/w3c/editing/the-hidden-attribute/hidden-1a.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/extra/w3c/editing/the-hidden-attribute/hidden-1-ref.html"
+      }, 
+      {
+        "url": "/tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1a.html", 
+        "path": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1a.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html"
+      }, 
+      {
         "url": "/tests/flexiblebox/csswg/align-content-001.htm", 
         "path": "tests/flexiblebox/csswg/align-content-001.htm", 
         "ref_type": "==", 
@@ -2640,6 +2652,10 @@
         "path": "tests/audiosystem/AudioDevice_id_attribute.html"
       }, 
       {
+        "url": "/tests/audiosystem/AudioDevice_id_value.html", 
+        "path": "tests/audiosystem/AudioDevice_id_value.html"
+      }, 
+      {
         "url": "/tests/audiosystem/AudioDevice_label_attribute.html", 
         "path": "tests/audiosystem/AudioDevice_label_attribute.html"
       }, 
@@ -2672,6 +2688,10 @@
         "path": "tests/audiosystem/AudioGroup_id_attribute.html"
       }, 
       {
+        "url": "/tests/audiosystem/AudioGroup_id_value.html", 
+        "path": "tests/audiosystem/AudioGroup_id_value.html"
+      }, 
+      {
         "url": "/tests/audiosystem/AudioGroup_label_attribute.html", 
         "path": "tests/audiosystem/AudioGroup_label_attribute.html"
       }, 
@@ -2682,6 +2702,10 @@
       {
         "url": "/tests/audiosystem/AudioGroup_name_attribute.html", 
         "path": "tests/audiosystem/AudioGroup_name_attribute.html"
+      }, 
+      {
+        "url": "/tests/audiosystem/AudioGroup_name_value.html", 
+        "path": "tests/audiosystem/AudioGroup_name_value.html"
       }, 
       {
         "url": "/tests/audiosystem/AudioGroup_onlabelchanged_exist.html", 
@@ -2706,6 +2730,10 @@
       {
         "url": "/tests/audiosystem/AudioStream_id_attribute.html", 
         "path": "tests/audiosystem/AudioStream_id_attribute.html"
+      }, 
+      {
+        "url": "/tests/audiosystem/AudioStream_id_value.html", 
+        "path": "tests/audiosystem/AudioStream_id_value.html"
       }, 
       {
         "url": "/tests/audiosystem/AudioStream_label_attribute.html", 
@@ -2848,6 +2876,10 @@
         "path": "tests/audiosystem/MuteControl_id_attribute.html"
       }, 
       {
+        "url": "/tests/audiosystem/MuteControl_id_value.html", 
+        "path": "tests/audiosystem/MuteControl_id_value.html"
+      }, 
+      {
         "url": "/tests/audiosystem/MuteControl_label_attribute.html", 
         "path": "tests/audiosystem/MuteControl_label_attribute.html"
       }, 
@@ -2864,6 +2896,10 @@
         "path": "tests/audiosystem/MuteControl_onmutedchanged_exist.html"
       }, 
       {
+        "url": "/tests/audiosystem/MuteControl_onmutedchanged_function.html", 
+        "path": "tests/audiosystem/MuteControl_onmutedchanged_function.html"
+      }, 
+      {
         "url": "/tests/audiosystem/MuteControl_set_muted_exist.html", 
         "path": "tests/audiosystem/MuteControl_set_muted_exist.html"
       }, 
@@ -2876,8 +2912,16 @@
         "path": "tests/audiosystem/VolumeControl_get_simplified_balance_exist.html"
       }, 
       {
+        "url": "/tests/audiosystem/VolumeControl_get_simplified_balance_function.html", 
+        "path": "tests/audiosystem/VolumeControl_get_simplified_balance_function.html"
+      }, 
+      {
         "url": "/tests/audiosystem/VolumeControl_id_attribute.html", 
         "path": "tests/audiosystem/VolumeControl_id_attribute.html"
+      }, 
+      {
+        "url": "/tests/audiosystem/VolumeControl_id_value.html", 
+        "path": "tests/audiosystem/VolumeControl_id_value.html"
       }, 
       {
         "url": "/tests/audiosystem/VolumeControl_label_attribute.html", 
@@ -2894,6 +2938,10 @@
       {
         "url": "/tests/audiosystem/VolumeControl_onvolumechanged_exist.html", 
         "path": "tests/audiosystem/VolumeControl_onvolumechanged_exist.html"
+      }, 
+      {
+        "url": "/tests/audiosystem/VolumeControl_onvolumechanged_function.html", 
+        "path": "tests/audiosystem/VolumeControl_onvolumechanged_function.html"
       }, 
       {
         "url": "/tests/audiosystem/VolumeControl_onvolumestepschanged_exist.html", 
@@ -31959,14 +32007,6 @@
         "path": "tests/extra/semantics/text-level-semantics/the-mark-element/mark_element_base_usage-manual.html"
       }, 
       {
-        "url": "/tests/extra/w3c/editing/the-hidden-attribute/hidden-1a-manual.html", 
-        "path": "tests/extra/w3c/editing/the-hidden-attribute/hidden-1a-manual.html"
-      }, 
-      {
-        "url": "/tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1a-manual.html", 
-        "path": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1a-manual.html"
-      }, 
-      {
         "url": "/tests/extra/xhtml5/w3c/body_link-manual.xhtml", 
         "path": "tests/extra/xhtml5/w3c/body_link-manual.xhtml"
       }, 
@@ -36077,10 +36117,6 @@
         "path": "tests/extra/html5-extra-app/testscripts/window_prompt_base.feature"
       }, 
       {
-        "url": "/tests/extra/resources/COPYING", 
-        "path": "tests/extra/resources/COPYING"
-      }, 
-      {
         "url": "/tests/extra/resources/WebIDLParser.js", 
         "path": "tests/extra/resources/WebIDLParser.js"
       }, 
@@ -36089,24 +36125,20 @@
         "path": "tests/extra/resources/idlharness.js"
       }, 
       {
-        "url": "/tests/extra/resources/testharness.css", 
-        "path": "tests/extra/resources/testharness.css"
-      }, 
-      {
-        "url": "/tests/extra/resources/testharness.js", 
-        "path": "tests/extra/resources/testharness.js"
-      }, 
-      {
-        "url": "/tests/extra/resources/testharnessreport.js", 
-        "path": "tests/extra/resources/testharnessreport.js"
-      }, 
-      {
         "url": "/tests/extra/spec.json", 
         "path": "tests/extra/spec.json"
       }, 
       {
         "url": "/tests/extra/w3c/COPYING", 
         "path": "tests/extra/w3c/COPYING"
+      }, 
+      {
+        "url": "tests/extra/w3c/editing/the-hidden-attribute/hidden-1-ref.html", 
+        "path": "tests/extra/w3c/editing/the-hidden-attribute/hidden-1-ref.html"
+      }, 
+      {
+        "url": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html", 
+        "path": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html"
       }, 
       {
         "url": "/tests/extra/xhtml5/images/COPYING", 
