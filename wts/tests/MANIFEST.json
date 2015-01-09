@@ -31963,10 +31963,6 @@
         "path": "tests/devicecapabilities/VideoCodec-manual.html"
       }, 
       {
-        "url": "/tests/extra/attributes/w3c/anchor_href-manual.htm", 
-        "path": "tests/extra/attributes/w3c/anchor_href-manual.htm"
-      }, 
-      {
         "url": "/tests/extra/html5-extra-app/browsers/window_alert_base-manual.html", 
         "path": "tests/extra/html5-extra-app/browsers/window_alert_base-manual.html"
       }, 
@@ -36041,10 +36037,6 @@
         "path": "tests/dnd/w3c/dragdrop_support.js"
       }, 
       {
-        "url": "/tests/extra/attributes/w3c/COPYING", 
-        "path": "tests/extra/attributes/w3c/COPYING"
-      }, 
-      {
         "url": "/tests/extra/base64/w3c/COPYING", 
         "path": "tests/extra/base64/w3c/COPYING"
       }, 
@@ -36117,12 +36109,28 @@
         "path": "tests/extra/html5-extra-app/testscripts/window_prompt_base.feature"
       }, 
       {
+        "url": "/tests/extra/resources/COPYING", 
+        "path": "tests/extra/resources/COPYING"
+      }, 
+      {
         "url": "/tests/extra/resources/WebIDLParser.js", 
         "path": "tests/extra/resources/WebIDLParser.js"
       }, 
       {
         "url": "/tests/extra/resources/idlharness.js", 
         "path": "tests/extra/resources/idlharness.js"
+      }, 
+      {
+        "url": "/tests/extra/resources/testharness.css", 
+        "path": "tests/extra/resources/testharness.css"
+      }, 
+      {
+        "url": "/tests/extra/resources/testharness.js", 
+        "path": "tests/extra/resources/testharness.js"
+      }, 
+      {
+        "url": "/tests/extra/resources/testharnessreport.js", 
+        "path": "tests/extra/resources/testharnessreport.js"
       }, 
       {
         "url": "/tests/extra/spec.json", 
