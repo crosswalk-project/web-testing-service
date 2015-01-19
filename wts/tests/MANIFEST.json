@@ -36109,28 +36109,12 @@
         "path": "tests/extra/html5-extra-app/testscripts/window_prompt_base.feature"
       }, 
       {
-        "url": "/tests/extra/resources/COPYING", 
-        "path": "tests/extra/resources/COPYING"
-      }, 
-      {
         "url": "/tests/extra/resources/WebIDLParser.js", 
         "path": "tests/extra/resources/WebIDLParser.js"
       }, 
       {
         "url": "/tests/extra/resources/idlharness.js", 
         "path": "tests/extra/resources/idlharness.js"
-      }, 
-      {
-        "url": "/tests/extra/resources/testharness.css", 
-        "path": "tests/extra/resources/testharness.css"
-      }, 
-      {
-        "url": "/tests/extra/resources/testharness.js", 
-        "path": "tests/extra/resources/testharness.js"
-      }, 
-      {
-        "url": "/tests/extra/resources/testharnessreport.js", 
-        "path": "tests/extra/resources/testharnessreport.js"
       }, 
       {
         "url": "/tests/extra/spec.json", 
