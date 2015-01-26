@@ -1296,6 +1296,24 @@
         "path": "tests/svg/w3c/foreign_content_013.html", 
         "ref_type": "==", 
         "ref_url": "/tests/svg/w3c/reference/foreign_content_011-ref.html"
+      }, 
+      {
+        "url": "/tests/text/csswg/text-align-006.html", 
+        "path": "tests/text/csswg/text-align-006.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/text/csswg/text-align-006-ref.html"
+      }, 
+      {
+        "url": "/tests/text/csswg/text-align-007.html", 
+        "path": "tests/text/csswg/text-align-007.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/text/csswg/text-align-007-ref.html"
+      }, 
+      {
+        "url": "/tests/text/csswg/text-align-008.html", 
+        "path": "tests/text/csswg/text-align-008.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/text/csswg/text-align-007-ref.html"
       }
     ], 
     "testharness": [
@@ -30192,6 +30210,10 @@
         "path": "tests/webstorage/window_localStorage_getItem_no_argument.html"
       }, 
       {
+        "url": "/tests/webstorage/window_localStorage_iframe_item.html", 
+        "path": "tests/webstorage/window_localStorage_iframe_item.html"
+      }, 
+      {
         "url": "/tests/webstorage/window_localStorage_key_zero.html", 
         "path": "tests/webstorage/window_localStorage_key_zero.html"
       }, 
@@ -30282,6 +30304,10 @@
       {
         "url": "/tests/webstorage/window_sessionStorage_getItem_no_argument.html", 
         "path": "tests/webstorage/window_sessionStorage_getItem_no_argument.html"
+      }, 
+      {
+        "url": "/tests/webstorage/window_sessionStorage_iframe_item.html", 
+        "path": "tests/webstorage/window_sessionStorage_iframe_item.html"
       }, 
       {
         "url": "/tests/webstorage/window_sessionStorage_key_zero.html", 
@@ -34571,14 +34597,6 @@
         "path": "tests/webgl/khronos/webgl_variable.vert.html"
       }, 
       {
-        "url": "/tests/webstorage/window_localStorage_iframe_item-manual.html", 
-        "path": "tests/webstorage/window_localStorage_iframe_item-manual.html"
-      }, 
-      {
-        "url": "/tests/webstorage/window_sessionStorage_iframe_item-manual.html", 
-        "path": "tests/webstorage/window_sessionStorage_iframe_item-manual.html"
-      }, 
-      {
         "url": "/tests/workers/SharedWorker_in_iframe-manual.html", 
         "path": "tests/workers/SharedWorker_in_iframe-manual.html"
       }
@@ -37171,6 +37189,14 @@
       {
         "url": "/tests/text/csswg/COPYING", 
         "path": "tests/text/csswg/COPYING"
+      }, 
+      {
+        "url": "tests/text/csswg/text-align-006-ref.html", 
+        "path": "tests/text/csswg/text-align-006-ref.html"
+      }, 
+      {
+        "url": "tests/text/csswg/text-align-007-ref.html", 
+        "path": "tests/text/csswg/text-align-007-ref.html"
       }, 
       {
         "url": "tests/text/reference/nowrap-clear-float-ref.html", 
