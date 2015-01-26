@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-Copyright (c) 2014 Intel Corporation.
+Copyright (c) 2013 Intel Corporation.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -26,28 +26,32 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Authors:
-        Wang, Hongjuan <hongjuanx.wang@intel.com>
+        Yan,ChangCi <changci.yan@intel.com>
+        Xu,Yuhan <yuhanx.xu@intel.com>
 
 -->
 
-<meta charset="utf-8">
-<title>CSS3 Text Effects Test: text-align - match-parent</title>
-<link rel="author" title="Intel" href="http://www.intel.com">
-<link rel="help" href="http://www.w3.org/TR/2012/WD-css3-text-20121113/#text-align0">
-<meta name="flags" content="">
-<meta name="assert" content="Test passes if its parent's direction value and results in a computed value of either left or right">
-<style>
-  div {text-align: right;}
-  div > div {
-    background-color: green;
-    height: 200px;
-    text-align: match-parent;
-    width: 200px;
-  }
-</style>
-<body>
-  <p>Test passes if the contents are aligned to the end edge of the green box.</p>
-  <div>
-    <div>Filler Text</div>
-  </div>
-</body>
+<html>
+  <head>
+    <title>WebStorage Test: window_sessionStorage_iframe_item</title>
+    <link rel="author" title="Intel" href="http://www.intel.com" >
+    <link rel="help" href="http://www.w3.org/TR/2011/CR-webstorage-20111208/#dom-sessionStorage" >
+    <meta name="flags" content="" />
+    <meta name="assert" content="Check if sessionStorage access to the API for pages from other domains running in iframes" />
+    <script src="../resources/testharness.js"></script>
+    <script src="../resources/testharnessreport.js"></script>
+  </head>
+  <body>
+    <div id="log"></div>
+    <iframe src="sessionStorage_iframe.html" style="width:100%;min-height:300px;border:none" SCROLLING="no"></iframe>
+    <script>
+        sessionStorage.setItem("sessionStorageIframeKey", "sessionStorageIframeValue");
+        function testResult(resultValue) {
+          test(function () {
+            assert_true("sessionStorage" in window, "sessionStorage in window");
+            assert_equals(resultValue, "sessionStorageIframeValue", "the value");
+          }, "Check if sessionStorage access to the API for pages from other domains running in iframes");
+        }
+    </script>
+  </body>
+</html>
