@@ -584,6 +584,12 @@
         "ref_url": "/tests/flexiblebox/csswg/reference/align-content-001-ref.html"
       }, 
       {
+        "url": "/tests/flexiblebox/csswg/align-content-004.htm", 
+        "path": "tests/flexiblebox/csswg/align-content-004.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/flexiblebox/csswg/reference/align-content-001-ref.html"
+      }, 
+      {
         "url": "/tests/flexiblebox/csswg/align-content-005.htm", 
         "path": "tests/flexiblebox/csswg/align-content-005.htm", 
         "ref_type": "==", 
@@ -610,6 +616,12 @@
       {
         "url": "/tests/flexiblebox/csswg/align-items-003.htm", 
         "path": "tests/flexiblebox/csswg/align-items-003.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/flexiblebox/csswg/reference/align-content-001-ref.html"
+      }, 
+      {
+        "url": "/tests/flexiblebox/csswg/align-items-004.htm", 
+        "path": "tests/flexiblebox/csswg/align-items-004.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/flexiblebox/csswg/reference/align-content-001-ref.html"
       }, 
@@ -9678,6 +9690,10 @@
         "path": "tests/deviceorientation/DeviceMotionEvent_attributes_test.html"
       }, 
       {
+        "url": "/tests/deviceorientation/DeviceOrientationEvent_attributes_readonly.html", 
+        "path": "tests/deviceorientation/DeviceOrientationEvent_attributes_readonly.html"
+      }, 
+      {
         "url": "/tests/deviceorientation/DeviceOrientationEvent_attributes_test.html", 
         "path": "tests/deviceorientation/DeviceOrientationEvent_attributes_test.html"
       }, 
@@ -16776,10 +16792,6 @@
       {
         "url": "/tests/sandbox/w3c/sandbox_001.htm", 
         "path": "tests/sandbox/w3c/sandbox_001.htm"
-      }, 
-      {
-        "url": "/tests/sandbox/w3c/sandbox_002.htm", 
-        "path": "tests/sandbox/w3c/sandbox_002.htm"
       }, 
       {
         "url": "/tests/sandbox/w3c/sandbox_005.htm", 
@@ -30139,7 +30151,8 @@
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_local_setitem_quotaexceedederr.html", 
-        "path": "tests/webstorage/w3c/storage_local_setitem_quotaexceedederr.html"
+        "path": "tests/webstorage/w3c/storage_local_setitem_quotaexceedederr.html", 
+        "timeout": "long"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_session_builtins.html", 
@@ -30179,7 +30192,8 @@
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_session_setitem_quotaexceedederr.html", 
-        "path": "tests/webstorage/w3c/storage_session_setitem_quotaexceedederr.html"
+        "path": "tests/webstorage/w3c/storage_session_setitem_quotaexceedederr.html", 
+        "timeout": "long"
       }, 
       {
         "url": "/tests/webstorage/window_localStorage_enumerate_storage.html", 
@@ -32071,14 +32085,6 @@
       {
         "url": "/tests/fileapi/w3c/filelist-section/filelist_selected_file-manual.html", 
         "path": "tests/fileapi/w3c/filelist-section/filelist_selected_file-manual.html"
-      }, 
-      {
-        "url": "/tests/flexiblebox/csswg/align-content-004-manual.htm", 
-        "path": "tests/flexiblebox/csswg/align-content-004-manual.htm"
-      }, 
-      {
-        "url": "/tests/flexiblebox/csswg/align-items-004-manual.htm", 
-        "path": "tests/flexiblebox/csswg/align-items-004-manual.htm"
       }, 
       {
         "url": "/tests/fonts/csswg/c523-font-style-000-manual.htm", 
@@ -37001,10 +37007,6 @@
       {
         "url": "/tests/sandbox/w3c/COPYING", 
         "path": "tests/sandbox/w3c/COPYING"
-      }, 
-      {
-        "url": "/tests/sandbox/w3c/support/green-at-15.mp4", 
-        "path": "tests/sandbox/w3c/support/green-at-15.mp4"
       }, 
       {
         "url": "/tests/screenorientation/spec.json", 
