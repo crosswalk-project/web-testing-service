@@ -500,6 +500,18 @@
         "ref_url": "/tests/colors/csswg/reference/t422-rgba-clamping-a0.0-b-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t422-rgba-clamping-a1.0-b.htm", 
+        "path": "tests/colors/csswg/t422-rgba-clamping-a1.0-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-clamping-a1.0-b-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t422-rgba-clip-outside-device-gamut-b.htm", 
+        "path": "tests/colors/csswg/t422-rgba-clip-outside-device-gamut-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-clip-outside-device-gamut-b-ref.html"
+      }, 
+      {
         "url": "/tests/colors/csswg/t422-rgba-func-int-a.htm", 
         "path": "tests/colors/csswg/t422-rgba-func-int-a.htm", 
         "ref_type": "==", 
@@ -518,6 +530,12 @@
         "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-whitespace-b-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t422-rgba-onscreen-b.htm", 
+        "path": "tests/colors/csswg/t422-rgba-onscreen-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html"
+      }, 
+      {
         "url": "/tests/colors/csswg/t423-transparent-1-a.htm", 
         "path": "tests/colors/csswg/t423-transparent-1-a.htm", 
         "ref_type": "==", 
@@ -530,16 +548,58 @@
         "ref_url": "/tests/colors/csswg/reference/t423-transparent-2-a-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t424-hsl-basic-a.htm", 
+        "path": "tests/colors/csswg/t424-hsl-basic-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t424-hsl-basic-a-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t424-hsl-clip-outside-gamut-b.htm", 
+        "path": "tests/colors/csswg/t424-hsl-clip-outside-gamut-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t424-hsl-clip-outside-gamut-b-ref.html"
+      }, 
+      {
         "url": "/tests/colors/csswg/t424-hsl-h-rotating-b.htm", 
         "path": "tests/colors/csswg/t424-hsl-h-rotating-b.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/colors/csswg/reference/t424-hsl-h-rotating-b-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t424-hsl-parsing-f.htm", 
+        "path": "tests/colors/csswg/t424-hsl-parsing-f.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t424-hsl-parsing-f-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t424-hsl-values-b.htm", 
+        "path": "tests/colors/csswg/t424-hsl-values-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t424-hsl-values-b-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t425-hsla-clip-outside-device-gamut-b.htm", 
+        "path": "tests/colors/csswg/t425-hsla-clip-outside-device-gamut-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t425-hsla-clip-outside-device-gamut-ref.htm"
+      }, 
+      {
         "url": "/tests/colors/csswg/t425-hsla-h-rotating-b.htm", 
         "path": "tests/colors/csswg/t425-hsla-h-rotating-b.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/colors/csswg/reference/t425-hsl-h-rotating-b-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t425-hsla-parsing-f.htm", 
+        "path": "tests/colors/csswg/t425-hsla-parsing-f.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t424-hsl-parsing-f-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t425-hsla-values-b.htm", 
+        "path": "tests/colors/csswg/t425-hsla-values-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t425-hsla-values-b-ref.html"
       }, 
       {
         "url": "/tests/colors/csswg/t44-currentcolor-background-b.htm", 
@@ -31475,40 +31535,8 @@
         "path": "tests/colors/CSS3Colors_color_pseudo-classes-manual.html"
       }, 
       {
-        "url": "/tests/colors/csswg/t422-rgba-clamping-a1.0-b-manual.htm", 
-        "path": "tests/colors/csswg/t422-rgba-clamping-a1.0-b-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t422-rgba-clip-outside-device-gamut-b-manual.htm", 
-        "path": "tests/colors/csswg/t422-rgba-clip-outside-device-gamut-b-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t422-rgba-onscreen-b-manual.htm", 
-        "path": "tests/colors/csswg/t422-rgba-onscreen-b-manual.htm"
-      }, 
-      {
         "url": "/tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c-manual.htm", 
         "path": "tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t424-hsl-basic-a-manual.htm", 
-        "path": "tests/colors/csswg/t424-hsl-basic-a-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t424-hsl-clip-outside-gamut-b-manual.htm", 
-        "path": "tests/colors/csswg/t424-hsl-clip-outside-gamut-b-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t424-hsl-parsing-f-manual.htm", 
-        "path": "tests/colors/csswg/t424-hsl-parsing-f-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t424-hsl-values-b-manual.htm", 
-        "path": "tests/colors/csswg/t424-hsl-values-b-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t425-hsla-clip-outside-device-gamut-b-manual.htm", 
-        "path": "tests/colors/csswg/t425-hsla-clip-outside-device-gamut-b-manual.htm"
       }, 
       {
         "url": "/tests/colors/csswg/t425-hsla-onscreen-b-manual.htm", 
@@ -31517,14 +31545,6 @@
       {
         "url": "/tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c-manual.htm", 
         "path": "tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t425-hsla-parsing-f-manual.htm", 
-        "path": "tests/colors/csswg/t425-hsla-parsing-f-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t425-hsla-values-b-manual.htm", 
-        "path": "tests/colors/csswg/t425-hsla-values-b-manual.htm"
       }, 
       {
         "url": "/tests/csp/csp_base-uri_asterisk-manual.py", 
@@ -35785,6 +35805,14 @@
         "path": "tests/colors/csswg/reference/t422-rgba-clamping-a0.0-b-ref.html"
       }, 
       {
+        "url": "tests/colors/csswg/reference/t422-rgba-clamping-a1.0-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t422-rgba-clamping-a1.0-b-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t422-rgba-clip-outside-device-gamut-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t422-rgba-clip-outside-device-gamut-b-ref.html"
+      }, 
+      {
         "url": "tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html", 
         "path": "tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
       }, 
@@ -35797,16 +35825,44 @@
         "path": "tests/colors/csswg/reference/t422-rgba-func-whitespace-b-ref.html"
       }, 
       {
+        "url": "tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html"
+      }, 
+      {
         "url": "tests/colors/csswg/reference/t423-transparent-2-a-ref.html", 
         "path": "tests/colors/csswg/reference/t423-transparent-2-a-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t424-hsl-basic-a-ref.html", 
+        "path": "tests/colors/csswg/reference/t424-hsl-basic-a-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t424-hsl-clip-outside-gamut-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t424-hsl-clip-outside-gamut-b-ref.html"
       }, 
       {
         "url": "tests/colors/csswg/reference/t424-hsl-h-rotating-b-ref.html", 
         "path": "tests/colors/csswg/reference/t424-hsl-h-rotating-b-ref.html"
       }, 
       {
+        "url": "tests/colors/csswg/reference/t424-hsl-parsing-f-ref.html", 
+        "path": "tests/colors/csswg/reference/t424-hsl-parsing-f-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t424-hsl-values-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t424-hsl-values-b-ref.html"
+      }, 
+      {
         "url": "tests/colors/csswg/reference/t425-hsl-h-rotating-b-ref.html", 
         "path": "tests/colors/csswg/reference/t425-hsl-h-rotating-b-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t425-hsla-clip-outside-device-gamut-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t425-hsla-clip-outside-device-gamut-b-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t425-hsla-values-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t425-hsla-values-b-ref.html"
       }, 
       {
         "url": "tests/colors/csswg/reference/t44-currentcolor-background-b-ref.html", 
