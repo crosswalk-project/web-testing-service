@@ -536,6 +536,12 @@
         "ref_url": "/tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c.htm", 
+        "path": "tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-onscreen-multiple-boxes-c-ref.html"
+      }, 
+      {
         "url": "/tests/colors/csswg/t423-transparent-1-a.htm", 
         "path": "tests/colors/csswg/t423-transparent-1-a.htm", 
         "ref_type": "==", 
@@ -588,6 +594,12 @@
         "path": "tests/colors/csswg/t425-hsla-h-rotating-b.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/colors/csswg/reference/t425-hsl-h-rotating-b-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c.htm", 
+        "path": "tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-onscreen-multiple-boxes-c-ref.html"
       }, 
       {
         "url": "/tests/colors/csswg/t425-hsla-parsing-f.htm", 
@@ -20571,7 +20583,8 @@
       }, 
       {
         "url": "/tests/video/w3c/video_loop_base.html", 
-        "path": "tests/video/w3c/video_loop_base.html"
+        "path": "tests/video/w3c/video_loop_base.html", 
+        "timeout": "long"
       }, 
       {
         "url": "/tests/video/w3c/video_loop_reflect.html", 
@@ -31535,16 +31548,8 @@
         "path": "tests/colors/CSS3Colors_color_pseudo-classes-manual.html"
       }, 
       {
-        "url": "/tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c-manual.htm", 
-        "path": "tests/colors/csswg/t422-rgba-onscreen-multiple-boxes-c-manual.htm"
-      }, 
-      {
         "url": "/tests/colors/csswg/t425-hsla-onscreen-b-manual.htm", 
         "path": "tests/colors/csswg/t425-hsla-onscreen-b-manual.htm"
-      }, 
-      {
-        "url": "/tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c-manual.htm", 
-        "path": "tests/colors/csswg/t425-hsla-onscreen-multiple-boxes-c-manual.htm"
       }, 
       {
         "url": "/tests/csp/csp_base-uri_asterisk-manual.py", 
@@ -35827,6 +35832,10 @@
       {
         "url": "tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html", 
         "path": "tests/colors/csswg/reference/t422-rgba-onscreen-b-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t422-rgba-onscreen-multiple-boxes-c-ref.html", 
+        "path": "tests/colors/csswg/reference/t422-rgba-onscreen-multiple-boxes-c-ref.html"
       }, 
       {
         "url": "tests/colors/csswg/reference/t423-transparent-2-a-ref.html", 
