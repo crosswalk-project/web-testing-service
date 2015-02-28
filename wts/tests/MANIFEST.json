@@ -17950,6 +17950,10 @@
         "path": "tests/transitions/csswg/transition-timing-function-001.html"
       }, 
       {
+        "url": "/tests/transitions/w3c/transitions-animatable-properties-01.html", 
+        "path": "tests/transitions/w3c/transitions-animatable-properties-01.html"
+      }, 
+      {
         "url": "/tests/typedarrays/ArrayBuffer_byteLength_exist.html", 
         "path": "tests/typedarrays/ArrayBuffer_byteLength_exist.html"
       }, 
@@ -32028,28 +32032,24 @@
         "path": "tests/devicecapabilities/VideoCodec-manual.html"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/browsers/window_alert_base-manual.html", 
-        "path": "tests/extra/html5-extra-app/browsers/window_alert_base-manual.html"
+        "url": "/tests/extra/browsers/bdd/window_alert_base-manual.html", 
+        "path": "tests/extra/browsers/bdd/window_alert_base-manual.html"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/browsers/window_confirm_base-manual.html", 
-        "path": "tests/extra/html5-extra-app/browsers/window_confirm_base-manual.html"
+        "url": "/tests/extra/browsers/bdd/window_confirm_base-manual.html", 
+        "path": "tests/extra/browsers/bdd/window_confirm_base-manual.html"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/browsers/window_prompt_base-manual.html", 
-        "path": "tests/extra/html5-extra-app/browsers/window_prompt_base-manual.html"
+        "url": "/tests/extra/browsers/bdd/window_prompt_base-manual.html", 
+        "path": "tests/extra/browsers/bdd/window_prompt_base-manual.html"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/dom/document_onchange_event-manual.html", 
-        "path": "tests/extra/html5-extra-app/dom/document_onchange_event-manual.html"
+        "url": "/tests/extra/dom/bdd/document_onchange_event-manual.html", 
+        "path": "tests/extra/dom/bdd/document_onchange_event-manual.html"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/dom/document_oninput_event-manual.html", 
-        "path": "tests/extra/html5-extra-app/dom/document_oninput_event-manual.html"
-      }, 
-      {
-        "url": "/tests/extra/html5-extra-app/xhtml5/area_noref-manual.xhtml", 
-        "path": "tests/extra/html5-extra-app/xhtml5/area_noref-manual.xhtml"
+        "url": "/tests/extra/dom/bdd/document_oninput_event-manual.html", 
+        "path": "tests/extra/dom/bdd/document_oninput_event-manual.html"
       }, 
       {
         "url": "/tests/extra/semantics/forms/the-textarea-element/textarea_element_maxLength-manual.html", 
@@ -32066,6 +32066,10 @@
       {
         "url": "/tests/extra/semantics/text-level-semantics/the-mark-element/mark_element_base_usage-manual.html", 
         "path": "tests/extra/semantics/text-level-semantics/the-mark-element/mark_element_base_usage-manual.html"
+      }, 
+      {
+        "url": "/tests/extra/xhtml5/bdd/area_noref-manual.xhtml", 
+        "path": "tests/extra/xhtml5/bdd/area_noref-manual.xhtml"
       }, 
       {
         "url": "/tests/extra/xhtml5/w3c/body_link-manual.xhtml", 
@@ -32652,14 +32656,6 @@
         "path": "tests/touchevent/w3c/single-touch-manual.html"
       }, 
       {
-        "url": "/tests/transitions/webkit/background-transitions-manual.html", 
-        "path": "tests/transitions/webkit/background-transitions-manual.html"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/border-radius-transition-manual.html", 
-        "path": "tests/transitions/webkit/border-radius-transition-manual.html"
-      }, 
-      {
         "url": "/tests/transitions/webkit/cancel-transition-manual.html", 
         "path": "tests/transitions/webkit/cancel-transition-manual.html"
       }, 
@@ -32668,28 +32664,8 @@
         "path": "tests/transitions/webkit/change-values-during-transition-manual.html"
       }, 
       {
-        "url": "/tests/transitions/webkit/delay-manual.html", 
-        "path": "tests/transitions/webkit/delay-manual.html"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/shorthand-border-transitions-manual.html", 
-        "path": "tests/transitions/webkit/shorthand-border-transitions-manual.html"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/shorthand-transitions-manual.html", 
-        "path": "tests/transitions/webkit/shorthand-transitions-manual.html"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/transform-op-list-match-manual.html", 
-        "path": "tests/transitions/webkit/transform-op-list-match-manual.html"
-      }, 
-      {
         "url": "/tests/transitions/webkit/transition-end-event-nested-manual.html", 
         "path": "tests/transitions/webkit/transition-end-event-nested-manual.html"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/zero-duration-in-list-manual.html", 
-        "path": "tests/transitions/webkit/zero-duration-in-list-manual.html"
       }, 
       {
         "url": "/tests/ui/CSS3UI_pseudo-classes_required-manual.html", 
@@ -34628,6 +34604,14 @@
         "path": "tests/webgl/khronos/webgl_variable.vert.html"
       }, 
       {
+        "url": "/tests/webstorage/Storage_example_insurance_on_trip-manual.html", 
+        "path": "tests/webstorage/Storage_example_insurance_on_trip-manual.html"
+      }, 
+      {
+        "url": "/tests/webstorage/Storage_example_load_page_times-manual.html", 
+        "path": "tests/webstorage/Storage_example_load_page_times-manual.html"
+      }, 
+      {
         "url": "/tests/workers/SharedWorker_in_iframe-manual.html", 
         "path": "tests/workers/SharedWorker_in_iframe-manual.html"
       }
@@ -36158,10 +36142,6 @@
         "path": "tests/extra/html5-extra-app/icon.png"
       }, 
       {
-        "url": "/tests/extra/html5-extra-app/images/blue-area.png", 
-        "path": "tests/extra/html5-extra-app/images/blue-area.png"
-      }, 
-      {
         "url": "/tests/extra/html5-extra-app/manifest.json", 
         "path": "tests/extra/html5-extra-app/manifest.json"
       }, 
@@ -37330,6 +37310,10 @@
         "path": "tests/transitions/support/support.js"
       }, 
       {
+        "url": "/tests/transitions/w3c/COPYING", 
+        "path": "tests/transitions/w3c/COPYING"
+      }, 
+      {
         "url": "/tests/transitions/webkit/COPYING", 
         "path": "tests/transitions/webkit/COPYING"
       }, 
@@ -37340,10 +37324,6 @@
       {
         "url": "/tests/transitions/webkit/resources/transition-end-event-helpers.js", 
         "path": "tests/transitions/webkit/resources/transition-end-event-helpers.js"
-      }, 
-      {
-        "url": "/tests/transitions/webkit/resources/transition-test-helpers.js", 
-        "path": "tests/transitions/webkit/resources/transition-test-helpers.js"
       }, 
       {
         "url": "/tests/typedarrays/spec.json", 
