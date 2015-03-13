@@ -12378,18 +12378,6 @@
         "path": "tests/fullscreen/FullScreen_fullScreenEnabled_type.html"
       }, 
       {
-        "url": "/tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_exists.html", 
-        "path": "tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_exists.html"
-      }, 
-      {
-        "url": "/tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_readonly.html", 
-        "path": "tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_readonly.html"
-      }, 
-      {
-        "url": "/tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_type.html", 
-        "path": "tests/fullscreen/FullScreen_fullScreenKeyboardInputAllowed_type.html"
-      }, 
-      {
         "url": "/tests/fullscreen/FullScreen_fullScreen_type.html", 
         "path": "tests/fullscreen/FullScreen_fullScreen_type.html"
       }, 
