@@ -638,6 +638,18 @@
         "ref_url": "/tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html"
       }, 
       {
+        "url": "/tests/extra/xhtml5/w3c/body_text_00ffff.xhtml", 
+        "path": "tests/extra/xhtml5/w3c/body_text_00ffff.xhtml", 
+        "ref_type": "==", 
+        "ref_url": "/tests/extra/xhtml5/w3c/body_text_00ffff-ref.html"
+      }, 
+      {
+        "url": "/tests/extra/xhtml5/w3c/html_style_in_comment.xhtml", 
+        "path": "tests/extra/xhtml5/w3c/html_style_in_comment.xhtml", 
+        "ref_type": "==", 
+        "ref_url": "/tests/extra/xhtml5/w3c/html_style_in_comment-ref.html"
+      }, 
+      {
         "url": "/tests/flexiblebox/csswg/align-content-001.htm", 
         "path": "tests/flexiblebox/csswg/align-content-001.htm", 
         "ref_type": "==", 
@@ -1398,6 +1410,12 @@
         "path": "tests/text/csswg/text-align-008.html", 
         "ref_type": "==", 
         "ref_url": "/tests/text/csswg/text-align-007-ref.html"
+      }, 
+      {
+        "url": "/tests/ui/csswg/selector-required.html", 
+        "path": "tests/ui/csswg/selector-required.html", 
+        "ref_type": "==", 
+        "ref_url": "/tests/ui/csswg/selector-required-ref.html"
       }
     ], 
     "testharness": [
@@ -30629,6 +30647,10 @@
         "path": "tests/workers/Worker_constructor.html"
       }, 
       {
+        "url": "/tests/workers/w3c/004.html", 
+        "path": "tests/workers/w3c/004.html"
+      }, 
+      {
         "url": "/tests/workers/w3c/MessagePort_initial_disabled.htm", 
         "path": "tests/workers/w3c/MessagePort_initial_disabled.htm"
       }, 
@@ -32064,14 +32086,6 @@
         "path": "tests/extra/xhtml5/w3c/body_link-manual.xhtml"
       }, 
       {
-        "url": "/tests/extra/xhtml5/w3c/body_text_00ffff-manual.xhtml", 
-        "path": "tests/extra/xhtml5/w3c/body_text_00ffff-manual.xhtml"
-      }, 
-      {
-        "url": "/tests/extra/xhtml5/w3c/html_style_in_comment-manual.xhtml", 
-        "path": "tests/extra/xhtml5/w3c/html_style_in_comment-manual.xhtml"
-      }, 
-      {
         "url": "/tests/extra/xhtml5/w3c/img_border_percent-manual.xhtml", 
         "path": "tests/extra/xhtml5/w3c/img_border_percent-manual.xhtml"
       }, 
@@ -32654,10 +32668,6 @@
       {
         "url": "/tests/transitions/webkit/transition-end-event-nested-manual.html", 
         "path": "tests/transitions/webkit/transition-end-event-nested-manual.html"
-      }, 
-      {
-        "url": "/tests/ui/CSS3UI_pseudo-classes_required-manual.html", 
-        "path": "tests/ui/CSS3UI_pseudo-classes_required-manual.html"
       }, 
       {
         "url": "/tests/vibration/w3c/cancel-when-hidden-manual.html", 
@@ -34598,10 +34608,6 @@
       {
         "url": "/tests/webstorage/Storage_example_load_page_times-manual.html", 
         "path": "tests/webstorage/Storage_example_load_page_times-manual.html"
-      }, 
-      {
-        "url": "/tests/workers/SharedWorker_in_iframe-manual.html", 
-        "path": "tests/workers/SharedWorker_in_iframe-manual.html"
       }
     ], 
     "helper": [
@@ -36242,6 +36248,14 @@
         "path": "tests/extra/xhtml5/w3c/COPYING"
       }, 
       {
+        "url": "tests/extra/xhtml5/w3c/body_text_00ffff-ref.html", 
+        "path": "tests/extra/xhtml5/w3c/body_text_00ffff-ref.html"
+      }, 
+      {
+        "url": "tests/extra/xhtml5/w3c/html_style_in_comment-ref.html", 
+        "path": "tests/extra/xhtml5/w3c/html_style_in_comment-ref.html"
+      }, 
+      {
         "url": "/tests/fileapi/FileReaderSync_readAsArrayBuffer_Blob_invalid.js", 
         "path": "tests/fileapi/FileReaderSync_readAsArrayBuffer_Blob_invalid.js"
       }, 
@@ -37326,6 +37340,14 @@
         "path": "tests/typedarrays/w3c/submission/COPYING"
       }, 
       {
+        "url": "/tests/ui/csswg/COPYING", 
+        "path": "tests/ui/csswg/COPYING"
+      }, 
+      {
+        "url": "tests/ui/csswg/selector-required-ref.html", 
+        "path": "tests/ui/csswg/selector-required-ref.html"
+      }, 
+      {
         "url": "/tests/ui/spec.json", 
         "path": "tests/ui/spec.json"
       }, 
@@ -38260,6 +38282,10 @@
       {
         "url": "/tests/workers/support/shared-worker-simple.js", 
         "path": "tests/workers/support/shared-worker-simple.js"
+      }, 
+      {
+        "url": "/tests/workers/w3c/001-1.xml", 
+        "path": "tests/workers/w3c/001-1.xml"
       }, 
       {
         "url": "/tests/workers/w3c/COPYING", 
