@@ -218,12 +218,6 @@
         "ref_url": "/tests/backgrounds/csswg/reference/background-image-first-letter-ref.html"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-intrinsic-001.htm", 
-        "path": "tests/backgrounds/csswg/background-intrinsic-001.htm", 
-        "ref_type": "==", 
-        "ref_url": "/tests/backgrounds/csswg/background-intrinsic-ref.xht"
-      }, 
-      {
         "url": "/tests/backgrounds/csswg/background-origin-002.html", 
         "path": "tests/backgrounds/csswg/background-origin-002.html", 
         "ref_type": "==", 
@@ -10162,6 +10156,10 @@
       {
         "url": "/tests/extra/w3c/semantics/forms/the-input-element/valueMode.html", 
         "path": "tests/extra/w3c/semantics/forms/the-input-element/valueMode.html"
+      }, 
+      {
+        "url": "/tests/extra/w3c/semantics/forms/the-textarea-element/form-validation-validity-tooLong.html", 
+        "path": "tests/extra/w3c/semantics/forms/the-textarea-element/form-validation-validity-tooLong.html"
       }, 
       {
         "url": "/tests/extra/w3c/semantics/grouping-content/the-figcaption-element/grouping-figcaption.html", 
@@ -31434,72 +31432,76 @@
         "path": "tests/audio/w3c/audio_volume_silent-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_background-position_2cm_1cm-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_background-position_2cm_1cm-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_background-position_2cm_1cm-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_background-position_2cm_1cm-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-outset_left_bottom_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-outset_left_bottom_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-outset_left_bottom_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-outset_left_bottom_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-outset_left_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-outset_left_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-outset_left_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-outset_left_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-slice_left_bottom_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-slice_left_bottom_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-slice_left_bottom_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-slice_left_bottom_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-slice_left_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-slice_left_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-slice_left_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-slice_left_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-width_left_bottom_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-width_left_bottom_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-width_left_bottom_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-width_left_bottom_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/CSS3BG_border-image-width_left_value_miss-manual.html", 
-        "path": "tests/backgrounds/CSS3BG_border-image-width_left_value_miss-manual.html"
+        "url": "/tests/backgrounds/bdd/CSS3BG_border-image-width_left_value_miss-manual.html", 
+        "path": "tests/backgrounds/bdd/CSS3BG_border-image-width_left_value_miss-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-002-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-002-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-002-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-002-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-011-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-011-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-011-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-011-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-012-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-012-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-012-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-012-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-013-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-013-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-013-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-013-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-015-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-015-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-015-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-015-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-019-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-019-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-019-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-019-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-023-manual.htm", 
-        "path": "tests/backgrounds/csswg/background-023-manual.htm"
+        "url": "/tests/backgrounds/csswg/bdd/background-023-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-023-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-size-024-manual.html", 
-        "path": "tests/backgrounds/csswg/background-size-024-manual.html"
+        "url": "/tests/backgrounds/csswg/bdd/background-intrinsic-001-manual.htm", 
+        "path": "tests/backgrounds/csswg/bdd/background-intrinsic-001-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-size-032-manual.html", 
-        "path": "tests/backgrounds/csswg/background-size-032-manual.html"
+        "url": "/tests/backgrounds/csswg/bdd/background-size-024-manual.html", 
+        "path": "tests/backgrounds/csswg/bdd/background-size-024-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/background-size-033-manual.html", 
-        "path": "tests/backgrounds/csswg/background-size-033-manual.html"
+        "url": "/tests/backgrounds/csswg/bdd/background-size-032-manual.html", 
+        "path": "tests/backgrounds/csswg/bdd/background-size-032-manual.html"
+      }, 
+      {
+        "url": "/tests/backgrounds/csswg/bdd/background-size-033-manual.html", 
+        "path": "tests/backgrounds/csswg/bdd/background-size-033-manual.html"
       }, 
       {
         "url": "/tests/canvas/w3c/2d.coordinatespace-manual.html", 
@@ -32062,10 +32064,6 @@
         "path": "tests/extra/dom/bdd/document_oninput_event-manual.html"
       }, 
       {
-        "url": "/tests/extra/semantics/forms/the-textarea-element/textarea_element_maxLength-manual.html", 
-        "path": "tests/extra/semantics/forms/the-textarea-element/textarea_element_maxLength-manual.html"
-      }, 
-      {
         "url": "/tests/extra/semantics/grouping-content/the-figcaption-element/figcaption_element-manual.html", 
         "path": "tests/extra/semantics/grouping-content/the-figcaption-element/figcaption_element-manual.html"
       }, 
@@ -32078,8 +32076,8 @@
         "path": "tests/extra/semantics/text-level-semantics/the-mark-element/mark_element_base_usage-manual.html"
       }, 
       {
-        "url": "/tests/extra/xhtml5/bdd/area_noref-manual.xhtml", 
-        "path": "tests/extra/xhtml5/bdd/area_noref-manual.xhtml"
+        "url": "/tests/extra/xhtml5/w3c/bdd/area_noref-manual.xhtml", 
+        "path": "tests/extra/xhtml5/w3c/bdd/area_noref-manual.xhtml"
       }, 
       {
         "url": "/tests/extra/xhtml5/w3c/body_link-manual.xhtml", 
@@ -32118,124 +32116,124 @@
         "path": "tests/fileapi/w3c/filelist-section/filelist_selected_file-manual.html"
       }, 
       {
-        "url": "/tests/fonts/csswg/c523-font-style-000-manual.htm", 
-        "path": "tests/fonts/csswg/c523-font-style-000-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/c523-font-style-000-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/c523-font-style-000-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/c524-font-var-000-manual.htm", 
-        "path": "tests/fonts/csswg/c524-font-var-000-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/c524-font-var-000-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/c524-font-var-000-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/c525-font-wt-000-manual.htm", 
-        "path": "tests/fonts/csswg/c525-font-wt-000-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/c525-font-wt-000-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/c525-font-wt-000-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/c526-font-sz-000-manual.htm", 
-        "path": "tests/fonts/csswg/c526-font-sz-000-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/c526-font-sz-000-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/c526-font-sz-000-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-002-manual.htm", 
-        "path": "tests/fonts/csswg/font-002-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-002-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-002-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-006-manual.htm", 
-        "path": "tests/fonts/csswg/font-006-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-006-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-006-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-007-manual.htm", 
-        "path": "tests/fonts/csswg/font-007-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-007-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-007-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-008-manual.htm", 
-        "path": "tests/fonts/csswg/font-008-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-008-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-008-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-009-manual.htm", 
-        "path": "tests/fonts/csswg/font-009-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-009-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-009-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-010-manual.htm", 
-        "path": "tests/fonts/csswg/font-010-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-010-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-010-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-011-manual.htm", 
-        "path": "tests/fonts/csswg/font-011-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-011-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-011-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-012-manual.htm", 
-        "path": "tests/fonts/csswg/font-012-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-012-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-012-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-013-manual.htm", 
-        "path": "tests/fonts/csswg/font-013-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-013-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-013-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-014-manual.htm", 
-        "path": "tests/fonts/csswg/font-014-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-014-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-014-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-015-manual.htm", 
-        "path": "tests/fonts/csswg/font-015-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-015-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-015-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-016-manual.htm", 
-        "path": "tests/fonts/csswg/font-016-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-016-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-016-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-018-manual.htm", 
-        "path": "tests/fonts/csswg/font-018-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-018-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-018-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-022-manual.htm", 
-        "path": "tests/fonts/csswg/font-022-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-022-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-022-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-023-manual.htm", 
-        "path": "tests/fonts/csswg/font-023-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-023-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-023-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-024-manual.htm", 
-        "path": "tests/fonts/csswg/font-024-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-024-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-024-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-025-manual.htm", 
-        "path": "tests/fonts/csswg/font-025-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-025-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-025-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-026-manual.htm", 
-        "path": "tests/fonts/csswg/font-026-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-026-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-026-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-027-manual.htm", 
-        "path": "tests/fonts/csswg/font-027-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-027-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-027-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-028-manual.htm", 
-        "path": "tests/fonts/csswg/font-028-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-028-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-028-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-029-manual.htm", 
-        "path": "tests/fonts/csswg/font-029-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-029-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-029-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-030-manual.htm", 
-        "path": "tests/fonts/csswg/font-030-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-030-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-030-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-031-manual.htm", 
-        "path": "tests/fonts/csswg/font-031-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-031-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-031-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-032-manual.htm", 
-        "path": "tests/fonts/csswg/font-032-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-032-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-032-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-043-manual.htm", 
-        "path": "tests/fonts/csswg/font-043-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-043-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-043-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-044-manual.htm", 
-        "path": "tests/fonts/csswg/font-044-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-044-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-044-manual.htm"
       }, 
       {
         "url": "/tests/fonts/csswg/font-family-002-manual.htm", 
@@ -32602,8 +32600,8 @@
         "path": "tests/presentation/presentation_test/steps09-manual.html"
       }, 
       {
-        "url": "/tests/sandbox/w3c/sandbox_007-manual.htm", 
-        "path": "tests/sandbox/w3c/sandbox_007-manual.htm"
+        "url": "/tests/sandbox/w3c/bdd/sandbox_007-manual.htm", 
+        "path": "tests/sandbox/w3c/bdd/sandbox_007-manual.htm"
       }, 
       {
         "url": "/tests/sessionhistory/history_forward_basic-manual.html", 
@@ -34602,12 +34600,12 @@
         "path": "tests/webgl/khronos/webgl_variable.vert.html"
       }, 
       {
-        "url": "/tests/webstorage/Storage_example_insurance_on_trip-manual.html", 
-        "path": "tests/webstorage/Storage_example_insurance_on_trip-manual.html"
+        "url": "/tests/webstorage/bdd/Storage_example_insurance_on_trip-manual.html", 
+        "path": "tests/webstorage/bdd/Storage_example_insurance_on_trip-manual.html"
       }, 
       {
-        "url": "/tests/webstorage/Storage_example_load_page_times-manual.html", 
-        "path": "tests/webstorage/Storage_example_load_page_times-manual.html"
+        "url": "/tests/webstorage/bdd/Storage_example_load_page_times-manual.html", 
+        "path": "tests/webstorage/bdd/Storage_example_load_page_times-manual.html"
       }
     ], 
     "helper": [
@@ -36208,6 +36206,10 @@
         "path": "tests/extra/w3c/editing/the-hidden-attribute/hidden-1-ref.html"
       }, 
       {
+        "url": "/tests/extra/w3c/semantics/forms/the-textarea-element/support/validator.js", 
+        "path": "tests/extra/w3c/semantics/forms/the-textarea-element/support/validator.js"
+      }, 
+      {
         "url": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html", 
         "path": "tests/extra/w3c/semantics/grouping-content/the-ol-element/reversed-1-ref.html"
       }, 
@@ -36246,6 +36248,10 @@
       {
         "url": "/tests/extra/xhtml5/w3c/COPYING", 
         "path": "tests/extra/xhtml5/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/extra/xhtml5/w3c/bdd/images/blue-area.png", 
+        "path": "tests/extra/xhtml5/w3c/bdd/images/blue-area.png"
       }, 
       {
         "url": "tests/extra/xhtml5/w3c/body_text_00ffff-ref.html", 
@@ -37054,6 +37060,10 @@
       {
         "url": "/tests/sandbox/w3c/COPYING", 
         "path": "tests/sandbox/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/sandbox/w3c/support/sandbox_helper.js", 
+        "path": "tests/sandbox/w3c/support/sandbox_helper.js"
       }, 
       {
         "url": "/tests/screenorientation/spec.json", 
