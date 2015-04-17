@@ -476,6 +476,12 @@
         "ref_url": "/tests/colors/CSS3Colors_color_transprent_rgba_0_0_0_0-ref.html"
       }, 
       {
+        "url": "/tests/colors/csswg/t31-color-currentColor-b.htm", 
+        "path": "tests/colors/csswg/t31-color-currentColor-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t31-color-currentColor-b-ref.html"
+      }, 
+      {
         "url": "/tests/colors/csswg/t32-opacity-offscreen-multiple-boxes-1-c.htm", 
         "path": "tests/colors/csswg/t32-opacity-offscreen-multiple-boxes-1-c.htm", 
         "ref_type": "==", 
@@ -486,6 +492,54 @@
         "path": "tests/colors/csswg/t32-opacity-offscreen-multiple-boxes-2-c.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/colors/csswg/reference/t32-opacity-offscreen-multiple-boxes-2-c-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-func-int-a.htm", 
+        "path": "tests/colors/csswg/t421-rgb-func-int-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-func-no-mixed-f.htm", 
+        "path": "tests/colors/csswg/t421-rgb-func-no-mixed-f.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-no-mixed-f-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-func-pct-a.htm", 
+        "path": "tests/colors/csswg/t421-rgb-func-pct-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-func-whitespace-b.htm", 
+        "path": "tests/colors/csswg/t421-rgb-func-whitespace-b.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-whitespace-b-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-hex-parsing-f.htm", 
+        "path": "tests/colors/csswg/t421-rgb-hex-parsing-f.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-no-mixed-f-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-hex3-a.htm", 
+        "path": "tests/colors/csswg/t421-rgb-hex3-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-hex6-a.htm", 
+        "path": "tests/colors/csswg/t421-rgb-hex6-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t422-rgba-a1.0-a.htm", 
+        "path": "tests/colors/csswg/t422-rgba-a1.0-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-a1.0-a-ref.html"
       }, 
       {
         "url": "/tests/colors/csswg/t422-rgba-clamping-a0.0-b.htm", 
@@ -516,6 +570,12 @@
         "path": "tests/colors/csswg/t422-rgba-func-no-mixed-f.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-no-mixed-f-ref.html"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t422-rgba-func-pct-a.htm", 
+        "path": "tests/colors/csswg/t422-rgba-func-pct-a.htm", 
+        "ref_type": "==", 
+        "ref_url": "/tests/colors/csswg/reference/t422-rgba-func-int-a-ref.html"
       }, 
       {
         "url": "/tests/colors/csswg/t422-rgba-func-whitespace-b.htm", 
@@ -896,6 +956,12 @@
         "ref_url": "/tests/flexiblebox/csswg/order-with-row-reverse-ref.html"
       }, 
       {
+        "url": "/tests/fonts/csswg/bdd/font-matching-rule-012.xht", 
+        "path": "tests/fonts/csswg/bdd/font-matching-rule-012.xht", 
+        "ref_type": "==", 
+        "ref_url": "/tests/fonts/csswg/bdd/reference/font-matching-rule-012-ref.html"
+      }, 
+      {
         "url": "/tests/fonts/csswg/font-001.htm", 
         "path": "tests/fonts/csswg/font-001.htm", 
         "ref_type": "==", 
@@ -1056,12 +1122,6 @@
         "path": "tests/fonts/csswg/font-matching-rule-009.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/fonts/csswg/reference/font-weight-normal-ref.html"
-      }, 
-      {
-        "url": "/tests/fonts/csswg/font-matching-rule-012.xht", 
-        "path": "tests/fonts/csswg/font-matching-rule-012.xht", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/reference/font-matching-rule-012-ref.html"
       }, 
       {
         "url": "/tests/fonts/csswg/font-size-001.htm", 
@@ -31564,8 +31624,8 @@
         "path": "tests/colors/CSS3Colors_color_pseudo-classes-manual.html"
       }, 
       {
-        "url": "/tests/colors/csswg/t425-hsla-onscreen-b-manual.htm", 
-        "path": "tests/colors/csswg/t425-hsla-onscreen-b-manual.htm"
+        "url": "/tests/colors/csswg/bdd/t425-hsla-onscreen-b-manual.htm", 
+        "path": "tests/colors/csswg/bdd/t425-hsla-onscreen-b-manual.htm"
       }, 
       {
         "url": "/tests/csp/csp_base-uri_asterisk-manual.py", 
@@ -32236,120 +32296,120 @@
         "path": "tests/fonts/csswg/bdd/font-044-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-002-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-002-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-002-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-002-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-003-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-003-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-003-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-004-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-004-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-004-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-004-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-005-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-005-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-005-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-005-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-006-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-006-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-006-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-006-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-invalid-characters-001-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-invalid-characters-001-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-invalid-characters-001-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-invalid-characters-001-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-family-rule-005-manual.htm", 
-        "path": "tests/fonts/csswg/font-family-rule-005-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-family-rule-005-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-family-rule-005-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-matching-rule-001-manual.htm", 
-        "path": "tests/fonts/csswg/font-matching-rule-001-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-matching-rule-001-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-matching-rule-001-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-matching-rule-006-manual.htm", 
-        "path": "tests/fonts/csswg/font-matching-rule-006-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-matching-rule-006-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-matching-rule-006-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-size-003-manual.htm", 
-        "path": "tests/fonts/csswg/font-size-003-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-size-003-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-size-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-size-091-manual.htm", 
-        "path": "tests/fonts/csswg/font-size-091-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-size-091-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-size-091-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-size-116-manual.xht", 
-        "path": "tests/fonts/csswg/font-size-116-manual.xht"
+        "url": "/tests/fonts/csswg/bdd/font-size-116-manual.xht", 
+        "path": "tests/fonts/csswg/bdd/font-size-116-manual.xht"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-size-rule-003-manual.htm", 
-        "path": "tests/fonts/csswg/font-size-rule-003-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-size-rule-003-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-size-rule-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-size-rule-004-manual.xht", 
-        "path": "tests/fonts/csswg/font-size-rule-004-manual.xht"
+        "url": "/tests/fonts/csswg/bdd/font-size-rule-004-manual.xht", 
+        "path": "tests/fonts/csswg/bdd/font-size-rule-004-manual.xht"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-style-001-manual.htm", 
-        "path": "tests/fonts/csswg/font-style-001-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-style-001-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-style-001-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-style-002-manual.htm", 
-        "path": "tests/fonts/csswg/font-style-002-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-style-002-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-style-002-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-style-003-manual.htm", 
-        "path": "tests/fonts/csswg/font-style-003-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-style-003-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-style-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-style-004-manual.htm", 
-        "path": "tests/fonts/csswg/font-style-004-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-style-004-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-style-004-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-systemfont-rule-004-manual.htm", 
-        "path": "tests/fonts/csswg/font-systemfont-rule-004-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-systemfont-rule-004-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-systemfont-rule-004-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-variant-002-manual.htm", 
-        "path": "tests/fonts/csswg/font-variant-002-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-variant-002-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-variant-002-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-variant-003-manual.htm", 
-        "path": "tests/fonts/csswg/font-variant-003-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-variant-003-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-variant-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-008-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-008-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-008-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-008-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-010-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-010-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-010-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-010-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-011-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-011-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-011-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-011-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-012-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-012-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-012-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-012-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-013-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-013-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-013-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-013-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-014-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-014-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-014-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-014-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-015-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-015-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-015-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-015-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-weight-rule-002-manual.htm", 
-        "path": "tests/fonts/csswg/font-weight-rule-002-manual.htm"
+        "url": "/tests/fonts/csswg/bdd/font-weight-rule-002-manual.htm", 
+        "path": "tests/fonts/csswg/bdd/font-weight-rule-002-manual.htm"
       }, 
       {
         "url": "/tests/geoallow/w3c/t-manual.html", 
@@ -32620,16 +32680,16 @@
         "path": "tests/simd/int32x4-manual.html"
       }, 
       {
-        "url": "/tests/svg/svg_label_inline-manual.html", 
-        "path": "tests/svg/svg_label_inline-manual.html"
+        "url": "/tests/svg/bdd/svg_label_inline-manual.html", 
+        "path": "tests/svg/bdd/svg_label_inline-manual.html"
       }, 
       {
-        "url": "/tests/svg/w3c/foreign_content_003-manual.html", 
-        "path": "tests/svg/w3c/foreign_content_003-manual.html"
+        "url": "/tests/svg/w3c/bdd/foreign_content_003-manual.html", 
+        "path": "tests/svg/w3c/bdd/foreign_content_003-manual.html"
       }, 
       {
-        "url": "/tests/svg/w3c/foreign_content_004-manual.html", 
-        "path": "tests/svg/w3c/foreign_content_004-manual.html"
+        "url": "/tests/svg/w3c/bdd/foreign_content_004-manual.html", 
+        "path": "tests/svg/w3c/bdd/foreign_content_004-manual.html"
       }, 
       {
         "url": "/tests/touchevent/TouchEvent_altKey_exist-manual.html", 
@@ -35774,12 +35834,20 @@
         "path": "tests/colors/csswg/COPYING"
       }, 
       {
+        "url": "tests/colors/csswg/reference/t31-color-currentColor-b-ref.html", 
+        "path": "tests/colors/csswg/reference/t31-color-currentColor-b-ref.html"
+      }, 
+      {
         "url": "tests/colors/csswg/reference/t32-opacity-offscreen-multiple-boxes-1-c-ref.html", 
         "path": "tests/colors/csswg/reference/t32-opacity-offscreen-multiple-boxes-1-c-ref.html"
       }, 
       {
         "url": "tests/colors/csswg/reference/t32-opacity-offscreen-multiple-boxes-2-c-ref.html", 
         "path": "tests/colors/csswg/reference/t32-opacity-offscreen-multiple-boxes-2-c-ref.html"
+      }, 
+      {
+        "url": "tests/colors/csswg/reference/t422-rgba-a1.0-a-ref.html", 
+        "path": "tests/colors/csswg/reference/t422-rgba-a1.0-a-ref.html"
       }, 
       {
         "url": "tests/colors/csswg/reference/t422-rgba-clamping-a0.0-b-ref.html", 
