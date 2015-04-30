@@ -956,12 +956,6 @@
         "ref_url": "/tests/flexiblebox/csswg/order-with-row-reverse-ref.html"
       }, 
       {
-        "url": "/tests/fonts/csswg/bdd/font-matching-rule-012.xht", 
-        "path": "tests/fonts/csswg/bdd/font-matching-rule-012.xht", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/bdd/reference/font-matching-rule-012-ref.html"
-      }, 
-      {
         "url": "/tests/fonts/csswg/font-001.htm", 
         "path": "tests/fonts/csswg/font-001.htm", 
         "ref_type": "==", 
@@ -1122,6 +1116,12 @@
         "path": "tests/fonts/csswg/font-matching-rule-009.htm", 
         "ref_type": "==", 
         "ref_url": "/tests/fonts/csswg/reference/font-weight-normal-ref.html"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-matching-rule-012.xht", 
+        "path": "tests/fonts/csswg/font-matching-rule-012.xht", 
+        "ref_type": "==", 
+        "ref_url": "/tests/fonts/csswg/reference/font-matching-rule-012-ref.html"
       }, 
       {
         "url": "/tests/fonts/csswg/font-size-001.htm", 
@@ -2086,10 +2086,6 @@
         "path": "tests/audio/audio_MediaError_code_type.html"
       }, 
       {
-        "url": "/tests/audio/audio_TimeRanges_end.html", 
-        "path": "tests/audio/audio_TimeRanges_end.html"
-      }, 
-      {
         "url": "/tests/audio/audio_TimeRanges_end_INDEX_SIZE_ERR.html", 
         "path": "tests/audio/audio_TimeRanges_end_INDEX_SIZE_ERR.html"
       }, 
@@ -2108,10 +2104,6 @@
       {
         "url": "/tests/audio/audio_TimeRanges_length_type.html", 
         "path": "tests/audio/audio_TimeRanges_length_type.html"
-      }, 
-      {
-        "url": "/tests/audio/audio_TimeRanges_start.html", 
-        "path": "tests/audio/audio_TimeRanges_start.html"
       }, 
       {
         "url": "/tests/audio/audio_TimeRanges_start_INDEX_SIZE_ERR.html", 
@@ -2498,10 +2490,6 @@
         "path": "tests/audio/audio_play_ogg_vorbis.html"
       }, 
       {
-        "url": "/tests/audio/audio_play_wav_pcm.html", 
-        "path": "tests/audio/audio_play_wav_pcm.html"
-      }, 
-      {
         "url": "/tests/audio/audio_play_webm_vorbis.html", 
         "path": "tests/audio/audio_play_webm_vorbis.html"
       }, 
@@ -2542,20 +2530,12 @@
         "path": "tests/audio/audio_resume_ogg_vorbis.html"
       }, 
       {
-        "url": "/tests/audio/audio_resume_wav_pcm.html", 
-        "path": "tests/audio/audio_resume_wav_pcm.html"
-      }, 
-      {
         "url": "/tests/audio/audio_resume_webm_vorbis.html", 
         "path": "tests/audio/audio_resume_webm_vorbis.html"
       }, 
       {
         "url": "/tests/audio/audio_seek_ogg_vorbis.html", 
         "path": "tests/audio/audio_seek_ogg_vorbis.html"
-      }, 
-      {
-        "url": "/tests/audio/audio_seek_wav_pcm.html", 
-        "path": "tests/audio/audio_seek_wav_pcm.html"
       }, 
       {
         "url": "/tests/audio/audio_seek_webm_vorbis.html", 
@@ -5294,80 +5274,12 @@
         "path": "tests/backgrounds/CSS3BG_box-shadow_50px_50px_inset_black.html"
       }, 
       {
-        "url": "/tests/batterystatus/BatteryManager_charging.html", 
-        "path": "tests/batterystatus/BatteryManager_charging.html"
+        "url": "/tests/batterystatus/w3c/battery-interface.html", 
+        "path": "tests/batterystatus/w3c/battery-interface.html"
       }, 
       {
-        "url": "/tests/batterystatus/BatteryManager_chargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_chargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_charging_charging.html", 
-        "path": "tests/batterystatus/BatteryManager_charging_charging.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_charging_dischargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_charging_dischargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_charging_level.html", 
-        "path": "tests/batterystatus/BatteryManager_charging_level.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_dischargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_dischargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_discharging_charging.html", 
-        "path": "tests/batterystatus/BatteryManager_discharging_charging.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_discharging_chargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_discharging_chargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_discharging_level.html", 
-        "path": "tests/batterystatus/BatteryManager_discharging_level.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_full_charging.html", 
-        "path": "tests/batterystatus/BatteryManager_full_charging.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_full_chargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_full_chargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_full_dischargingTime.html", 
-        "path": "tests/batterystatus/BatteryManager_full_dischargingTime.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_full_level.html", 
-        "path": "tests/batterystatus/BatteryManager_full_level.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_level.html", 
-        "path": "tests/batterystatus/BatteryManager_level.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_onchargingchange.html", 
-        "path": "tests/batterystatus/BatteryManager_onchargingchange.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_onchargingtimechange.html", 
-        "path": "tests/batterystatus/BatteryManager_onchargingtimechange.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_ondischargingtimechange.html", 
-        "path": "tests/batterystatus/BatteryManager_ondischargingtimechange.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/BatteryManager_onlevelchange.html", 
-        "path": "tests/batterystatus/BatteryManager_onlevelchange.html"
-      }, 
-      {
-        "url": "/tests/batterystatus/Navigator_getBattery.html", 
-        "path": "tests/batterystatus/Navigator_getBattery.html"
+        "url": "/tests/batterystatus/w3c/battery-promise.html", 
+        "path": "tests/batterystatus/w3c/battery-promise.html"
       }, 
       {
         "url": "/tests/browserstate/navigator_onLine_exists.html", 
@@ -19942,10 +19854,6 @@
         "path": "tests/video/video_MediaError_code_type.html"
       }, 
       {
-        "url": "/tests/video/video_TimeRanges_end.html", 
-        "path": "tests/video/video_TimeRanges_end.html"
-      }, 
-      {
         "url": "/tests/video/video_TimeRanges_end_INDEX_SIZE_ERR.html", 
         "path": "tests/video/video_TimeRanges_end_INDEX_SIZE_ERR.html"
       }, 
@@ -19964,10 +19872,6 @@
       {
         "url": "/tests/video/video_TimeRanges_length_type.html", 
         "path": "tests/video/video_TimeRanges_length_type.html"
-      }, 
-      {
-        "url": "/tests/video/video_TimeRanges_start.html", 
-        "path": "tests/video/video_TimeRanges_start.html"
       }, 
       {
         "url": "/tests/video/video_TimeRanges_start_INDEX_SIZE_ERR.html", 
@@ -29891,10 +29795,6 @@
         "path": "tests/webstorage/StorageEvent_key_exist.html"
       }, 
       {
-        "url": "/tests/webstorage/StorageEvent_key_initial_value.html", 
-        "path": "tests/webstorage/StorageEvent_key_initial_value.html"
-      }, 
-      {
         "url": "/tests/webstorage/StorageEvent_key_normal_value.html", 
         "path": "tests/webstorage/StorageEvent_key_normal_value.html"
       }, 
@@ -30281,10 +30181,6 @@
       {
         "url": "/tests/webstorage/w3c/storage_local_removeitem.html", 
         "path": "tests/webstorage/w3c/storage_local_removeitem.html"
-      }, 
-      {
-        "url": "/tests/webstorage/w3c/storage_local_security.html", 
-        "path": "tests/webstorage/w3c/storage_local_security.html"
       }, 
       {
         "url": "/tests/webstorage/w3c/storage_local_setitem.html", 
@@ -31520,6 +31416,14 @@
         "path": "tests/backgrounds/bdd/CSS3BG_border-image-width_left_value_miss-manual.html"
       }, 
       {
+        "url": "/tests/backgrounds/csswg/background-size-024-manual.html", 
+        "path": "tests/backgrounds/csswg/background-size-024-manual.html"
+      }, 
+      {
+        "url": "/tests/backgrounds/csswg/background-size-033-manual.html", 
+        "path": "tests/backgrounds/csswg/background-size-033-manual.html"
+      }, 
+      {
         "url": "/tests/backgrounds/csswg/bdd/background-002-manual.htm", 
         "path": "tests/backgrounds/csswg/bdd/background-002-manual.htm"
       }, 
@@ -31552,16 +31456,32 @@
         "path": "tests/backgrounds/csswg/bdd/background-intrinsic-001-manual.htm"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/bdd/background-size-024-manual.html", 
-        "path": "tests/backgrounds/csswg/bdd/background-size-024-manual.html"
-      }, 
-      {
         "url": "/tests/backgrounds/csswg/bdd/background-size-032-manual.html", 
         "path": "tests/backgrounds/csswg/bdd/background-size-032-manual.html"
       }, 
       {
-        "url": "/tests/backgrounds/csswg/bdd/background-size-033-manual.html", 
-        "path": "tests/backgrounds/csswg/bdd/background-size-033-manual.html"
+        "url": "/tests/batterystatus/w3c/battery-charging-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-charging-manual.html"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-created-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-created-manual.html"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-discharging-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-discharging-manual.html"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-full-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-full-manual.html"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-plugging-in-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-plugging-in-manual.html"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-unplugging-manual.html", 
+        "path": "tests/batterystatus/w3c/battery-unplugging-manual.html"
       }, 
       {
         "url": "/tests/canvas/w3c/2d.coordinatespace-manual.html", 
@@ -32292,10 +32212,6 @@
         "path": "tests/fonts/csswg/bdd/font-043-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/bdd/font-044-manual.htm", 
-        "path": "tests/fonts/csswg/bdd/font-044-manual.htm"
-      }, 
-      {
         "url": "/tests/fonts/csswg/bdd/font-family-002-manual.htm", 
         "path": "tests/fonts/csswg/bdd/font-family-002-manual.htm"
       }, 
@@ -32336,20 +32252,8 @@
         "path": "tests/fonts/csswg/bdd/font-size-003-manual.htm"
       }, 
       {
-        "url": "/tests/fonts/csswg/bdd/font-size-091-manual.htm", 
-        "path": "tests/fonts/csswg/bdd/font-size-091-manual.htm"
-      }, 
-      {
-        "url": "/tests/fonts/csswg/bdd/font-size-116-manual.xht", 
-        "path": "tests/fonts/csswg/bdd/font-size-116-manual.xht"
-      }, 
-      {
         "url": "/tests/fonts/csswg/bdd/font-size-rule-003-manual.htm", 
         "path": "tests/fonts/csswg/bdd/font-size-rule-003-manual.htm"
-      }, 
-      {
-        "url": "/tests/fonts/csswg/bdd/font-size-rule-004-manual.xht", 
-        "path": "tests/fonts/csswg/bdd/font-size-rule-004-manual.xht"
       }, 
       {
         "url": "/tests/fonts/csswg/bdd/font-style-001-manual.htm", 
@@ -32410,6 +32314,22 @@
       {
         "url": "/tests/fonts/csswg/bdd/font-weight-rule-002-manual.htm", 
         "path": "tests/fonts/csswg/bdd/font-weight-rule-002-manual.htm"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-044-manual.htm", 
+        "path": "tests/fonts/csswg/font-044-manual.htm"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-size-091-manual.htm", 
+        "path": "tests/fonts/csswg/font-size-091-manual.htm"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-size-116-manual.xht", 
+        "path": "tests/fonts/csswg/font-size-116-manual.xht"
+      }, 
+      {
+        "url": "/tests/fonts/csswg/font-size-rule-004-manual.xht", 
+        "path": "tests/fonts/csswg/font-size-rule-004-manual.xht"
       }, 
       {
         "url": "/tests/geoallow/w3c/t-manual.html", 
@@ -32680,8 +32600,8 @@
         "path": "tests/simd/int32x4-manual.html"
       }, 
       {
-        "url": "/tests/svg/bdd/svg_label_inline-manual.html", 
-        "path": "tests/svg/bdd/svg_label_inline-manual.html"
+        "url": "/tests/svg/svg_label_inline-manual.html", 
+        "path": "tests/svg/svg_label_inline-manual.html"
       }, 
       {
         "url": "/tests/svg/w3c/bdd/foreign_content_003-manual.html", 
@@ -32766,6 +32686,18 @@
       {
         "url": "/tests/vibration/w3c/simple-scalar-manual.html", 
         "path": "tests/vibration/w3c/simple-scalar-manual.html"
+      }, 
+      {
+        "url": "/tests/video/video_playback_h263-manual.html", 
+        "path": "tests/video/video_playback_h263-manual.html"
+      }, 
+      {
+        "url": "/tests/video/video_playback_h264-manual.html", 
+        "path": "tests/video/video_playback_h264-manual.html"
+      }, 
+      {
+        "url": "/tests/video/video_playback_mpeg4-manual.html", 
+        "path": "tests/video/video_playback_mpeg4-manual.html"
       }, 
       {
         "url": "/tests/video/w3c/video_000-manual.htm", 
@@ -34976,6 +34908,18 @@
       {
         "url": "/tests/batterystatus/spec.json", 
         "path": "tests/batterystatus/spec.json"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/COPYING", 
+        "path": "tests/batterystatus/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/battery-interface.js", 
+        "path": "tests/batterystatus/w3c/battery-interface.js"
+      }, 
+      {
+        "url": "/tests/batterystatus/w3c/prime.js", 
+        "path": "tests/batterystatus/w3c/prime.js"
       }, 
       {
         "url": "/tests/browserstate/spec.json", 
@@ -37474,12 +37418,24 @@
         "path": "tests/video/media/3GP(v5)_MPEG4_QCIF_15FPS_177Kbps_AMR-NB_Mono_10.8Kbps_60sec(1.3Mb).3GP"
       }, 
       {
+        "url": "/tests/video/media/3GP_h263_CIF_30FPS_507Kbps_HE-AAC_Stereo_64Kbps_60sec(4.1Mb)_BBB.3gp", 
+        "path": "tests/video/media/3GP_h263_CIF_30FPS_507Kbps_HE-AAC_Stereo_64Kbps_60sec(4.1Mb)_BBB.3gp"
+      }, 
+      {
         "url": "/tests/video/media/3GP_h263_CIF_30FPS_517Kbps_eAAC+_44.1KHz_64Kbps_10sec(0.7Mb)_BBB.3GP", 
         "path": "tests/video/media/3GP_h263_CIF_30FPS_517Kbps_eAAC+_44.1KHz_64Kbps_10sec(0.7Mb)_BBB.3GP"
       }, 
       {
         "url": "/tests/video/media/COPYING", 
         "path": "tests/video/media/COPYING"
+      }, 
+      {
+        "url": "/tests/video/media/MP4_MPEG4_CIF_15FPS_387Kbps_MP3_44.1KHz_64Kbps_60sec(3Mb)_BBB(hinted).mp4", 
+        "path": "tests/video/media/MP4_MPEG4_CIF_15FPS_387Kbps_MP3_44.1KHz_64Kbps_60sec(3Mb)_BBB(hinted).mp4"
+      }, 
+      {
+        "url": "/tests/video/media/MP4_h264_CIF_15FPS_387Kbps_MP3_44.1KHz_64Kbps_60sec(3.4Mb)_BBB(hinted).mp4", 
+        "path": "tests/video/media/MP4_h264_CIF_15FPS_387Kbps_MP3_44.1KHz_64Kbps_60sec(3.4Mb)_BBB(hinted).mp4"
       }, 
       {
         "url": "/tests/video/media/movie_300.mp4", 
