@@ -1502,140 +1502,13 @@
         "path": "tests/3dtransforms/CSS33Dtransform_transform.html"
       }, 
       {
-        "url": "/tests/animations/CSS3Animations_animation-delay_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation-delay_exists.html"
+        "url": "/tests/animations/csswg/animationevent-interface.html", 
+        "path": "tests/animations/csswg/animationevent-interface.html"
       }, 
       {
-        "url": "/tests/animations/CSS3Animations_animation-delay_initial_value.html", 
-        "path": "tests/animations/CSS3Animations_animation-delay_initial_value.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-direction_alternate-reverse.html", 
-        "path": "tests/animations/CSS3Animations_animation-direction_alternate-reverse.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-direction_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation-direction_exists.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-direction_reverse.html", 
-        "path": "tests/animations/CSS3Animations_animation-direction_reverse.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-duration_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation-duration_exists.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-duration_initial_value.html", 
-        "path": "tests/animations/CSS3Animations_animation-duration_initial_value.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-fill-mode_backwards.html", 
-        "path": "tests/animations/CSS3Animations_animation-fill-mode_backwards.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-fill-mode_both.html", 
-        "path": "tests/animations/CSS3Animations_animation-fill-mode_both.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-fill-mode_exist.html", 
-        "path": "tests/animations/CSS3Animations_animation-fill-mode_exist.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-fill-mode_forwards.html", 
-        "path": "tests/animations/CSS3Animations_animation-fill-mode_forwards.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-fill-mode_initial_value.html", 
-        "path": "tests/animations/CSS3Animations_animation-fill-mode_initial_value.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-iteration-count_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation-iteration-count_exists.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-play-state_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation-play-state_exists.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-timing-function_step-end.html", 
-        "path": "tests/animations/CSS3Animations_animation-timing-function_step-end.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-timing-function_step-start.html", 
-        "path": "tests/animations/CSS3Animations_animation-timing-function_step-start.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-timing-function_steps_end.html", 
-        "path": "tests/animations/CSS3Animations_animation-timing-function_steps_end.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation-timing-function_steps_number.html", 
-        "path": "tests/animations/CSS3Animations_animation-timing-function_steps_number.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation_exists.html", 
-        "path": "tests/animations/CSS3Animations_animation_exists.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animation_shorthand.html", 
-        "path": "tests/animations/CSS3Animations_animation_shorthand.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animationend.html", 
-        "path": "tests/animations/CSS3Animations_animationend.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animationiteration.html", 
-        "path": "tests/animations/CSS3Animations_animationiteration.html"
-      }, 
-      {
-        "url": "/tests/animations/CSS3Animations_animationstart.html", 
-        "path": "tests/animations/CSS3Animations_animationstart.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/animation-timing-function_steps_two_parameters_start.html", 
-        "path": "tests/animations/csswg/animation-timing-function_steps_two_parameters_start.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframerule_keytext.html", 
-        "path": "tests/animations/csswg/csskeyframerule_keytext.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframerule_style.html", 
-        "path": "tests/animations/csswg/csskeyframerule_style.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframesrule_appendrule.html", 
-        "path": "tests/animations/csswg/csskeyframesrule_appendrule.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframesrule_cssrules.html", 
-        "path": "tests/animations/csswg/csskeyframesrule_cssrules.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframesrule_deleterule.html", 
-        "path": "tests/animations/csswg/csskeyframesrule_deleterule.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframesrule_findrule.html", 
-        "path": "tests/animations/csswg/csskeyframesrule_findrule.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/csskeyframesrule_name.html", 
-        "path": "tests/animations/csswg/csskeyframesrule_name.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/cssrule_const_keyframe.html", 
-        "path": "tests/animations/csswg/cssrule_const_keyframe.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/cssrule_const_keyframes.html", 
-        "path": "tests/animations/csswg/cssrule_const_keyframes.html"
-      }, 
-      {
-        "url": "/tests/animations/csswg/pseudoElement-001.html", 
-        "path": "tests/animations/csswg/pseudoElement-001.html"
+        "url": "/tests/animations/csswg/animationevent-types.html", 
+        "path": "tests/animations/csswg/animationevent-types.html", 
+        "timeout": "long"
       }, 
       {
         "url": "/tests/animationtiming/AnimationTiming_Callback_FrameRequestCallback_ignoreOptionalArgs.html", 
@@ -16910,24 +16783,26 @@
         "path": "tests/sandbox/w3c/sandbox_032.htm"
       }, 
       {
-        "url": "/tests/screenorientation/ScreenOrientation_lock_orientation_invalid.html", 
-        "path": "tests/screenorientation/ScreenOrientation_lock_orientation_invalid.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/ScreenOrientation_lock_orientation_null.html", 
-        "path": "tests/screenorientation/ScreenOrientation_lock_orientation_null.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/ScreenOrientation_onchange_basic.html", 
-        "path": "tests/screenorientation/ScreenOrientation_onchange_basic.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/Screen_attributes_tests.html", 
-        "path": "tests/screenorientation/Screen_attributes_tests.html"
+        "url": "/tests/screenorientation/blink/lockOrientation-bad-argument.html", 
+        "path": "tests/screenorientation/blink/lockOrientation-bad-argument.html"
       }, 
       {
         "url": "/tests/screenorientation/blink/lockOrientation-basic.html", 
-        "path": "tests/screenorientation/blink/lockOrientation-basic.html"
+        "path": "tests/screenorientation/blink/lockOrientation-basic.html", 
+        "timeout": "long"
+      }, 
+      {
+        "url": "/tests/screenorientation/blink/orientation-reading.html", 
+        "path": "tests/screenorientation/blink/orientation-reading.html"
+      }, 
+      {
+        "url": "/tests/screenorientation/blink/orientationchange-event.html", 
+        "path": "tests/screenorientation/blink/orientationchange-event.html", 
+        "timeout": "long"
+      }, 
+      {
+        "url": "/tests/screenorientation/blink/screenorientation-api.html", 
+        "path": "tests/screenorientation/blink/screenorientation-api.html"
       }, 
       {
         "url": "/tests/selectorslevel1/selectors1_document_queryselector_exists.html", 
@@ -31336,6 +31211,270 @@
     ], 
     "manual": [
       {
+        "url": "/tests/animations/csswg/animation-delay-001-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-002-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-003-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-004-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-005-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-006-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-delay-007-manual.html", 
+        "path": "tests/animations/csswg/animation-delay-007-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-001-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-002-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-003-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-004-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-005-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-direction-006-manual.html", 
+        "path": "tests/animations/csswg/animation-direction-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-display-manual.html", 
+        "path": "tests/animations/csswg/animation-display-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-001-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-002-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-003-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-004-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-005-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-006-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-007-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-007-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-duration-008-manual.html", 
+        "path": "tests/animations/csswg/animation-duration-008-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-001-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-002-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-003-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-004-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-005-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-fill-mode-006-manual.html", 
+        "path": "tests/animations/csswg/animation-fill-mode-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-001-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-002-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-003-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-004-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-005-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-006-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-007-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-007-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-count-008-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-count-008-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-iteration-event-manual.html", 
+        "path": "tests/animations/csswg/animation-iteration-event-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-keyframes-001-manual.html", 
+        "path": "tests/animations/csswg/animation-keyframes-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-keyframes-002-manual.html", 
+        "path": "tests/animations/csswg/animation-keyframes-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-keyframes-003-manual.html", 
+        "path": "tests/animations/csswg/animation-keyframes-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-001-manual.html", 
+        "path": "tests/animations/csswg/animation-name-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-002-manual.html", 
+        "path": "tests/animations/csswg/animation-name-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-003-manual.html", 
+        "path": "tests/animations/csswg/animation-name-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-004-manual.html", 
+        "path": "tests/animations/csswg/animation-name-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-005-manual.html", 
+        "path": "tests/animations/csswg/animation-name-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-name-006-manual.html", 
+        "path": "tests/animations/csswg/animation-name-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-play-state-001-manual.html", 
+        "path": "tests/animations/csswg/animation-play-state-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-play-state-002-manual.html", 
+        "path": "tests/animations/csswg/animation-play-state-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-play-state-003-manual.html", 
+        "path": "tests/animations/csswg/animation-play-state-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-play-state-004-manual.html", 
+        "path": "tests/animations/csswg/animation-play-state-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-shorthand-001-manual.html", 
+        "path": "tests/animations/csswg/animation-shorthand-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-shorthand-002-manual.html", 
+        "path": "tests/animations/csswg/animation-shorthand-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-shorthand-003-manual.html", 
+        "path": "tests/animations/csswg/animation-shorthand-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-001-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-001-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-002-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-002-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-003-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-003-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-004-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-004-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-005-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-005-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-006-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-006-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-007-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-007-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-008-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-008-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-009-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-009-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-010-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-010-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-011-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-011-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animation-timing-function-012-manual.html", 
+        "path": "tests/animations/csswg/animation-timing-function-012-manual.html"
+      }, 
+      {
+        "url": "/tests/animations/csswg/animationstart-and-animationend-events-manual.html", 
+        "path": "tests/animations/csswg/animationstart-and-animationend-events-manual.html"
+      }, 
+      {
         "url": "/tests/animationtiming/AnimationTiming_WindowAnimationTiming_cancelAnimationFrame_boolean-manual.html", 
         "path": "tests/animationtiming/AnimationTiming_WindowAnimationTiming_cancelAnimationFrame_boolean-manual.html"
       }, 
@@ -34642,12 +34781,12 @@
         "path": "tests/animations/csswg/COPYING"
       }, 
       {
-        "url": "/tests/animations/spec.json", 
-        "path": "tests/animations/spec.json"
+        "url": "/tests/animations/csswg/animationevent-interface.js", 
+        "path": "tests/animations/csswg/animationevent-interface.js"
       }, 
       {
-        "url": "/tests/animations/support/support.js", 
-        "path": "tests/animations/support/support.js"
+        "url": "/tests/animations/spec.json", 
+        "path": "tests/animations/spec.json"
       }, 
       {
         "url": "/tests/animationtiming/spec.json", 
@@ -37400,6 +37539,10 @@
       {
         "url": "/tests/usertiming/w3c/resources/webperftestharnessextension.js", 
         "path": "tests/usertiming/w3c/resources/webperftestharnessextension.js"
+      }, 
+      {
+        "url": "/tests/version.json", 
+        "path": "tests/version.json"
       }, 
       {
         "url": "/tests/vibration/spec.json", 
