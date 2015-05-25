@@ -2035,10 +2035,6 @@
         "path": "tests/audio/audio_canPlayType_mp3.html"
       }, 
       {
-        "url": "/tests/audio/audio_canPlayType_no_argument.html", 
-        "path": "tests/audio/audio_canPlayType_no_argument.html"
-      }, 
-      {
         "url": "/tests/audio/audio_canPlayType_null.html", 
         "path": "tests/audio/audio_canPlayType_null.html"
       }, 
@@ -16499,8 +16495,8 @@
         "path": "tests/resourcetiming/w3c/submission/test_resource_script_types.html"
       }, 
       {
-        "url": "/tests/resourcetiming/w3c/submission/test_resource_timing.html", 
-        "path": "tests/resourcetiming/w3c/submission/test_resource_timing.html"
+        "url": "/tests/resourcetiming/w3c/test_resource_timing.html", 
+        "path": "tests/resourcetiming/w3c/test_resource_timing.html"
       }, 
       {
         "url": "/tests/sandbox/iframe_contentDocument_attribute_exsits.html", 
@@ -19237,10 +19233,6 @@
         "path": "tests/typedarrays/w3c/submission/Uint8ClampedArray_constructor.html"
       }, 
       {
-        "url": "/tests/typedarrays/w3c/submission/Uint8ClampedArray_idlharness.html", 
-        "path": "tests/typedarrays/w3c/submission/Uint8ClampedArray_idlharness.html"
-      }, 
-      {
         "url": "/tests/typedarrays/w3c/submission/Uint8ClampedArray_length.html", 
         "path": "tests/typedarrays/w3c/submission/Uint8ClampedArray_length.html"
       }, 
@@ -19807,10 +19799,6 @@
       {
         "url": "/tests/video/video_canPlayType_method_type.html", 
         "path": "tests/video/video_canPlayType_method_type.html"
-      }, 
-      {
-        "url": "/tests/video/video_canPlayType_no_argument.html", 
-        "path": "tests/video/video_canPlayType_no_argument.html"
       }, 
       {
         "url": "/tests/video/video_canPlayType_null.html", 
@@ -31603,10 +31591,6 @@
         "path": "tests/batterystatus/w3c/battery-charging-manual.html"
       }, 
       {
-        "url": "/tests/batterystatus/w3c/battery-created-manual.html", 
-        "path": "tests/batterystatus/w3c/battery-created-manual.html"
-      }, 
-      {
         "url": "/tests/batterystatus/w3c/battery-discharging-manual.html", 
         "path": "tests/batterystatus/w3c/battery-discharging-manual.html"
       }, 
@@ -37149,8 +37133,28 @@
         "path": "tests/resourcetiming/spec.json"
       }, 
       {
-        "url": "/tests/resourcetiming/w3c/submission/COPYING", 
-        "path": "tests/resourcetiming/w3c/submission/COPYING"
+        "url": "/tests/resourcetiming/w3c/COPYING", 
+        "path": "tests/resourcetiming/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/resources/resource_timing_test0.css", 
+        "path": "tests/resourcetiming/w3c/resources/resource_timing_test0.css"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/resources/resource_timing_test0.js", 
+        "path": "tests/resourcetiming/w3c/resources/resource_timing_test0.js"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/resources/resource_timing_test0.png", 
+        "path": "tests/resourcetiming/w3c/resources/resource_timing_test0.png"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/resources/resource_timing_test0.xml", 
+        "path": "tests/resourcetiming/w3c/resources/resource_timing_test0.xml"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/resources/webperftestharness.js", 
+        "path": "tests/resourcetiming/w3c/resources/webperftestharness.js"
       }, 
       {
         "url": "/tests/resourcetiming/w3c/submission/common/redirect.py", 
@@ -37181,28 +37185,12 @@
         "path": "tests/resourcetiming/w3c/submission/resources/nested.css"
       }, 
       {
-        "url": "/tests/resourcetiming/w3c/submission/resources/resource_timing_test0.css", 
-        "path": "tests/resourcetiming/w3c/submission/resources/resource_timing_test0.css"
-      }, 
-      {
-        "url": "/tests/resourcetiming/w3c/submission/resources/resource_timing_test0.js", 
-        "path": "tests/resourcetiming/w3c/submission/resources/resource_timing_test0.js"
-      }, 
-      {
-        "url": "/tests/resourcetiming/w3c/submission/resources/resource_timing_test0.png", 
-        "path": "tests/resourcetiming/w3c/submission/resources/resource_timing_test0.png"
-      }, 
-      {
-        "url": "/tests/resourcetiming/w3c/submission/resources/resource_timing_test0.xml", 
-        "path": "tests/resourcetiming/w3c/submission/resources/resource_timing_test0.xml"
-      }, 
-      {
-        "url": "/tests/resourcetiming/w3c/submission/resources/webperftestharness.js", 
-        "path": "tests/resourcetiming/w3c/submission/resources/webperftestharness.js"
-      }, 
-      {
         "url": "/tests/resourcetiming/w3c/submission/resources/webperftestharnessextension.js", 
         "path": "tests/resourcetiming/w3c/submission/resources/webperftestharnessextension.js"
+      }, 
+      {
+        "url": "/tests/resourcetiming/w3c/test_resource_timing.js", 
+        "path": "tests/resourcetiming/w3c/test_resource_timing.js"
       }, 
       {
         "url": "/tests/sandbox/spec.json", 
@@ -37691,6 +37679,226 @@
       {
         "url": "/tests/webcl/khronos/resources/js-test-style.css", 
         "path": "tests/webcl/khronos/resources/js-test-style.css"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/basic_image_buffer_sampler.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/basic_image_buffer_sampler.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/copy_attributes.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/copy_attributes.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/double.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/double.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/doubleVector.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/doubleVector.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/empty_kernel.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/empty_kernel.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/getArg.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/getArg.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/half.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/half.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/image1d_array_type.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/image1d_array_type.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/image1d_buffer_type.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/image1d_buffer_type.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/image1d_type.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/image1d_type.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/image2d_array_type.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/image2d_array_type.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/kernel_with_struct_argument.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/kernel_with_struct_argument.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/memoryCheckChar.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/memoryCheckChar.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/memoryCheckInt.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/memoryCheckInt.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/memoryCheckLong.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/memoryCheckLong.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/memoryCheckShort.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/memoryCheckShort.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/nbody_simulation.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/nbody_simulation.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/nbody_simulation_bad.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/nbody_simulation_bad.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/options_test_kernel.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/options_test_kernel.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/sample_copy_kernel.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/sample_copy_kernel.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/sample_kernel_bad_name.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/sample_kernel_bad_name.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/sample_kernel_code_bad.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/sample_kernel_code_bad.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/sample_single_kernel.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/sample_single_kernel.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/sample_two_kernels_in_one.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/sample_two_kernels_in_one.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_Vector16.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_Vector16.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_Vector2.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_Vector2.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_Vector3.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_Vector3.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_Vector4.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_Vector4.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_Vector8.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_Vector8.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_array_notype.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_array_notype.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_basic.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_basic.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_basic_functionality.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_basic_functionality.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_basic_vectors.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_basic_vectors.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_local.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_local.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/setArg_num_notype.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/setArg_num_notype.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/square.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/square.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/square_with_attribute.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/square_with_attribute.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_char.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_char.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_float.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_float.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_int.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_int.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_long.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_long.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_short.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_short.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_uchar.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_uchar.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_uint.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_uint.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_ulong.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_ulong.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_read_ushort.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_read_ushort.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_char.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_char.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_float.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_float.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_int.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_int.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_long.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_long.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_short.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_short.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_uchar.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_uchar.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_uint.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_uint.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_ulong.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_ulong.cl"
+      }, 
+      {
+        "url": "/tests/webcl/khronos/resources/kernels/test_stream_write_ushort.cl", 
+        "path": "tests/webcl/khronos/resources/kernels/test_stream_write_ushort.cl"
       }, 
       {
         "url": "/tests/webcl/spec.json", 
