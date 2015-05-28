@@ -167,7 +167,12 @@ def start_ws_server(config, paths, port, bind_hostname):
                            bind_hostname)
 
 def start_wss_server(config, paths, port, bind_hostname):
-    return
+    return WebSocketDaemon(config["host"],
+                           str(port),
+                           paths["ws_doc_root"],
+                           paths["ws_handlers_root"],
+                           "debug",
+                           bind_hostname)
 
 def get_ports(config):
     rv = defaultdict(list)
