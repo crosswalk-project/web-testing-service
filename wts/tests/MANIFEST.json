@@ -16179,6 +16179,10 @@
         "path": "tests/notification/notification_constructor.html"
       }, 
       {
+        "url": "/tests/notification/notification_permission.html", 
+        "path": "tests/notification/notification_permission.html"
+      }, 
+      {
         "url": "/tests/notification/notification_requestPermission.html", 
         "path": "tests/notification/notification_requestPermission.html"
       }, 
@@ -37527,10 +37531,6 @@
       {
         "url": "/tests/usertiming/w3c/resources/webperftestharnessextension.js", 
         "path": "tests/usertiming/w3c/resources/webperftestharnessextension.js"
-      }, 
-      {
-        "url": "/tests/version.json", 
-        "path": "tests/version.json"
       }, 
       {
         "url": "/tests/vibration/spec.json", 
