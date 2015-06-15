@@ -275,10 +275,6 @@ def get_manifest_items(rel_path):
         else:
             root = tree
 
-        for script_el in root.findall(".//{http://www.w3.org/1999/xhtml}script"):
-            if script_el.get('src') and (script_el.get('src').find("resources/unit.js") != -1 or script_el.get('src').find("resources/js-test-pre.js") != -1):
-                return [ManualTest(rel_path, url)]
-
         timeout_nodes = root.findall(".//{http://www.w3.org/1999/xhtml}meta[@name='timeout']")
         if timeout_nodes:
             timeout_str = timeout_nodes[0].attrib.get("content", None)
@@ -289,9 +285,13 @@ def get_manifest_items(rel_path):
                     pass
 
         for script_el in root.findall(".//{http://www.w3.org/1999/xhtml}script"):
-            if script_el.get('src') and script_el.get('src').find("testharness.js") != -1:
-                return [TestharnessTest(rel_path, url, timeout=timeout)]
-        
+            if script_el.get('src'):
+                if script_el.get('src').find("testharness.js") != -1 \
+                    or script_el.get('src').find("resources/unit.js") != -1 \
+                    or script_el.get('src').find("js-test-pre.js") != -1 \
+                    or script_el.get('src').find("qunit.js") != -1:
+                        return [TestharnessTest(rel_path, url, timeout=timeout)]
+
         match_links = root.findall(".//{http://www.w3.org/1999/xhtml}link[@rel='match']")
         mismatch_links = root.findall(".//{http://www.w3.org/1999/xhtml}link[@rel='mismatch']")
 
@@ -342,7 +342,7 @@ def update(manifest, path):
     import html5lib
 
     for root, dirs, files in os.walk(path):
-        for fn in files: 
+        for fn in files:
             full_path = "%s/%s" % (root, fn)
             relative_path = full_path.split('/../../wts/')[1]
             manifest.extend(get_manifest_items(relative_path))
