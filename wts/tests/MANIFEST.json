@@ -2,6 +2,12 @@
   "items": {
     "reftest": [
       {
+        "url": "/tests/2dtransforms/csswg/2d-rotate-notref.html", 
+        "path": "tests/2dtransforms/csswg/2d-rotate-notref.html", 
+        "ref_type": "!=", 
+        "ref_url": "/tests/2dtransforms/csswg/2d-rotate-ref.html"
+      }, 
+      {
         "url": "/tests/3dtransforms/csswg/backface-visibility-hidden-001.html", 
         "path": "tests/3dtransforms/csswg/backface-visibility-hidden-001.html", 
         "ref_type": "==", 
@@ -1802,12 +1808,6 @@
         "ref_url": "/tests/fonts/csswg/reference/font-weight-normal-ref.html"
       }, 
       {
-        "url": "/tests/fonts/csswg/font-matching-rule-012.xht", 
-        "path": "tests/fonts/csswg/font-matching-rule-012.xht", 
-        "ref_type": "==", 
-        "ref_url": "/tests/fonts/csswg/reference/font-matching-rule-012-ref.html"
-      }, 
-      {
         "url": "/tests/fonts/csswg/font-size-001.htm", 
         "path": "tests/fonts/csswg/font-size-001.htm", 
         "ref_type": "==", 
@@ -2160,6 +2160,42 @@
       {
         "url": "/tests/2dtransforms/2dtransform_property_exist.html", 
         "path": "tests/2dtransforms/2dtransform_property_exist.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/2d-rotate-js.html", 
+        "path": "tests/2dtransforms/csswg/2d-rotate-js.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-2d-getComputedStyle-001.html", 
+        "path": "tests/2dtransforms/csswg/transform-2d-getComputedStyle-001.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_invalid_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_invalid_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_max_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_max_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_min_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_min_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_neg_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_neg_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_second_omited_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_second_omited_prefixed.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform_translate_zero_prefixed.html", 
+        "path": "tests/2dtransforms/csswg/transform_translate_zero_prefixed.html"
       }, 
       {
         "url": "/tests/3dtransforms/CSS33Dtransform_backface-visibility.html", 
@@ -17479,18 +17515,8 @@
         "path": "tests/screenorientation/blink/lockOrientation-bad-argument.html"
       }, 
       {
-        "url": "/tests/screenorientation/blink/lockOrientation-basic.html", 
-        "path": "tests/screenorientation/blink/lockOrientation-basic.html", 
-        "timeout": "long"
-      }, 
-      {
         "url": "/tests/screenorientation/blink/orientation-reading.html", 
         "path": "tests/screenorientation/blink/orientation-reading.html"
-      }, 
-      {
-        "url": "/tests/screenorientation/blink/orientationchange-event.html", 
-        "path": "tests/screenorientation/blink/orientationchange-event.html", 
-        "timeout": "long"
       }, 
       {
         "url": "/tests/screenorientation/blink/screenorientation-api.html", 
@@ -24960,10 +24986,6 @@
       {
         "url": "/tests/webgl/khronos/readPixels.html", 
         "path": "tests/webgl/khronos/readPixels.html"
-      }, 
-      {
-        "url": "/tests/webgl/khronos/readPixelsBadArgs.html", 
-        "path": "tests/webgl/khronos/readPixelsBadArgs.html"
       }, 
       {
         "url": "/tests/webgl/khronos/renderbuffer-initialization.html", 
@@ -33763,6 +33785,730 @@
     ], 
     "manual": [
       {
+        "url": "/tests/2dtransforms/csswg/2d-rotate-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/2d-rotate-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-scale-nested-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-scale-nested-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-skew-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-skew-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-skew-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-skew-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-transform-inherit-rotate-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-transform-inherit-rotate-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-transform-inherit-scale-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-transform-inherit-scale-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-transform-scale-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-transform-scale-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-transform-scale-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-transform-scale-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css-transforms-transformlist-manual.html", 
+        "path": "tests/2dtransforms/csswg/css-transforms-transformlist-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css3-transform-scale-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/css3-transform-scale-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/css3-transform-scale-manual.html", 
+        "path": "tests/2dtransforms/csswg/css3-transform-scale-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/rotate-180-degrees-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/rotate-180-degrees-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/rotate-270-degrees-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/rotate-270-degrees-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/rotate-90-degrees-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/rotate-90-degrees-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/scale-optional-second-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/scale-optional-second-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/scale-zero-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/scale-zero-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/skew-test1-manual.html", 
+        "path": "tests/2dtransforms/csswg/skew-test1-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-abspos-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-applies-to-001-manual.xht", 
+        "path": "tests/2dtransforms/csswg/transform-applies-to-001-manual.xht"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-applies-to-002-manual.xht", 
+        "path": "tests/2dtransforms/csswg/transform-applies-to-002-manual.xht"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-background-008-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-background-008-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-compound-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-compound-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-descendant-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-descendant-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-display-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-display-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-display-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-display-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-display-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-display-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-display-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-display-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-fixed-bg-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-generated-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-generated-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-generated-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-generated-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-iframe-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-iframe-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-image-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-image-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-inherit-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-inherit-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-inherit-origin-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-origin-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-inherit-origin-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-origin-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-inline-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-inline-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-008-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-008-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-009-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-009-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-010-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-010-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-011-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-011-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-012-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-012-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-013-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-013-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-014-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-014-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-015-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-015-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-016-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-016-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-017-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-017-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-018-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-018-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-input-019-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-019-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-matrix-008-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-008-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-008-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-008-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-009-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-009-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-01-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-01-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-010-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-010-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-011-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-011-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-012-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-012-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-origin-name-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-name-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-overflow-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-overflow-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-overflow-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-overflow-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-percent-008-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-008-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-propagate-inherit-boolean-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-propagate-inherit-boolean-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-root-bg-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-root-bg-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-root-bg-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-root-bg-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rotate-007-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-007-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-rounding-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-rounding-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scale-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scale-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scale-percent-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-percent-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scale-test-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-test-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scalex-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scalex-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-scaley-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-scaley-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-singular-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-singular-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-stacking-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-stacking-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-stacking-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-stacking-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-stacking-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-stacking-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-stacking-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-stacking-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-stresstest-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-stresstest-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-table-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-table-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-table-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-table-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-table-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-inline-block-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-inline-block-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-inline-table-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-inline-table-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-list-item-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-list-item-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-caption-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-caption-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-cell-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-cell-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-footer-group-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-footer-group-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-header-group-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-header-group-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-row-group-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-row-group-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-transformable-table-row-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-row-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translate-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translate-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translate-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translate-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translate-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatex-006-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-006-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatey-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatey-002-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-002-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatey-003-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-003-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatey-004-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-004-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transform-translatey-005-manual.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-005-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transforms-rotate-degree-90-manual.html", 
+        "path": "tests/2dtransforms/csswg/transforms-rotate-degree-90-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transforms-rotate-translate-scale-manual.html", 
+        "path": "tests/2dtransforms/csswg/transforms-rotate-translate-scale-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transforms-skewX-manual.html", 
+        "path": "tests/2dtransforms/csswg/transforms-skewX-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/transforms-skewY-manual.html", 
+        "path": "tests/2dtransforms/csswg/transforms-skewY-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/translate-manual.html", 
+        "path": "tests/2dtransforms/csswg/translate-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/translate-optional-second-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/translate-optional-second-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/ttwf-reftest-rotate-manual.html", 
+        "path": "tests/2dtransforms/csswg/ttwf-reftest-rotate-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/ttwf-transform-skewx-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/ttwf-transform-skewx-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/ttwf-transform-skewy-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/ttwf-transform-skewy-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/ttwf-transform-translatex-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/ttwf-transform-translatex-001-manual.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/ttwf-transform-translatey-001-manual.html", 
+        "path": "tests/2dtransforms/csswg/ttwf-transform-translatey-001-manual.html"
+      }, 
+      {
         "url": "/tests/animations/csswg/animation-delay-001-manual.html", 
         "path": "tests/animations/csswg/animation-delay-001-manual.html"
       }, 
@@ -34233,6 +34979,22 @@
       {
         "url": "/tests/colors/csswg/bdd/t425-hsla-onscreen-b-manual.htm", 
         "path": "tests/colors/csswg/bdd/t425-hsla-onscreen-b-manual.htm"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t421-rgb-values-meaning-b-manual.htm", 
+        "path": "tests/colors/csswg/t421-rgb-values-meaning-b-manual.htm"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t422-rgba-values-meaning-b-manual.htm", 
+        "path": "tests/colors/csswg/t422-rgba-values-meaning-b-manual.htm"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t43-svg-keywords-a-manual.htm", 
+        "path": "tests/colors/csswg/t43-svg-keywords-a-manual.htm"
+      }, 
+      {
+        "url": "/tests/colors/csswg/t451-system-colors-a-manual.htm", 
+        "path": "tests/colors/csswg/t451-system-colors-a-manual.htm"
       }, 
       {
         "url": "/tests/csp/csp_base-uri_asterisk-manual.py", 
@@ -35011,6 +35773,10 @@
         "path": "tests/fonts/csswg/font-044-manual.htm"
       }, 
       {
+        "url": "/tests/fonts/csswg/font-matching-rule-012-manual.xht", 
+        "path": "tests/fonts/csswg/font-matching-rule-012-manual.xht"
+      }, 
+      {
         "url": "/tests/fonts/csswg/font-size-091-manual.htm", 
         "path": "tests/fonts/csswg/font-size-091-manual.htm"
       }, 
@@ -35207,6 +35973,38 @@
         "path": "tests/multicolumn/CSS3Multicolumn_column-width_same-manual.html"
       }, 
       {
+        "url": "/tests/nfc/NDEFMessageEvent_message_attribute-manual.html", 
+        "path": "tests/nfc/NDEFMessageEvent_message_attribute-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCPeerEvent_peer_attribute-manual.html", 
+        "path": "tests/nfc/NFCPeerEvent_peer_attribute-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCPeer_onmessageread_attribute-manual.html", 
+        "path": "tests/nfc/NFCPeer_onmessageread_attribute-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCPeer_sendNDEF-manual.html", 
+        "path": "tests/nfc/NFCPeer_sendNDEF-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCPeer_startHandover-manual.html", 
+        "path": "tests/nfc/NFCPeer_startHandover-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCTagEvent_tag_attribute-manual.html", 
+        "path": "tests/nfc/NFCTagEvent_tag_attribute-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCTag_readNDEF-manual.html", 
+        "path": "tests/nfc/NFCTag_readNDEF-manual.html"
+      }, 
+      {
+        "url": "/tests/nfc/NFCTag_writeNDEF-manual.html", 
+        "path": "tests/nfc/NFCTag_writeNDEF-manual.html"
+      }, 
+      {
         "url": "/tests/notification/notification_body-manual.html", 
         "path": "tests/notification/notification_body-manual.html"
       }, 
@@ -35275,6 +36073,14 @@
         "path": "tests/sandbox/w3c/bdd/sandbox_007-manual.htm"
       }, 
       {
+        "url": "/tests/screenorientation/blink/lockOrientation-basic-manual.html", 
+        "path": "tests/screenorientation/blink/lockOrientation-basic-manual.html"
+      }, 
+      {
+        "url": "/tests/screenorientation/blink/orientationchange-event-manual.html", 
+        "path": "tests/screenorientation/blink/orientationchange-event-manual.html"
+      }, 
+      {
         "url": "/tests/sessionhistory/history_forward_basic-manual.html", 
         "path": "tests/sessionhistory/history_forward_basic-manual.html"
       }, 
@@ -35289,6 +36095,10 @@
       {
         "url": "/tests/svg/w3c/bdd/foreign_content_004-manual.html", 
         "path": "tests/svg/w3c/bdd/foreign_content_004-manual.html"
+      }, 
+      {
+        "url": "/tests/text/CSS3TextEffects_hyphens_none-manual.html", 
+        "path": "tests/text/CSS3TextEffects_hyphens_none-manual.html"
       }, 
       {
         "url": "/tests/touchevent/TouchEvent_altKey_exist-manual.html", 
@@ -35420,6 +36230,566 @@
       }
     ], 
     "helper": [
+      {
+        "url": "tests/2dtransforms/csswg/2d-rotate-ref.html", 
+        "path": "tests/2dtransforms/csswg/2d-rotate-ref.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/COPYING", 
+        "path": "tests/2dtransforms/csswg/COPYING"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/css-skew-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/css-skew-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/css-skew-002-ref.html", 
+        "path": "tests/2dtransforms/csswg/css-skew-002-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/css-scale-nested-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/css-scale-nested-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/css-transforms-transformlist-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/css-transforms-transformlist-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/css3-transform-scale-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/css3-transform-scale-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/scale-optional-second-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/scale-optional-second-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/scale-zero-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/scale-zero-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/skew-test1-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/skew-test1-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transform-origin-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transform-origin-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transform-scale-test-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transform-scale-test-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transform-translateX-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transform-translateX-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transforms-rotate-degree-90-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transforms-rotate-degree-90-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transforms-rotate-translate-scale-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transforms-rotate-translate-scale-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transforms-skewX-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transforms-skewX-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/transforms-skewY-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/transforms-skewY-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/translate-optional-second-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/translate-optional-second-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reference/ttwf-reftest-rotate-ref.html", 
+        "path": "tests/2dtransforms/csswg/reference/ttwf-reftest-rotate-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reftest/transform-applies-to-001-ref.xht", 
+        "path": "tests/2dtransforms/csswg/reftest/transform-applies-to-001-ref.xht"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reftest/transform-applies-to-002-ref.xht", 
+        "path": "tests/2dtransforms/csswg/reftest/transform-applies-to-002-ref.xht"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/reftest/transform-origin-01-ref.html", 
+        "path": "tests/2dtransforms/csswg/reftest/transform-origin-01-ref.html"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-green.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-green.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-lime.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-lime.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-maroon.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-maroon.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-navy.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-navy.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-red.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-red.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/1x1-white.png", 
+        "path": "tests/2dtransforms/csswg/support/1x1-white.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/60x60-gg-rr.png", 
+        "path": "tests/2dtransforms/csswg/support/60x60-gg-rr.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/60x60-green.png", 
+        "path": "tests/2dtransforms/csswg/support/60x60-green.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/60x60-red.png", 
+        "path": "tests/2dtransforms/csswg/support/60x60-red.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/a-green.css", 
+        "path": "tests/2dtransforms/csswg/support/a-green.css"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/b-green.css", 
+        "path": "tests/2dtransforms/csswg/support/b-green.css"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/c-red.css", 
+        "path": "tests/2dtransforms/csswg/support/c-red.css"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/cat.png", 
+        "path": "tests/2dtransforms/csswg/support/cat.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/import-green.css", 
+        "path": "tests/2dtransforms/csswg/support/import-green.css"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/import-red.css", 
+        "path": "tests/2dtransforms/csswg/support/import-red.css"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/pattern-gg-gr.png", 
+        "path": "tests/2dtransforms/csswg/support/pattern-gg-gr.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/pattern-grg-rgr-grg.png", 
+        "path": "tests/2dtransforms/csswg/support/pattern-grg-rgr-grg.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/pattern-grg-rrg-rgg.png", 
+        "path": "tests/2dtransforms/csswg/support/pattern-grg-rrg-rgg.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/pattern-rgr-grg-rgr.png", 
+        "path": "tests/2dtransforms/csswg/support/pattern-rgr-grg-rgr.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/pattern-tr.png", 
+        "path": "tests/2dtransforms/csswg/support/pattern-tr.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/ruler-h-50%.png", 
+        "path": "tests/2dtransforms/csswg/support/ruler-h-50%.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/ruler-h-50px.png", 
+        "path": "tests/2dtransforms/csswg/support/ruler-h-50px.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/ruler-v-100px.png", 
+        "path": "tests/2dtransforms/csswg/support/ruler-v-100px.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/ruler-v-50px.png", 
+        "path": "tests/2dtransforms/csswg/support/ruler-v-50px.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/square-purple.png", 
+        "path": "tests/2dtransforms/csswg/support/square-purple.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/square-teal.png", 
+        "path": "tests/2dtransforms/csswg/support/square-teal.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/square-white.png", 
+        "path": "tests/2dtransforms/csswg/support/square-white.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/support/README", 
+        "path": "tests/2dtransforms/csswg/support/support/README"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/support/swatch-green.png", 
+        "path": "tests/2dtransforms/csswg/support/support/swatch-green.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/support/swatch-red.png", 
+        "path": "tests/2dtransforms/csswg/support/support/swatch-red.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-blue.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-blue.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-green.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-green.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-lime.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-lime.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-orange.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-orange.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-red.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-red.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-white.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-white.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/swatch-yellow.png", 
+        "path": "tests/2dtransforms/csswg/support/swatch-yellow.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-bl.png", 
+        "path": "tests/2dtransforms/csswg/support/test-bl.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-br.png", 
+        "path": "tests/2dtransforms/csswg/support/test-br.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-inner-half-size.png", 
+        "path": "tests/2dtransforms/csswg/support/test-inner-half-size.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-outer.png", 
+        "path": "tests/2dtransforms/csswg/support/test-outer.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-tl.png", 
+        "path": "tests/2dtransforms/csswg/support/test-tl.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/test-tr.png", 
+        "path": "tests/2dtransforms/csswg/support/test-tr.png"
+      }, 
+      {
+        "url": "/tests/2dtransforms/csswg/support/transform-lime-square.png", 
+        "path": "tests/2dtransforms/csswg/support/transform-lime-square.png"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-abspos-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-abspos-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-blank-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-blank-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-compound-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-compound-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-descendant-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-descendant-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-display-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-display-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-fixed-bg-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-fixed-bg-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-generated-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-generated-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-generated-002-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-generated-002-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-iframe-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-iframe-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-image-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-image-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-inherit-origin-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-origin-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-inherit-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-inherit-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-inline-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-inline-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-002-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-002-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-003-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-003-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-004-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-004-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-005-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-005-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-006-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-006-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-007-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-007-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-008-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-008-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-009-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-009-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-010-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-010-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-011-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-011-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-012-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-012-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-013-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-013-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-014-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-014-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-015-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-015-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-016-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-016-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-017-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-017-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-018-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-018-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-input-019-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-input-019-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-lime-square-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-lime-square-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-002-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-002-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-003-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-003-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-004-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-004-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-005-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-005-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-006-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-006-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-007-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-007-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-matrix-008-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-matrix-008-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-origin-007-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-origin-007-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-overflow-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-overflow-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-overflow-002-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-overflow-002-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-percent-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-percent-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-propagate-inherit-boolean-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-propagate-inherit-boolean-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-root-bg-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-root-bg-003-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-003-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-root-bg-004-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-root-bg-004-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-rotate-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-rotate-007-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-rotate-007-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-rounding-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-rounding-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-scale-percent-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-percent-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-scale-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-scale-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-scalex-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-scalex-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-scaley-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-scaley-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-singular-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-singular-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-stresstest-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-stresstest-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-table-001-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-001-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-table-004-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-table-004-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-inline-block-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-inline-block-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-inline-table-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-inline-table-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-list-item-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-list-item-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-caption-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-caption-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-cell-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-cell-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-footer-group-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-footer-group-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-header-group-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-header-group-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-row-group-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-row-group-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-transformable-table-row-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-transformable-table-row-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-translate-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-translate-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-translatex-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatex-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/transform-translatey-ref.html", 
+        "path": "tests/2dtransforms/csswg/transform-translatey-ref.html"
+      }, 
+      {
+        "url": "tests/2dtransforms/csswg/translate-ref.html", 
+        "path": "tests/2dtransforms/csswg/translate-ref.html"
+      }, 
       {
         "url": "/tests/2dtransforms/spec.json", 
         "path": "tests/2dtransforms/spec.json"
@@ -38895,6 +40265,58 @@
       {
         "url": "/tests/usecase/samples/BrowserState/js/main.js", 
         "path": "tests/usecase/samples/BrowserState/js/main.js"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/README.md", 
+        "path": "tests/usecase/samples/CSP-Meta/README.md"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/css/csp_style.css", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/css/csp_style.css"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/css/csp_style_online.css", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/css/csp_style_online.css"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/font/w3c/COPYING", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/font/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/font/w3c/CanvasTest.ttf", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/font/w3c/CanvasTest.ttf"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/images/COPYING", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/images/COPYING"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/images/green-100x100.png", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/images/green-100x100.png"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/images/w3c/COPYING", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/images/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/images/w3c/cat.png", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/images/w3c/cat.png"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/js/csp.js", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/js/csp.js"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/js/csp_online.js", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/js/csp_online.js"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/media/w3c/COPYING", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/media/w3c/COPYING"
+      }, 
+      {
+        "url": "/tests/usecase/samples/CSP-Meta/resources/media/w3c/movie_300.mp4", 
+        "path": "tests/usecase/samples/CSP-Meta/resources/media/w3c/movie_300.mp4"
       }, 
       {
         "url": "/tests/usecase/samples/CSP/README.md", 
