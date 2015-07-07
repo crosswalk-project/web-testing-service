@@ -3,8 +3,8 @@
         "fullscreen"
     ],
     "icons": [{
-            "sizes": "512x512",
-            "src": "images/icon512.png"
+            "sizes": "1140x1125",
+            "src": "images/icon.png"
     }],
     "name": "Web Test Client",
     "orientation": "any",
