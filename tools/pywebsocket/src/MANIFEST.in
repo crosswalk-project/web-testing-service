@@ -1,6 +1,5 @@
 include COPYING
 include MANIFEST.in
 include README
-recursive-include example *.py
 recursive-include mod_pywebsocket *.py
-recursive-include test *.py
+

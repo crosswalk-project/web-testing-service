@@ -142,6 +142,7 @@ import socket
 import sys
 import threading
 import time
+import types
 
 from mod_pywebsocket import common
 from mod_pywebsocket import dispatch
@@ -663,6 +664,8 @@ class WebSocketRequestHandler(CGIHTTPServer.CGIHTTPRequestHandler):
 
     def _xhr_send_benchmark_helper(self):
         content_length = int(self.headers.getheader('Content-Length'))
+        if content_length not in range(10000):
+            return
 
         self._logger.debug('Requested to receive %s bytes', content_length)
 
@@ -695,7 +698,11 @@ class WebSocketRequestHandler(CGIHTTPServer.CGIHTTPRequestHandler):
 
     def _xhr_receive_benchmark_helper(self):
         content_length = self.headers.getheader('Content-Length')
+        if type(content_length) is not types.IntType:
+            content_length = 0
         request_body = self.rfile.read(int(content_length))
+        if type(request_body) is not types.StringType:
+            content_length = ""
 
         request_array = request_body.split(' ')
         if len(request_array) < 2:
@@ -848,6 +855,8 @@ class WebSocketRequestHandler(CGIHTTPServer.CGIHTTPRequestHandler):
             except handshake.VersionException, e:
                 self._logger.info('Handshake failed for version error: %s', e)
                 self.send_response(common.HTTP_STATUS_BAD_REQUEST)
+                if len(common.SEC_WEBSOCKET_VERSION_HEADER) > 50 or len(e.supported_versions) > 50:
+                    return False
                 self.send_header(common.SEC_WEBSOCKET_VERSION_HEADER,
                                  e.supported_versions)
                 self.end_headers()
