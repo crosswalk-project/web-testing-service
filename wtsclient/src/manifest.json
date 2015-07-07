@@ -6,9 +6,9 @@
             "sizes": "512x512",
             "src": "images/icon512.png"
     }],
-    "name": "WTS Client",
+    "name": "Web Test Client",
     "orientation": "any",
     "start_url": "http://wts.crosswalk-project.org",
-    "xwalk_description": "Web Testing Service",
+    "xwalk_description": "Web Test Client Application",
     "xwalk_version": "0.1"
 }
