@@ -95,13 +95,8 @@ ManifestIterator.prototype = {
 
     to_test: function(manifest_item,test_type) {
         var suite_name = manifest_item.url.split("/")[2]
-        var update_spec = false;
         if (!gsuite_name || gsuite_name !== suite_name) {
           gsuite_name = suite_name;
-          update_spec = true;
-        }
-
-        if (update_spec) {
           var xhr = new XMLHttpRequest();
           xhr.onreadystatechange = function(manifest_item,test_type) {
               if (xhr.readyState !== 4) {
