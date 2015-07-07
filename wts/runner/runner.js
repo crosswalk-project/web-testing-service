@@ -46,6 +46,13 @@ function ManifestIterator(manifest, filter_array, test_types) {
     this.filter_cases();
 }
 
+var gsuite_name = null;
+var gspec_desc = null;
+var type_arr = new Array();
+type_arr["testharness"] = "auto";
+type_arr["reftest"] = "reference";
+type_arr["manual"] = "manual";
+
 ManifestIterator.prototype = {
     filter_cases: function(){
         var mfitor = this;
@@ -87,9 +94,34 @@ ManifestIterator.prototype = {
     },
 
     to_test: function(manifest_item,test_type) {
+        var suite_name = manifest_item.url.split("/")[2]
+        var update_spec = false;
+        if (!gsuite_name || gsuite_name !== suite_name) {
+          gsuite_name = suite_name;
+          update_spec = true;
+        }
+
+        if (update_spec) {
+          var xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function(manifest_item,test_type) {
+              if (xhr.readyState !== 4) {
+                  return;
+              }
+              if (!(xhr.status === 200 || xhr.status === 0)) {
+                  throw new Error("spec file " + path + " failed to load");
+              }
+              gspec_desc = xhr.responseText.split('spec_desc')[1].split('\n')[0].split(':')[1].split('"')[1]
+              };
+
+          var spec_file = "/tests/" + gsuite_name + "/spec.json"
+          xhr.open("GET", spec_file, false);
+          xhr.send(null);
+        }
+
         var test = {
             type: test_type,
-            url: manifest_item.url
+            url: manifest_item.url,
+            spec_desc: gspec_desc
         };
         if (manifest_item.hasOwnProperty("ref_url")) {
             test.ref_type = manifest_item.ref_type;
@@ -767,6 +799,8 @@ Results.prototype = {
                 var rv = {"test":(result.test.hasOwnProperty("ref_url") ?
                                   [result.test.url, result.test.ref_type, result.test.ref_url] :
                                   result.test.url),
+                          "type": type_arr[result.test.type],
+                          "spec_desc": result.test.spec_desc,
                           "subtests":result.subtests,
                           "status":result.status,
                           "message":result.message};
