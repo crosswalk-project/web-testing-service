@@ -1,5 +1,37 @@
 {
-  "css3": {
+  "Communication": {
+    "sessionhistory": {
+      "spec_desc": "HTML5 SessionHistory element", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/history.html#the-history-interface"
+    }, 
+    "sse": {
+      "spec_desc": "Server-Sent Events", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2011/WD-eventsource-20111020/"
+    }, 
+    "webmessaging": {
+      "spec_desc": "Web Messaging", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-webmessaging-20120501"
+    }, 
+    "webrtc": {
+      "spec_desc": "WebRTC API", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2013/WD-webrtc-20130910/"
+    }, 
+    "websocket": {
+      "spec_desc": "The WebSocket API", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-websockets-20120920/"
+    }, 
+    "xmlhttprequest": {
+      "spec_desc": "XMLHttpRequest Level 2", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-XMLHttpRequest-20121206/"
+    }
+  }, 
+  "DOM, Forms and Styles": {
     "2dtransforms": {
       "spec_desc": "CSS3 2D Transforms", 
       "spec_maturity": "WD", 
@@ -35,6 +67,21 @@
       "spec_maturity": "CR", 
       "spec_url": "http://www.w3.org/TR/2013/CR-css-fonts-3-20131003/"
     }, 
+    "forms": {
+      "spec_desc": "HTML5 Forms (Partial)", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/the-form-element.html#the-form-element"
+    }, 
+    "input": {
+      "spec_desc": "html5 input element", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/html5/forms.html"
+    }, 
+    "jsenhance": {
+      "spec_desc": "DOM/JS related to HTML5 Enhancements", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2011/WD-html5-20110525/common-dom-interfaces.html"
+    }, 
     "mediaqueries": {
       "spec_desc": "CSS3 Media Queries (Partial)", 
       "spec_maturity": "REC", 
@@ -44,6 +91,16 @@
       "spec_desc": "CSS3 Multicolumn Layout (Partial)", 
       "spec_maturity": "CR", 
       "spec_url": "http://www.w3.org/TR/2011/CR-css3-multicol-20110412"
+    }, 
+    "selectorslevel1": {
+      "spec_desc": "W3C Selectors API Level 1", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/"
+    }, 
+    "selectorslevel2": {
+      "spec_desc": "W3C Selectors API Level 2 (Partial)", 
+      "spec_maturity": "Note", 
+      "spec_url": "http://www.w3.org/TR/2013/NOTE-selectors-api2-20131017/"
     }, 
     "text": {
       "spec_desc": "CSS Text Module Level 3", 
@@ -61,88 +118,247 @@
       "spec_url": "http://www.w3.org/TR/2012/WD-css3-ui-20120117/"
     }
   }, 
-  "html5": {
-    "appcache": {
-      "spec_desc": "HTML5 Application Caches", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20120329/offline.html#appcache"
-    }, 
-    "audio": {
-      "spec_desc": "HTML5 audio element", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2014/REC-html5-20141028/"
+  "Device": {
+    "batterystatus": {
+      "spec_desc": "HTML5 Battery", 
+      "spec_maturity": "CR", 
+      "spec_url": "https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html"
     }, 
     "browserstate": {
       "spec_desc": "Html5 Browser Online State", 
       "spec_maturity": "ED", 
       "spec_url": "http://www.w3.org/html/wg/drafts/html/CR/browsers.html#browser-state"
     }, 
-    "canvas": {
-      "spec_desc": "HTML Canvas 2D Context", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2014/CR-2dcontext-20140821/"
-    }, 
-    "dnd": {
-      "spec_desc": "HTML5 Drag and Drop", 
+    "deviceorientation": {
+      "spec_desc": "W3C DeviceOrientation Event", 
       "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20120329/dnd.html"
+      "spec_url": "http://www.w3.org/TR/2011/WD-orientation-event-20111201"
     }, 
-    "extra": {
-      "spec_desc": "HTML5 APIs", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-html5-20121217/grouping-content.html#the-ol-element"
+    "netinfo": {
+      "spec_desc": "HTML5 NetworkInfo", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://w3c.github.io/netinfo/"
     }, 
-    "forms": {
-      "spec_desc": "HTML5 Forms (Partial)", 
+    "screenorientation": {
+      "spec_desc": "Screen Orientation API", 
+      "spec_maturity": "ED", 
+      "spec_url": "https://w3c.github.io/screen-orientation/"
+    }, 
+    "touchevent": {
+      "spec_desc": "W3C TouchEvent module", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-touch-events-20131010/"
+    }, 
+    "vibration": {
+      "spec_desc": "W3C Vibration API", 
       "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/the-form-element.html#the-form-element"
-    }, 
-    "input": {
-      "spec_desc": "html5 input element", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/html5/forms.html"
-    }, 
-    "jsenhance": {
-      "spec_desc": "DOM/JS related to HTML5 Enhancements", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2011/WD-html5-20110525/common-dom-interfaces.html"
-    }, 
-    "sandbox": {
-      "spec_desc": "HTML5 IframeSandbox element", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/the-iframe-element.html?path=5_2_8#the-iframe-element"
-    }, 
-    "sessionhistory": {
-      "spec_desc": "HTML5 SessionHistory element", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/history.html#the-history-interface"
-    }, 
-    "svg": {
-      "spec_desc": "Html5 Inline SVG", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2011/REC-SVG11-20110816/"
-    }, 
-    "video": {
-      "spec_desc": "HTML5 video element", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2014/REC-html5-20141028/"
+      "spec_url": "http://www.w3.org/TR/2012/WD-vibration-20120202/"
     }
   }, 
-  "nonw3c": {
-    "fullscreen": {
-      "spec_desc": "Fullscreen API (Mozilla Spec) (Partial)", 
-      "spec_maturity": "Living Standard", 
-      "spec_url": "https://fullscreen.spec.whatwg.org/"
+  "Experimental": {
+    "contactsmanager": {
+      "spec_desc": "Contacts Manager", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://www.w3.org/2012/sysapps/contacts-manager-api/"
+    }, 
+    "devicecapabilities": {
+      "spec_desc": "Device Capabilities", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://www.w3.org/2012/sysapps/device-capabilities/"
+    }, 
+    "gamepad": {
+      "spec_desc": "Gamepad API", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/gamepad/"
+    }, 
+    "iap": {
+      "spec_desc": "IAP", 
+      "spec_maturity": "", 
+      "spec_url": "https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP"
+    }, 
+    "messaging": {
+      "spec_desc": "Messaging API", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://www.w3.org/2012/sysapps/messaging/"
+    }, 
+    "nativefilesystem": {
+      "spec_desc": "Capability to access native pure file system", 
+      "spec_maturity": "", 
+      "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-672"
+    }, 
+    "presentation": {
+      "spec_desc": "Presentation API", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://webscreens.github.io/presentation-api/"
     }, 
     "promises": {
       "spec_desc": "Promises", 
       "spec_maturity": "", 
       "spec_url": "http://promises-aplus.github.io/promises-spec/"
     }, 
+    "rawsockets": {
+      "spec_desc": "Raw Sockets API", 
+      "spec_maturity": "", 
+      "spec_url": "http://www.w3.org/2012/sysapps/raw-sockets/"
+    }, 
     "simd": {
       "spec_desc": "SIMD", 
       "spec_maturity": "", 
       "spec_url": "https://github.com/johnmccutchan/ecmascript_simd"
+    }
+  }, 
+  "Graphics": {
+    "canvas": {
+      "spec_desc": "HTML Canvas 2D Context", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2014/CR-2dcontext-20140821/"
+    }, 
+    "svg": {
+      "spec_desc": "Html5 Inline SVG", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2011/REC-SVG11-20110816/"
+    }
+  }, 
+  "Location": {
+    "geoallow": {
+      "spec_desc": "Geolocation", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
+    }, 
+    "geodeny": {
+      "spec_desc": "Geolocation", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
+    }
+  }, 
+  "Media": {
+    "audio": {
+      "spec_desc": "HTML5 audio element", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2014/REC-html5-20141028/"
+    }, 
+    "gumallow": {
+      "spec_desc": "MediaStream", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
+    }, 
+    "mediacapture": {
+      "spec_desc": "HTML Media Capture", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html-media-capture-20120712"
+    }, 
+    "video": {
+      "spec_desc": "HTML5 video element", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2014/REC-html5-20141028/"
+    }, 
+    "webaudio": {
+      "spec_desc": "Web Audio API", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-webaudio-20121213/"
+    }
+  }, 
+  "Performance and Optimization": {
+    "animationtiming": {
+      "spec_desc": "AnimationTiming API", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2013/CR-animation-timing-20131031/"
+    }, 
+    "hrtime": {
+      "spec_desc": "High Resolution Time", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2012/REC-hr-time-20121217/"
+    }, 
+    "navigationtiming": {
+      "spec_desc": "Navigation Timing", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/navigation-timing/"
+    }, 
+    "pagevisibility": {
+      "spec_desc": "W3C Page Visibility API", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-page-visibility-20120726/"
+    }, 
+    "performancetimeline": {
+      "spec_desc": "Performance Timeline", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-performance-timeline-20131212/"
+    }, 
+    "resourcetiming": {
+      "spec_desc": "ResourceTiming", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/resource-timing/"
+    }, 
+    "usertiming": {
+      "spec_desc": "User Timing", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-user-timing-20131212/"
+    }, 
+    "workers": {
+      "spec_desc": "W3C Web Workers (Partial)", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-workers-20120501"
+    }
+  }, 
+  "Security": {
+    "cors": {
+      "spec_desc": "Cross-Origin Resource Sharing", 
+      "spec_maturity": "LCWD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-cors-20120403"
+    }, 
+    "csp": {
+      "spec_desc": "Content Security Policy 1.0", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-CSP-20121115/"
+    }, 
+    "sandbox": {
+      "spec_desc": "HTML5 IframeSandbox element", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20121025/the-iframe-element.html?path=5_2_8#the-iframe-element"
+    }
+  }, 
+  "Storage": {
+    "appcache": {
+      "spec_desc": "HTML5 Application Caches", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20120329/offline.html#appcache"
+    }, 
+    "fileapi": {
+      "spec_desc": "W3C File API", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://dev.w3.org/2006/webapi/FileAPI/"
+    }, 
+    "filesystemapi": {
+      "spec_desc": "HTML5 FileAPIDirectoriesAndSystem", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html"
+    }, 
+    "filewriterapi": {
+      "spec_desc": "HTML5 FileWriter", 
+      "spec_maturity": "ED", 
+      "spec_url": "http://dev.w3.org/2009/dap/file-system/file-writer.html"
+    }, 
+    "indexeddb": {
+      "spec_desc": "Indexed Database API", 
+      "spec_maturity": "ED", 
+      "spec_url": "https://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html"
+    }, 
+    "webdatabase": {
+      "spec_desc": "Web SQL Database", 
+      "spec_maturity": "Note", 
+      "spec_url": "http://www.w3.org/TR/2010/NOTE-webdatabase-20101118/"
+    }, 
+    "webstorage": {
+      "spec_desc": "Web Storage", 
+      "spec_maturity": "REC", 
+      "spec_url": "http://www.w3.org/TR/2013/REC-webstorage-20130730/"
+    }
+  }, 
+  "Supplementary": {
+    "fullscreen": {
+      "spec_desc": "Fullscreen API (Mozilla Spec) (Partial)", 
+      "spec_maturity": "Living Standard", 
+      "spec_url": "https://fullscreen.spec.whatwg.org/"
     }, 
     "typedarrays": {
       "spec_desc": "Typed Arrays (Khronos Spec)", 
@@ -160,26 +376,23 @@
       "spec_url": "https://www.khronos.org/registry/webgl/specs/1.0/"
     }
   }, 
-  "sysapps": {
-    "contactsmanager": {
-      "spec_desc": "Contacts Manager", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://www.w3.org/2012/sysapps/contacts-manager-api/"
+  "UI": {
+    "dnd": {
+      "spec_desc": "HTML5 Drag and Drop", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-html5-20120329/dnd.html"
     }, 
-    "devicecapabilities": {
-      "spec_desc": "Device Capabilities", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://www.w3.org/2012/sysapps/device-capabilities/"
-    }, 
-    "messaging": {
-      "spec_desc": "Messaging API", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://www.w3.org/2012/sysapps/messaging/"
-    }, 
-    "rawsockets": {
-      "spec_desc": "Raw Sockets API", 
-      "spec_maturity": "", 
-      "spec_url": "http://www.w3.org/2012/sysapps/raw-sockets/"
+    "notification": {
+      "spec_desc": "Web Notifications", 
+      "spec_maturity": "WD", 
+      "spec_url": "http://www.w3.org/TR/2012/WD-notifications-20120614/"
+    }
+  }, 
+  "W3C_EXTRAHTML5": {
+    "extra": {
+      "spec_desc": "HTML5 APIs", 
+      "spec_maturity": "CR", 
+      "spec_url": "http://www.w3.org/TR/2012/CR-html5-20121217/grouping-content.html#the-ol-element"
     }
   }, 
   "tizen": {
@@ -194,217 +407,22 @@
     }
   }, 
   "w3c": {
-    "animationtiming": {
-      "spec_desc": "AnimationTiming API", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2013/CR-animation-timing-20131031/"
-    }, 
-    "batterystatus": {
-      "spec_desc": "HTML5 Battery", 
-      "spec_maturity": "CR", 
-      "spec_url": "https://dvcs.w3.org/hg/dap/raw-file/default/battery/Overview.html"
-    }, 
-    "cors": {
-      "spec_desc": "Cross-Origin Resource Sharing", 
-      "spec_maturity": "LCWD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-cors-20120403"
-    }, 
-    "csp": {
-      "spec_desc": "Content Security Policy 1.0", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-CSP-20121115/"
-    }, 
-    "deviceorientation": {
-      "spec_desc": "W3C DeviceOrientation Event", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2011/WD-orientation-event-20111201"
-    }, 
-    "fileapi": {
-      "spec_desc": "W3C File API", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://dev.w3.org/2006/webapi/FileAPI/"
-    }, 
-    "filesystemapi": {
-      "spec_desc": "HTML5 FileAPIDirectoriesAndSystem", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://dev.w3.org/2009/dap/file-system/file-dir-sys.html"
-    }, 
-    "filewriterapi": {
-      "spec_desc": "HTML5 FileWriter", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://dev.w3.org/2009/dap/file-system/file-writer.html"
-    }, 
-    "gamepad": {
-      "spec_desc": "Gamepad API", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/gamepad/"
-    }, 
-    "geoallow": {
-      "spec_desc": "Geolocation", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
-    }, 
-    "geodeny": {
-      "spec_desc": "Geolocation", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
-    }, 
-    "gumallow": {
-      "spec_desc": "MediaStream", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-geolocation-API-20131024/"
-    }, 
-    "hrtime": {
-      "spec_desc": "High Resolution Time", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2012/REC-hr-time-20121217/"
-    }, 
-    "indexeddb": {
-      "spec_desc": "Indexed Database API", 
-      "spec_maturity": "ED", 
-      "spec_url": "https://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html"
-    }, 
-    "mediacapture": {
-      "spec_desc": "HTML Media Capture", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-html-media-capture-20120712"
-    }, 
-    "navigationtiming": {
-      "spec_desc": "Navigation Timing", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/navigation-timing/"
-    }, 
-    "netinfo": {
-      "spec_desc": "HTML5 NetworkInfo", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://w3c.github.io/netinfo/"
-    }, 
     "nfc": {
       "spec_desc": "This test suit is for nfc specification", 
       "spec_maturity": "WD", 
       "spec_url": "http://www.w3.org/TR/2014/WD-nfc-20140114/"
     }, 
-    "notification": {
-      "spec_desc": "Web Notifications", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-notifications-20120614/"
-    }, 
-    "pagevisibility": {
-      "spec_desc": "W3C Page Visibility API", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-page-visibility-20120726/"
-    }, 
-    "performancetimeline": {
-      "spec_desc": "Performance Timeline", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-performance-timeline-20131212/"
-    }, 
-    "presentation": {
-      "spec_desc": "Presentation API", 
-      "spec_maturity": "ED", 
-      "spec_url": "http://webscreens.github.io/presentation-api/"
-    }, 
-    "resourcetiming": {
-      "spec_desc": "ResourceTiming", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/resource-timing/"
-    }, 
-    "screenorientation": {
-      "spec_desc": "Screen Orientation API", 
-      "spec_maturity": "ED", 
-      "spec_url": "https://w3c.github.io/screen-orientation/"
-    }, 
-    "selectorslevel1": {
-      "spec_desc": "W3C Selectors API Level 1", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-selectors-api-20130221/"
-    }, 
-    "selectorslevel2": {
-      "spec_desc": "W3C Selectors API Level 2 (Partial)", 
-      "spec_maturity": "Note", 
-      "spec_url": "http://www.w3.org/TR/2013/NOTE-selectors-api2-20131017/"
-    }, 
-    "sse": {
-      "spec_desc": "Server-Sent Events", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2011/WD-eventsource-20111020/"
-    }, 
     "sso": {
       "spec_desc": "This test suite is for testing notifcation specification", 
       "spec_maturity": "", 
       "spec_url": "http://www.w3.org/TR/2012/WD-ssos-20120614"
-    }, 
-    "touchevent": {
-      "spec_desc": "W3C TouchEvent module", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-touch-events-20131010/"
-    }, 
-    "usertiming": {
-      "spec_desc": "User Timing", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-user-timing-20131212/"
-    }, 
-    "vibration": {
-      "spec_desc": "W3C Vibration API", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-vibration-20120202/"
-    }, 
-    "webaudio": {
-      "spec_desc": "Web Audio API", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-webaudio-20121213/"
-    }, 
-    "webdatabase": {
-      "spec_desc": "Web SQL Database", 
-      "spec_maturity": "Note", 
-      "spec_url": "http://www.w3.org/TR/2010/NOTE-webdatabase-20101118/"
-    }, 
-    "webmessaging": {
-      "spec_desc": "Web Messaging", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-webmessaging-20120501"
-    }, 
-    "webrtc": {
-      "spec_desc": "WebRTC API", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2013/WD-webrtc-20130910/"
-    }, 
-    "websocket": {
-      "spec_desc": "The WebSocket API", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-websockets-20120920/"
-    }, 
-    "webstorage": {
-      "spec_desc": "Web Storage", 
-      "spec_maturity": "REC", 
-      "spec_url": "http://www.w3.org/TR/2013/REC-webstorage-20130730/"
-    }, 
-    "workers": {
-      "spec_desc": "W3C Web Workers (Partial)", 
-      "spec_maturity": "CR", 
-      "spec_url": "http://www.w3.org/TR/2012/CR-workers-20120501"
-    }, 
-    "xmlhttprequest": {
-      "spec_desc": "XMLHttpRequest Level 2", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-XMLHttpRequest-20121206/"
     }
   }, 
   "xwalk": {
-    "iap": {
-      "spec_desc": "IAP", 
-      "spec_maturity": "", 
-      "spec_url": "https://crosswalk-project.org/#wiki/A-Possible-Web-IDL-for-IAP"
-    }, 
     "nacl": {
       "spec_desc": "Support for Native Client (NaCl)", 
       "spec_maturity": "", 
       "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-331"
-    }, 
-    "nativefilesystem": {
-      "spec_desc": "Capability to access native pure file system", 
-      "spec_maturity": "", 
-      "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-672"
     }
   }
 }
