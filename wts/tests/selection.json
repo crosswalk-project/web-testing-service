@@ -394,35 +394,5 @@
       "spec_maturity": "CR", 
       "spec_url": "http://www.w3.org/TR/2012/CR-html5-20121217/grouping-content.html#the-ol-element"
     }
-  }, 
-  "tizen": {
-    "audiosystem": {
-      "spec_desc": "This test suit is for AudioSystemAPI specification", 
-      "spec_url": "https://wiki.tizen.org/wiki/User:Tanuk/AudioSystemAPI"
-    }, 
-    "mediarenderer": {
-      "spec_desc": "This test suit is for Media Renderer API Specification", 
-      "spec_maturity": "", 
-      "spec_url": "http://01org.github.io/cloud-dleyna/mediarenderer.html#extensions-to-navigator-object"
-    }
-  }, 
-  "w3c": {
-    "nfc": {
-      "spec_desc": "This test suit is for nfc specification", 
-      "spec_maturity": "WD", 
-      "spec_url": "http://www.w3.org/TR/2014/WD-nfc-20140114/"
-    }, 
-    "sso": {
-      "spec_desc": "This test suite is for testing notifcation specification", 
-      "spec_maturity": "", 
-      "spec_url": "http://www.w3.org/TR/2012/WD-ssos-20120614"
-    }
-  }, 
-  "xwalk": {
-    "nacl": {
-      "spec_desc": "Support for Native Client (NaCl)", 
-      "spec_maturity": "", 
-      "spec_url": "https://crosswalk-project.org/jira/browse/XWALK-331"
-    }
   }
 }
