@@ -1,129 +1,108 @@
 <!DOCTYPE html>
 <html lang=en>
 <meta charset=UTF-8>
-<title>Crosswalk Tests Runner</title>
+<title>Web Test Service</title>
 <meta name="viewport" content="width=device-width"></meta>
 <link rel='stylesheet' href='css/bootstrap.min.css'>
 <link rel='stylesheet' href='css/bootstrap-theme.min.css'>
-<link rel=stylesheet href=runner.css>
-<script src=runner.js></script>
+<link rel='stylesheet' href='runner.css'>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script src='runner.js'></script>
 <header class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img src='logo.svg' width='50' height='50' alt='Logo for the WPT Runner'> Crosswalk Tests Runner</a>
-      <a class="navbar-brand pull-right info-a"><button id='show_info' class="btn btn-primary">Help</button></a>
+      <a class="navbar-brand" href="#"><img src='logo.png' width='70' height='30.1' alt='Logo for the WPT Runner'> Web Test Service</a>
     </div>
   </div>
 </header>
-
 <div class="container">
-  <div id='help'>
-    <h3>Running Tests</h3>
-    <p>
-      This tests runner runs some set of
-      <a href="https://github.com/crosswalk-project/crosswalk-test-suite">Crosswalk tests</a>, current tests version is <code><em id="version" >N/A</em></code>. The set of online tests available to run can be found in the <a href="/tests">test repository</a>.
-    </p>
-    <p>
-      The set of tests run is configurable via the spec name inputting or selection. Some examples of spec name values for input area are:
-    <p>
-      <ul>
-        <li><code>cors</code> - runs all of the <a href="/tests/cors/">cors</a> tests</li>
-        <li><code>cors, canvas, webaudio</code>: run all tests of <a href="/tests/cors/">cors</a>, <a href="/tests/canvas/">canvas</a> and <a href="/tests/webaudio/">webaudio</a></li>
-      </ul>
-    <p>
-    <p>
-      The set of online <a href="/tests/usecase/index.html">UseCase</a> tests is available to run, which set gather samples to demostrate crosswalk features.
-    <p>
-  </div>
 
-  <div id="testControl" class="panel panel-default">
-    <div class='panel-heading'>
-      <h2 class='panel-title'>Runner Options</h2>
+  <div id="testControl" class="panel hide_panel_border">
+  <div id="test_select_div">
+    <div id="spec_tabs">
+    <ul class="my_nav my_nav-tabs">
+	   <li id="li_select_test_specs" class="my_active tab_li">
+	     <span class="glyphicon glyphicon-check"></span>
+	   </li>
+	   <li id="li_input_test_specs" class="tab_li">
+		  <span class="glyphicon glyphicon-zoom-in"></span>
+	   </li>
+     </ul>
+     <div class="my_tab-content" id="selectpackages">
+		<div id="select_test_specs" class="my_tab-pane my_active">
+          <input id='select_tests' type="hidden">
+		  <div class="accordion suitslist"  id="suitslist">
+			</div>
+		  <div class="select_all_div">
+    		  <input type="checkbox" id='selectall'>
+    		  <label for="selectall" class="unselect_all_label" id="select_all_label">
+    		  <span class="glyphicon glyphicon-star-empty" id="select_all_span"></span> Select All <div class="all_num"></div></label>
+		  </div>
+		</div>
+		<div id="input_test_specs" class="my_tab-pane input_test_specs">
+		  <div>
+		      <ul class="input_ul">
+        	     <li class="input_li">
+        	       <input id='input_tests' placeholder='Input Test Specification' class='form-control' value="" autocomplete="off">
+                 </li>
+                 <li class="add_li">
+                   <span class="glyphicon glyphicon-plus"></span>
+                 </li>
+              </ul>
+		  </div>
+		  <div class="input_test_pp" id="input_test_pp">
+		  </div>
+		  <div class="input_test_result">
+		      <ul class="input_ul">
+		      </ul>
+		  </div>
+		</div>
+	 </div>
+	 </div>
+	 
+	 <div class="advanced_link"><span class="glyphicon glyphicon-chevron-up icon_advanced"></span> Advanced Options</div>
+	 
+	 <div id="test_type_div">
+       <ul class="test_type_ul">
+	     <li class="test_type_check test_type_li">
+	       <input type='checkbox' value="testharness" id='th' class="test-type">
+	       <span class="glyphicon glyphicon-star float_left"></span>
+           JavaScript Tests
+         </li>
+         <li class="test_type_uncheck test_type_middle test_type_li">
+           <input type='checkbox' value="reftest" id='ref' class="test-type">
+           <span class="glyphicon glyphicon-star-empty float_left"></span>
+           Reference Tests
+         </li>
+         <li class="test_type_uncheck test_type_li">
+           <input type='checkbox' value="manual" id='man' class="test-type">
+           <span class="glyphicon glyphicon-star-empty float_left"></span>
+           Manual Tests
+         </li>
+	   </ul>
     </div>
-    <div class="panel-body">
-      <div id='options' class='horizontal-form' >
-        <div class="form-group">
-          <label for="path" class="col-sm-3 control-label">Test specifications</label>
-          <div id="sepcinput" class="input-group col-sm-9 sepc-input">
-            <span class="input-group-btn">
-              <button id='select_tests' class="btn btn-primary" type="button">Select test specs</button>
-            </span>
-            <input id='input_tests' placeholder='Input test specs'  class='form-control' >
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="th" class="col-sm-3 control-label">JavaScript tests</label>
-          <label class="col-sm-9">
-            <input type=checkbox checked value="testharness" id='th' class='test-type'>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="ref" class="col-sm-3 control-label">Reference tests</label>
-          <label class="col-sm-9" >
-            <input type=checkbox checked value="reftest" id='ref' class='test-type'>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="man" class="col-sm-3 control-label">Manual tests</label>
-          <label class="col-sm-9">
-            <input type=checkbox checked value="manual" id='man' class='test-type'>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="timeout_multiplier" class="col-sm-3 control-label">Timeout multiplier</label>
-          <div class="col-sm-9">
-            <span class="input-group-addon hide-span"></span>
-            <input type=number value="1" id='timeout_multiplier' class='timeout_multiplier form-control'>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="iframe" class="col-sm-3 control-label">Run tests in iframe</label>
-          <label class="col-sm-9">
-            <input type=checkbox checked value="iframe" class='iframe' id='iframe'>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="render" class="col-sm-3 control-label">Show output (debug)</label>
-          <label class="col-sm-9">
-            <input type=checkbox id='render' value='render' class='render'>
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="dumpit" class="col-sm-3 control-label">Dump JSON (debug)</label>
-          <label class="col-sm-9">
-            <input type=checkbox id='dumpit'>
-          </label>
-        </div>
-        <div class="form-group contrl-btn">
-          <div class="col-sm-offset-3 col-sm-9">
-            <button type="button" class="btn btn-primary toggleStart" disabled>Start</button>
-            <button type='button' class="btn btn-primary togglePause" disabled>Pause</button>
-          </div>
-        </div>
-        <div id="selectpackages">
-          <div id="selectpackages-in">
-          <div class='panel panel-primary'>
-            <div class='panel-heading'>
-              <h4 class='panel-title'>Select test specs</h4>
-            </div>
-            <div class="panel-body">
-             <label><input type=checkbox id='selectall'> Select all specs</label>
-              <div class='well suitslist'>
-              </div>
-            </div>
-            <div class="panel-footer ">
-              <div class='row ok-root'>
-                <button class="btn btn-primary pull-right selcted-tests">OK</button>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+    
+    <div class="advanced_div">
+	   <ul>
+           <li class="advanced_ckb_checked" id="iframe_ckb"><input type="checkbox" checked value="iframe" class='iframe' id='iframe' hidden><span class="glyphicon glyphicon-star float_left"></span> Run Tests in "iframe"</li>
+		   <li class="advanced_ckb_unchecked advanced_ckb_middle" id="dumpit_ckb"><input type='checkbox' id='dumpit' value='dumpit' class='dumpit' hidden><span class="glyphicon glyphicon-star-empty float_left"></span> Dump JSON (debug)</li>
+	       <li class="timeout_multiplier_input" id="timeout_multiplier_input">Timeout Multiplier: 
+            <input type="number" value="1" id='timeout_multiplier' class='timeout_multiplier form-control'>
+           </li>
+	   </ul>
+    </div>
+    </div>
+    
+    <div class="form-group contrl-btn" id="start_btn_div">
+    <div class="start_error" id="start_error"><code>No test spec found to run ...</code></div>
+	   <ul>
+           <li id="togglePause" class="togglePause button_hidden width_49_75">Pause</li>
+	       <li id="toggleStart" class="toggleStart width_100">Start</li>
+	   </ul>
     </div>
   </div>
 
- <div id="output">
+  <div id="output" class="output">
     <div class="summary clearfix">
       <h4>Progress</h4>
       <div class="progress">
@@ -149,54 +128,76 @@
           </tr>
         </tbody>
       </table>
-      <a class="jsonResults btn btn-primary pull-right">Download JSON results</a>
     </div>
-    <div id="runMode" >
+    <div id="runMode">
       <iframe id="testFrame" ></iframe>
     </div>
+    <div class="container_div">
+      <div class="download_div width_49_75"><a class="jsonResults btn pull-right download_json width_100">Download JSON Results</a></div>
+      <div class="show_details width_100" id="show_details">Show Details</div>
+   </div>
     <div class="results">
-      <div id="manualUI">
-        <div class='panel panel-primary'>
-          <div class="panel-body mantestUI">The current test requires manual result marking.
-          </div>
-          <div class="panel-body reftestUI">
-            <p>
-              The current test requires manual result marking.
-              Test and ref should compare <strong class="refType text-primary"></strong>
-            </p>
-            <div class="btn-group">
-              <button class="btn btn-primary test">Show Test</button>
-              <button class="btn btn-primary ref">Show Reference</button>
+      <div id="manualUI" class="manualUI">
+        <div class='panel'>
+          <div class="panel-body pop_bgd panel_padding">
+            <div class="btn-group pop_bgd reftestUI width_49_75">
+                <div class="ref_div"><button class="test">Show Test</button></div>
+                <div class="ref_div btn_mrg_left_0_5"><button class="ref">Show Reference</button></div>
             </div>
-          </div>
-          <div class="panel-footer">
-            <div class="btn-group">
-              <button class="btn btn-primary prev"><</button>
-              <button class="btn btn-success pass">Pass</button>
-              <button class="btn btn-danger fail">Fail</button>
-              <button class="btn btn-warning block">Block</button>
-              <button class="btn btn-primary fwd">></button>
+            <div class="btn-group result_button width_49_75 margin_left_0_5">
+                <div class="mau_div"><button class="prev"><</button></div>
+                <div class="mau_div btn_mrg_left_0_5"><button class="pass">Pass</button></div>
+                <div class="mau_div btn_mrg_left_0_5"><button class="fail">Fail</button></div>
+                <div class="mau_div btn_mrg_left_0_5"><button class="block">Block</button></div>
+                <div class="mau_div btn_mrg_left_0_5"><button class="fwd">></button></div>
             </div>
           </div>
         </div>
       </div>
-
-      <hr>
+      
+      <div id="detail_div" class="detail_div">
       <h4>Details</h4>
-      <div style='overflow-x: scroll;'>
+      <div class="detail">
         <table class='table'>
           <thead>
             <tr>
               <th>Test</th>
               <th>Status</th>
               <th>Message</th>
-              <th>Subtest Pass Rate</th>
+              <th>Subtest</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
       </div>
+      </div>
+
     </div>
   </div>
-
+  <div id='help' class="help_div">
+    <h3>About Web Testing Service</h3>
+    <p>
+      The Web Testing Service is a web-based runner indicates how well the Crosswalk Project enable your product supports the HTML5 standard and related specifications on cross platforms. 
+      Measure your product with the latest web technology and comprehensive standard web test suites always, and compare the results with other web products you care about.
+    </p>
+    <p>
+      The Web Testing Service does not only host the latest HTML5 standard tests, but also involves the tests for the hottest web technologies, e.g. Real Sense, SIMD, Presentation APIs, as well as supports users to run them through browsers or web runtimes. 
+      Crosswalk Project QA team have been devoted on Web Testing Service, provided customization test plan according to user needs, and hoping that by using Web Testing Service, users could get an idea of improving their product and the web as a development platform.
+    </p>
+    <p>
+      The set of tests run is configurable via the specification name selection or searching. Especially, the searching input provides candidates which bases on specification name or category name:
+    </p> 
+    <p>
+      <ul>
+        <li><code>Communication</code> - add all tests of "Communication" specification category to the execution list.
+        <li><code>SIMD</code> - add all tests of "SIMD" specification to the execution list. 
+      </ul>
+    <p>
+    <p>
+      Visit <a href="/tests">Test Repository</a> (Tests version: <code><em id="version" >N/A</em></code>),  <a href="https://github.com/crosswalk-project/crosswalk-test-suite">Test Source Code</a>, and learn more about <a href="/tests">Features</a> for Web Testing Service.
+    </p>
+    <p>
+      Help us to improve Web Testing Service via  <a href="https://lists.crosswalk-project.org/mailman/listinfo/crosswalk-help">crosswalk-help mailing list.</a>
+    </p>
+  </div>
 </div>
