@@ -755,7 +755,7 @@ input#input_tests{
 .toggleStart{
     list-style: none;
     float: right;
-    background-color:#1ebcba;
+    background-color:#EC543B;
     padding:7px;
     text-align:center;
     color:#fff;
@@ -766,7 +766,7 @@ input#input_tests{
 .togglePause{
     list-style: none;
     float: right;
-    background-color:#1ebcba;
+    background-color:#EC543B;
     padding:7px;
     text-align:center;
     color:#fff;
@@ -805,8 +805,11 @@ input#input_tests{
 
 .download_json, .download_json:active, .download_json:hover{
     color: #fff;
-    background-color: #1ebcba;
-    margin-bottom: 3px;
+    background-color: #EC543B;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding:7px 12px;
 }
 
 .progress-bar{
@@ -824,7 +827,7 @@ input#input_tests{
 .show_details{
     padding:6px 12px;
     text-align:center;
-    background-color:#1ebcba;
+    background-color:#EC543B;
     color: #fff;
     height: 34px;
     float: right;
@@ -878,7 +881,7 @@ input#input_tests{
 }
 
 .select_all_div .select_all_label{
-    background-color:#1ebcba;
+    background-color:#88B038;
     padding:7px 12px 7px 10px;
     text-align:left;
     color:#fff;
@@ -986,10 +989,11 @@ li.specname label{
     width: 60px;
     text-align: center;
 	text-decoration:underline;
+	border-left: 1px solid #fff;
 }
 
 .ctg_num_check{
-    background-color:#EC543B;
+    background-color:#88b038;
 }
 
 .ctg_num_uncheck{
@@ -1023,7 +1027,7 @@ li.specname label{
     width:10%;
     float:left;
     list-style:none;
-    background-color: #1ebcba;
+    background-color: #EC543B;
     text-align: center;
     padding: 7px 0px 7px 0px;
     color: #fff;
