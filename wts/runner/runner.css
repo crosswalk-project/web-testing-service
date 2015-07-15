@@ -200,6 +200,10 @@ body {
     margin-bottom:0px;
 }
 
+.navbar-brand{
+    padding: 15px 0px;
+}
+
 iframe {
     width: 100%;
     height: 400px;
@@ -321,13 +325,6 @@ input#input_tests{
     display: none;
 }
 
-.suitslist{
-    overflow:auto;
-    overflow-y: auto;
-    overflow-x: auto;
-    height: 203px;
-}
-
 .ok-root{
     padding-right:20px;
 }
@@ -340,10 +337,6 @@ input#input_tests{
     width: 0;
     -webkit-transition: width 0 ease;
     transition: width 0s ease;
-}
-
-.navbar-brand{
-    padding: 15px 0px
 }
 
 .spec_list{
@@ -396,6 +389,10 @@ input#input_tests{
         display:none;
         margin:0px 3px 20px 3px;
         padding-top: 20px;
+    }
+    
+    .navbar-brand{
+        height: 45px;
     }
 }
 
@@ -456,8 +453,8 @@ input#input_tests{
         height: 111px;
     }
     
-    .help_div{
-        padding:0px 5px 0px 5px;
+    .container_div .width_49_75{
+        width: 100%;
     }
 }
 
@@ -539,7 +536,7 @@ input#input_tests{
 .my_nav>li>span{
     position:relative;
     display:block;
-    padding:5px 15px;
+    padding:7px 15px;
     color: #1ebcba;
 }
 
@@ -581,7 +578,8 @@ input#input_tests{
 .tab_li{
     width:50%;
     text-align:center;
-    font-size: 24px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .input_test_specs{
@@ -803,23 +801,6 @@ input#input_tests{
     width:19.6%;
 }
 
-.download_json, .download_json:active, .download_json:hover{
-    color: #fff;
-    background-color: #EC543B;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    padding:7px 12px;
-}
-
-.progress-bar{
-    background-color: #1ebcba;
-}
-
-.progress{
-    border-radius:0px;
-}
-
 .container_div{
     height: 50px;
 }
@@ -833,13 +814,32 @@ input#input_tests{
     float: right;
     margin-bottom: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 .download_div{
     float:right;
-    margin-top: 10px;
+    margin-top: 3px;
     margin-left: 0.5%;
+}
+
+.download_div a:link,.download_div a:visited,.download_div a:hover,.download_div a:active{
+    color: #fff;
+    background-color: #EC543B;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    padding:7px 12px;
+}
+
+.progress-bar{
+    background-color: #1ebcba;
+    line-height: 28px;
+}
+
+.progress{
+    border-radius:0px;
+    height: 28px;
 }
 
 .start_error{
@@ -943,7 +943,7 @@ input#input_tests{
 }
 
 .accordion-heading .category_label{
-    padding: 7px 15px 7px 15px;
+    padding: 6px 15px 6px 15px;
     font-weight: bold;
     font-size: 14px;
     cursor: pointer;
@@ -980,12 +980,13 @@ li.specname{
 
 li.specname label{
     padding-left: 30px;
+    padding-right: 10px;
 }
 
 .categry_num{
     float: right;
-    padding-top:7px;
-    padding-bottom:7px;
+    padding-top:6px;
+    padding-bottom:6px;
     width: 60px;
     text-align: center;
 	text-decoration:underline;

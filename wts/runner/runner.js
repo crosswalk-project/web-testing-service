@@ -531,7 +531,6 @@ SuiteUI.prototype ={
             index_num++;
         }
         this.packages_list.innerHTML = html;
-        this.packages_list.childNodes[0].childNodes[1].style.display = "block";
         this.select_all_label.childNodes[3].innerHTML = "0/"+total_num;
     },
 
@@ -687,10 +686,10 @@ SuiteUI.prototype ={
         for(var j = 0,k = category_group_list.length; j < k; j++){
             category_group_list[j].childNodes[1].style.display = "none";
         }
-        if(status == 'none'){
-            node.style.display = 'block';
-        }else{
+        if(status == 'block'){
             node.style.display = 'none';
+        }else{
+            node.style.display = 'block';
         }
     },
     
