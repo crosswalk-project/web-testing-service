@@ -835,6 +835,7 @@ TestControl.prototype = {
             this.start_button.classList.remove("width_100");
             this.start_button.classList.add("width_49_75");
             document.getElementById("show_details").innerHTML = "Show Details";
+            window.scrollTo(0,0);
             var run_mode = "window";
             if (this.iframe_checkbox.checked) {
                 run_mode = "iframe";
