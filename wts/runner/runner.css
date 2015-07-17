@@ -452,10 +452,6 @@ input#input_tests{
         margin: 0px;
         height: 111px;
     }
-    
-    .container_div .width_49_75{
-        width: 100%;
-    }
 }
 
 @media (max-width: 680px) {
@@ -750,7 +746,7 @@ input#input_tests{
     color:#1ebcba;
 }
 
-.toggleStart{
+.contrl_btns li{
     list-style: none;
     float: right;
     background-color:#EC543B;
@@ -759,18 +755,6 @@ input#input_tests{
     color:#fff;
     border-radius: 0px;
     cursor: pointer;
-}
-
-.togglePause{
-    list-style: none;
-    float: right;
-    background-color:#EC543B;
-    padding:7px;
-    text-align:center;
-    color:#fff;
-    border-radius: 0px;
-    cursor: pointer;
-    margin-left: 0.5%;
 }
 
 .width_100{
@@ -801,26 +785,8 @@ input#input_tests{
     width:19.6%;
 }
 
-.container_div{
-    height: 50px;
-}
-
-.show_details{
-    padding:6px 12px;
-    text-align:center;
-    background-color:#EC543B;
-    color: #fff;
-    height: 34px;
-    float: right;
-    margin-bottom: 10px;
-    cursor: pointer;
-    margin-top: 3px;
-}
-
 .download_div{
-    float:right;
     margin-top: 3px;
-    margin-left: 0.5%;
 }
 
 .download_div a:link,.download_div a:visited,.download_div a:hover,.download_div a:active{

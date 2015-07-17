@@ -93,11 +93,11 @@
     </div>
     </div>
     
-    <div class="form-group contrl-btn" id="start_btn_div">
+    <div class="form-group contrl-btn contrl_btns" id="start_btn_div">
     <div class="start_error" id="start_error"><code>No test spec found to run ...</code></div>
 	   <ul>
-           <li id="togglePause" class="togglePause button_hidden width_49_75">Pause</li>
-	       <li id="toggleStart" class="toggleStart width_100">Start</li>
+           <li id="togglePause" class="button_hidden width_49_75 margin_left_0_5">Pause</li>
+	       <li id="toggleStart" class="width_100">Start</li>
 	   </ul>
     </div>
   </div>
@@ -132,10 +132,7 @@
     <div id="runMode">
       <iframe id="testFrame" ></iframe>
     </div>
-    <div class="container_div">
-      <div class="download_div width_49_75"><a class="jsonResults pull-right download_json width_100">Download JSON Results</a></div>
-      <div class="show_details width_100" id="show_details">Show Details</div>
-   </div>
+    <div class="download_div"><a class="jsonResults pull-right download_json width_100">Download JSON Results</a></div>
     <div class="results">
       <div id="manualUI" class="manualUI">
         <div class='panel'>
@@ -155,7 +152,6 @@
         </div>
       </div>
       
-      <div id="detail_div" class="detail_div">
       <h4>Details</h4>
       <div class="detail">
         <table class='table'>
@@ -169,7 +165,6 @@
           </thead>
           <tbody></tbody>
         </table>
-      </div>
       </div>
 
     </div>

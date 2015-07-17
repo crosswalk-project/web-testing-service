@@ -130,28 +130,16 @@ function VisualOutput(elem, runner) {
     this.runner = runner;
     this.results_table = null;
     this.section_wrapper = null;
-    this.results_table = this.elem.querySelector(".results > div > div > table");
+    this.results_table = this.elem.querySelector(".results > div > table");
     this.section = null;
     this.progress = this.elem.querySelector(".summary .progress");
     this.meter = this.progress.querySelector(".progress-bar");
-    this.detail_div = this.elem.querySelector(".detail_div");
-    this.show_details_button = this.elem.querySelector(".show_details");
     this.result_count = null;
 
     this.elem.style.display = "none";
     this.runner.start_callbacks.push(this.on_start.bind(this));
     this.runner.result_callbacks.push(this.on_result.bind(this));
     this.runner.done_callbacks.push(this.on_done.bind(this));
-    
-    this.show_details_button.onclick = function(){
-        if(this.detail_div.style.display == "none"){
-            this.show_details_button.innerHTML = "Hide Details";
-            this.detail_div.style.display = "block";
-        }else{
-            this.show_details_button.innerHTML = "Show Details";
-            this.detail_div.style.display = "none";
-        }
-    }.bind(this);
 }
 
 VisualOutput.prototype = {
@@ -165,8 +153,6 @@ VisualOutput.prototype = {
             }
         }
         this.elem.querySelector(".jsonResults").style.display = "none";
-        this.show_details_button.classList.remove("width_49_75");
-        this.show_details_button.classList.add("width_100");
         this.meter.style.width = '0px';
         this.meter.textContent = '0%';
         this.results_table.removeChild(this.results_table.tBodies[0]);
@@ -176,7 +162,6 @@ VisualOutput.prototype = {
     on_start: function() {
         this.clear();
         this.elem.style.display = "block";
-        this.detail_div.style.display = "none";
         this.meter.classList.add("progress-striped", "active");
     },
 
@@ -303,8 +288,6 @@ VisualOutput.prototype = {
         a.textContent = "Download JSON Results";
         if (!a.getAttribute("download")) a.textContent += " (right-click and save as to download)";
         a.style.display = "inline";
-        this.show_details_button.classList.remove("width_100");
-        this.show_details_button.classList.add("width_49_75");
     },
 
     test_name_node: function(test) {
@@ -813,9 +796,11 @@ function TestControl(elem, runner) {
 
 TestControl.prototype = {
     set_start: function() {
-        this.start_button.disabled = false;
-        this.pause_button.disabled = true;
-        this.start_button.textContent = "Start";
+        if(this.start_button.textContent != "Stop"){
+            this.start_button.textContent = "Run";
+        }else{
+            this.start_button.textContent = "Rerun";
+        }
         this.iframe_checkbox.disabled = false;
         this.timeout_input.disabled = false;
         this.filter_selected.disabled = false;
@@ -831,10 +816,9 @@ TestControl.prototype = {
             var filter_array = this.get_filter();
             var test_types = this.get_test_types();
             var settings = this.get_testharness_settings();
-            this.pause_button.classList.remove("button_hidden");
             this.start_button.classList.remove("width_100");
             this.start_button.classList.add("width_49_75");
-            document.getElementById("show_details").innerHTML = "Show Details";
+            this.pause_button.classList.remove("button_hidden");
             window.scrollTo(0,0);
             var run_mode = "window";
             if (this.iframe_checkbox.checked) {
@@ -858,7 +842,6 @@ TestControl.prototype = {
 
     set_stop: function() {
         clearTimeout(this.runner.timeout);
-        this.pause_button.disabled = false;
         this.start_button.textContent = "Stop";
         this.type_checkboxes.forEach(function(elem) {
             elem.disabled = true;
@@ -868,12 +851,6 @@ TestControl.prototype = {
             this.timeout_input.disabled = false;
             this.filter_selected.disabled = false;
             this.filter_input.disabled = false;
-            this.pause_button.classList.add("button_hidden");
-            this.start_button.classList.remove("width_49_75");
-            this.start_button.classList.add("width_100");
-            document.getElementById("test_select_div").style.display = "block";
-            document.getElementById("start_btn_div").classList.remove("start_btn_div_manual");
-            document.getElementById("start_btn_div").classList.remove("start_btn_div_reftest");
             this.runner.done();
         }.bind(this);
     },
@@ -897,6 +874,20 @@ TestControl.prototype = {
             this.set_pause();
         }.bind(this);
 
+    },
+    
+    set_back: function() {
+        this.pause_button.textContent = "Back";
+        this.pause_button.onclick = function() {
+            document.getElementById("test_select_div").style.display = "block";
+            document.getElementById("start_btn_div").classList.remove("start_btn_div_manual");
+            document.getElementById("start_btn_div").classList.remove("start_btn_div_reftest");
+            document.getElementById("output").style.display = "none";
+            this.pause_button.classList.add("button_hidden");
+            this.start_button.classList.remove("width_49_75");
+            this.start_button.classList.add("width_100");
+            this.start_button.textContent = "Run";
+        }.bind(this);
     },
 
     get_filter: function(data) {
@@ -998,14 +989,8 @@ TestControl.prototype = {
     },
 
     on_done: function() {
-        this.set_pause();
         this.set_start();
-        this.pause_button.classList.add("button_hidden");
-        this.start_button.classList.remove("width_49_75");
-        this.start_button.classList.add("width_100");
-        document.getElementById("test_select_div").style.display = "block";
-        document.getElementById("start_btn_div").classList.remove("start_btn_div_manual");
-        document.getElementById("start_btn_div").classList.remove("start_btn_div_reftest");
+        this.set_back();
     },
     
     select_select_tab: function(){
