@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<title>URLs Switcher</title>
+<meta name="viewport" content="width=device-width"></meta>
+<style type="text/css">
+.switcher_container {
+    padding: 0px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.switcher_container02 {
+    padding: 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.urls_text {
+    width: 70%;
+    margin-right: 5px;
+    height: 38px;
+    padding: 0px;
+    border: 1px solid #cccccc;
+}
+
+.urls_switch {
+    width: 10%;
+    height: 40px;
+    padding: 0px;
+}
+
+.urls_text02 {
+    width: 70%;
+    margin-right: 5px;
+    height: 38px;
+    padding: 0px;
+    border: 1px solid #cccccc;
+}
+
+.urls_switch02 {
+    width: 10%;
+    height: 40px;
+    padding: 0px;
+}
+</style>
+<script>
+function init_page() {
+    document.getElementById("urls_switch").addEventListener("click",function(){
+         if (document.getElementById("urls_text").value) {
+             window.location.href = document.getElementById("urls_text").value
+         } else {
+             alert("Pls input the WTS URL, e.g. http://wts-ip")
+         }
+    } , false)
+
+    document.getElementById("urls_switch02").addEventListener("click",function(){
+         if (document.getElementById("urls_text02").value) {
+             window.location.href = document.getElementById("urls_text02").value
+         } else {
+             alert("Pls select one WTS URL ...")
+         }
+    } , false)
+}
+window.addEventListener("DOMContentLoaded", init_page, false)
+</script>
+</head>
+<body>
+<div class="switcher_container">
+<input id="urls_text" class="urls_text" type="text" name="urls"></input>
+<input id="urls_switch" class="urls_switch" type="button" value="Go"></input>
+</div>
+<div class="switcher_container02">
+<select id="urls_text02" class="urls_text02">
+  <option value="http://192.168.43.99">Internal WTS http://192.168.43.99</option>
+  <option value="http://wts.crosswalk-project.org">Official WTS http://wts.crosswalk-project.org</option>
+</select>
+<input id="urls_switch02" class="urls_switch02" type="button" value="Go"></input>
+</div>
+</body>
+</html>
