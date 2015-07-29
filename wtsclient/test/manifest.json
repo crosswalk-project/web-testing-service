@@ -1,0 +1,14 @@
+{
+    "display": [
+        "fullscreen"
+    ],
+    "icons": [{
+            "sizes": "128x128",
+            "src": "images/icon.png"
+    }],
+    "name": "Web Test Client",
+    "orientation": "any",
+    "start_url": "index.html",
+    "xwalk_description": "Web Test Client Application",
+    "xwalk_version": "0.1"
+}
