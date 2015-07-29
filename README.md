@@ -1,16 +1,18 @@
 ## Introduction
 
-The Web Testing Service (WTS) is a web server that hosts the comprehensive
-web test suites and supports users to run them online through Browsers or
-Web Runtimes. Its backend also provides the web servers such as wpt server,
-web socket server and some test media content; its frontend is a friendly
-web page to customize tests, control testing, and show test results.
+Web Testing Service is a web-based runner. It indicates how well the Crosswalk Project, browsers or other web runtime support the web standard and related specifications on cross platforms. It can also evaluate your product with latest and comprehensive web standards support, and comparing the results with other web products you are caring about.
+
+The Web Testing Service is not only a collection of test suites that including latest W3C web standards, but also involving the tests for hot web technologies which is not a part of W3C, e.g. Real Sense, SIMD. Crosswalk Project QA team are dedicated to provide this tool, also providing customization test plan according to user needs, and hoping that users could get ideas of improving their products on web.
 
 ## Documentation
 
 Check out our documents at `doc\`.
 
-* `doc/User_Guide_for_Web-Testing-Service_Setting_Up`
+* `doc/User_Guide_for_Web-Testing-Service_Setting_Up_v1.1.pdf`
+
+The guide to build WTS client application hosts `wtsclient/`
+
+* `wtsclient/README.md`
 
 ## Contributing
 
