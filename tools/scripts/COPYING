@@ -3,8 +3,8 @@ https://github.com/w3c/web-platform-tests/tree/master/tools/scripts(commit 09686
 with modification:
 
 tests_scan.py
-  update generate MANIFEST.json by scanning tests dir.
-  add generate selection.json.
+  update generate manifest1.json by scanning tests dir.
+  add generate manifest0.json.
 
 
 
