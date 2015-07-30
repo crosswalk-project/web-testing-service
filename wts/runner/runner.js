@@ -24,6 +24,7 @@ Manifest.prototype = {
             }
             document.getElementById("over").style.display = "none";
             document.getElementById("layout").style.display = "none";
+            document.getElementById("container").style.display = "block";
             this.data = JSON.parse(xhr.responseText);
             loaded_callback();
         }.bind(this);
