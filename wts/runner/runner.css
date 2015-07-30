@@ -142,7 +142,7 @@ html.done section + section {
     float: right;
 }
 
-.pass,.block,.fail,.prev,.fwd,.test,.ref{
+.pass,.block,.fail,.prev,.fwd,.test,.ref,.start,.start_disabled{
     width: 100%;
     outline:0 none !important; blr:expression(this.onFocus=this.blur());
     padding-top: 7px;
@@ -170,6 +170,16 @@ html.done section + section {
 
 .block, .block:active, .block:hover, .block:focus{
     background-color: #f0ad4e; 
+    color: #fff;
+}
+
+.start, .start:active, .start:hover, .start:focus{
+    background-color: #EC543B; 
+    color: #fff;
+}
+
+.start_disabled, .start_disabled:active, .start_disabled:hover, .start_disabled:focus{
+    background-color: #aaa; 
     color: #fff;
 }
 
@@ -456,9 +466,8 @@ input#input_tests{
 
 @media (max-width: 680px) {
     .advanced_div{
-        height:126px;
         display:none;
-		margin-top:3px;
+        margin-top:3px;
     }
     
     .advanced_div ul{
@@ -694,7 +703,7 @@ input#input_tests{
     .advanced_div{
         height:34px;
         display:none;
-		margin-top:3px;
+        margin-top:3px;
     }
     
     .advanced_div ul{
@@ -750,11 +759,14 @@ input#input_tests{
     list-style: none;
     float: right;
     background-color:#EC543B;
-    padding:7px;
     text-align:center;
     color:#fff;
     border-radius: 0px;
     cursor: pointer;
+}
+
+.togglePause{
+    padding:7px;
 }
 
 .width_100{
@@ -812,11 +824,15 @@ input#input_tests{
     color:red;
 }
 
+.loading_div code{
+	white-space: pre-wrap;
+}
+
 .start_btn_div_manual{
     margin-top: 38px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 995px) {
     .start_btn_div_reftest{
         margin-top: 78px;
     }
@@ -831,7 +847,7 @@ input#input_tests{
     }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 995px) {
     .start_btn_div_reftest{
         margin-top: 38px;
     }
@@ -865,16 +881,14 @@ input#input_tests{
 }
 
 .select_all_label .all_num{
-    float:right;
 	width:55px;
-	text-align:center;
+	padding:0 7px 0 12px;
 	font-weight: normal;
 }
 
 .unselect_all_label .all_num{
-    float:right;
 	width:55px;
-	text-align:center;
+	padding:0 7px 0 12px;
 	font-weight: normal;
 }
 
@@ -1020,4 +1034,29 @@ li.specname label{
 
 .detail{
     overflow-x: scroll;
+}
+
+.over {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    opacity:0.5;
+    z-index: 1000;
+}
+
+.layout {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    z-index: 1001;
+    text-align:center;
+    color: #fff;
+    font-size: 24px;
 }

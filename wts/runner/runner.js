@@ -9,6 +9,7 @@ function Manifest(path) {
     this.data = null;
     this.path = path;
     this.num_tests = null;
+    //this.load();
 }
 
 Manifest.prototype = {
@@ -21,13 +22,36 @@ Manifest.prototype = {
             if (!(xhr.status === 200 || xhr.status === 0)) {
                 throw new Error("Manifest " + this.path + " failed to load");
             }
+            document.getElementById("over").style.display = "none";
+            document.getElementById("layout").style.display = "none";
+            document.getElementById("container").style.display = "block";
             this.data = JSON.parse(xhr.responseText);
             loaded_callback();
         }.bind(this);
         xhr.open("GET", this.path);
         xhr.send(null);
     },
-
+    
+    manifest_load: function(loaded_callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== 4) {
+                return;
+            }
+            if (!(xhr.status === 200 || xhr.status === 0)) {
+                throw new Error("Manifest " + this.path + " failed to load");
+            }
+            document.getElementById("loading_div").style.display = "none";
+            document.getElementById("start_btn").disabled = false;
+            document.getElementById("start_btn").classList.remove("start_disabled");
+            document.getElementById("start_btn").classList.add("start");
+            this.data = JSON.parse(xhr.responseText);
+            loaded_callback();
+        }.bind(this);
+        xhr.open("GET", this.path);
+        xhr.send(null);
+    },
+    
     by_type:function(type) {
         if (this.data.items.hasOwnProperty(type)) {
             return this.data.items[type];
@@ -110,6 +134,7 @@ ManifestIterator.prototype = {
             spec_desc: this.select_json_data[suite_name]
         };
         if (manifest_item.hasOwnProperty("ref_url")) {
+            test.ref_type = manifest_item.ref_type;
             test.ref_url = manifest_item.ref_url;
         }
         return test;
@@ -296,6 +321,7 @@ VisualOutput.prototype = {
         } else {
             var wrapper = document.createElement("span");
             wrapper.appendChild(this.link(test.url));
+            wrapper.appendChild(document.createTextNode(" " + test.ref_type + " "));
             wrapper.appendChild(this.link(test.ref_url));
             return wrapper;
         }
@@ -420,6 +446,7 @@ ManualUI.prototype = {
             document.getElementById("start_btn_div").classList.remove("start_btn_div_manual");
             document.getElementById("start_btn_div").classList.add("start_btn_div_reftest");
             this.show_ref();
+            this.ref_button.textContent = test.ref_type === "==" ? "Show Reference" : "Show Reference(mismatch)";
         } else {
             this.hide_ref();
         }
@@ -516,7 +543,7 @@ SuiteUI.prototype ={
         this.packages_list.innerHTML = html;
         this.select_all_label.childNodes[3].innerHTML = "0/"+total_num;
     },
-
+    
     refresh_select_list_all: function(){
         var status = this.select_all.checked;
         var select_all_str = this.select_all_label.childNodes[3].innerHTML;
@@ -715,7 +742,8 @@ function TestControl(elem, runner) {
     this.filter_selected = this.elem.querySelector("#select_tests");
     this.filter_input = this.elem.querySelector("#input_tests");
     this.pause_button = this.elem.querySelector("#togglePause");
-    this.start_button = this.elem.querySelector("#toggleStart");
+    this.start_button = this.elem.querySelector("#start_btn");
+    this.start_li = this.elem.querySelector("#toggleStart");
     this.type_checkboxes = Array.prototype.slice.call(
     this.elem.querySelectorAll("input[type=checkbox].test-type"));
     this.iframe_checkbox = this.elem.querySelector(".iframe");
@@ -816,8 +844,8 @@ TestControl.prototype = {
             var filter_array = this.get_filter();
             var test_types = this.get_test_types();
             var settings = this.get_testharness_settings();
-            this.start_button.classList.remove("width_100");
-            this.start_button.classList.add("width_49_75");
+            this.start_li.classList.remove("width_100");
+            this.start_li.classList.add("width_49_75");
             this.pause_button.classList.remove("button_hidden");
             window.scrollTo(0,0);
             var run_mode = "window";
@@ -857,6 +885,7 @@ TestControl.prototype = {
 
     set_pause: function() {
         this.pause_button.textContent = "Pause";
+        document.getElementById("help").style.display = "none";
         this.pause_button.onclick = function() {
             this.iframe_checkbox.disabled = true;
             this.timeout_input.disabled = true;
@@ -879,13 +908,14 @@ TestControl.prototype = {
     set_back: function() {
         this.pause_button.textContent = "Back";
         this.pause_button.onclick = function() {
+            document.getElementById("help").style.display = "block";
             document.getElementById("test_select_div").style.display = "block";
             document.getElementById("start_btn_div").classList.remove("start_btn_div_manual");
             document.getElementById("start_btn_div").classList.remove("start_btn_div_reftest");
             document.getElementById("output").style.display = "none";
             this.pause_button.classList.add("button_hidden");
-            this.start_button.classList.remove("width_49_75");
-            this.start_button.classList.add("width_100");
+            this.start_li.classList.remove("width_49_75");
+            this.start_li.classList.add("width_100");
             this.start_button.textContent = "Run";
         }.bind(this);
     },
@@ -1153,7 +1183,7 @@ Results.prototype = {
         var data = {
             "results": this.test_results.map(function(result) {
                 var rv = {"test":(result.test.hasOwnProperty("ref_url") ?
-                                  [result.test.url, result.test.ref_url] :
+                                  [result.test.url, result.test.ref_type, result.test.ref_url] :
                                   result.test.url),
                           "type": type_arr[result.test.type],
                           "spec_desc": result.test.spec_desc,
@@ -1170,7 +1200,7 @@ Results.prototype = {
 function Runner(manifest_path) {
     this.server = location.protocol + "//" + location.host;
     this.manifest = new Manifest(manifest_path);
-    this.select_json = new Manifest('/tests/selection.json');
+    this.select_json = new Manifest('/tests/manifest0.json');
     this.filter_array = null;
     this.test_types = null;
     this.manifest_iterator = null;
@@ -1195,7 +1225,7 @@ function Runner(manifest_path) {
     this.results = new Results(this);
 
     this.start_after_manifest_load = false;
-    this.manifest.load(this.manifest_loaded.bind(this));
+    this.manifest.manifest_load(this.manifest_loaded.bind(this));
     this.suiteui = null;
     this.select_json.load(this.selection_load.bind(this));
 }
@@ -1206,7 +1236,7 @@ Runner.prototype = {
     currentTest: function() {
         return this.manifest[this.mTestCount];
     },
-
+    
     open_test_window: function() {
         this.test_window = window.open("about:blank", 800, 600);
         window.focus();
@@ -1397,7 +1427,7 @@ function setup() {
     var version_dom = document.getElementById('version');
 
     loadconfig("/tests/version.json",version_dom);
-    runner = new Runner("/tests/MANIFEST.json", options);
+    runner = new Runner("/tests/manifest1.json", options);
     var test_control = new TestControl(document.getElementById("testControl"), runner);
     new ManualUI(document.getElementById("manualUI"), runner);
     new VisualOutput(document.getElementById("output"), runner);
@@ -1409,6 +1439,9 @@ function setup() {
                     test_control.get_testharness_settings());
         return;
     }
+    
+    document.getElementById("start_btn").disabled = true;
+    
 }
 
 window.completion_callback = function(tests, status) {

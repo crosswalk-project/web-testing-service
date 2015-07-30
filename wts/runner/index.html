@@ -15,7 +15,7 @@
     </div>
   </div>
 </header>
-<div class="container">
+<div class="container" style="display:none;" id="container">
 
   <div id="testControl" class="panel hide_panel_border">
   <div id="test_select_div">
@@ -36,7 +36,7 @@
 		  <div class="select_all_div">
     		  <input type="checkbox" id='selectall'>
     		  <label for="selectall" class="unselect_all_label" id="select_all_label">
-    		  <span class="glyphicon glyphicon-star-empty" id="select_all_span"></span> Select All <div class="all_num"></div></label>
+    		  <span class="glyphicon glyphicon-star-empty" id="select_all_span"></span> Select All <span class="all_num"></span></label>
 		  </div>
 		</div>
 		<div id="input_test_specs" class="my_tab-pane input_test_specs">
@@ -95,9 +95,10 @@
     
     <div class="form-group contrl-btn contrl_btns" id="start_btn_div">
     <div class="start_error" id="start_error"><code>No test spec found to run ...</code></div>
+    <div class="loading_div" id="loading_div"><code>Loading test manifest, this may take several minutes.</code></div>
 	   <ul>
-           <li id="togglePause" class="button_hidden width_49_75 margin_left_0_5">Pause</li>
-	       <li id="toggleStart" class="width_100">Start</li>
+           <li id="togglePause" class="togglePause button_hidden width_49_75 margin_left_0_5">Pause</li>
+	       <li id="toggleStart" class="toggleStart width_100"><button class="start_disabled width_100" id="start_btn">Start</button></li>
 	   </ul>
     </div>
   </div>
@@ -172,16 +173,23 @@
   <div id='help' class="help_div">
     <h3>About Web Testing Service</h3>
     <p>
-      The Web Testing Service is a web-based runner indicates how well the Crosswalk Project enable your product supports the HTML5 standard and related specifications on cross platforms. 
-      Measure your product with the latest web technology and comprehensive standard web test suites always, and compare the results with other web products you care about.
-    </p>
+      Web Testing Service is a web-based runner. It indicates how well the Crosswalk Project, 
+      browsers or other web runtime support the web standard and related specifications on cross platforms. 
+      It can also evaluate your product with latest and comprehensive  web standards support, 
+      and comparing the results with other web products you are caring about.
+	 </p>
     <p>
-      The Web Testing Service does not only host the latest HTML5 standard tests, but also involves the tests for the hottest web technologies, e.g. Real Sense, SIMD, Presentation APIs, as well as supports users to run them through browsers or web runtimes. 
-      Crosswalk Project QA team have been devoted on Web Testing Service, provided customization test plan according to user needs, and hoping that by using Web Testing Service, users could get an idea of improving their product and the web as a development platform.
-    </p>
+		The Web Testing Service is not only a collection of test suites that including latest W3C web standards, 
+		but also involving the tests for hot web technologies which is not a part of W3C, e.g. Real Sense, SIMD. 
+		Crosswalk Project QA team are dedicated to provide this tool, 
+		also providing customization test plan according to user needs, 
+		and hoping that users could get ideas of improving their products on web.
+	 </p>
     <p>
-      The set of tests run is configurable via the specification name selection or searching. Especially, the searching input provides candidates which bases on specification name or category name:
-    </p> 
+		The test suites are configurable by selecting or searching the specification name. 
+		Especially, the searching input dropdown list provides results candidates which base on 
+		specification name or category name:
+	 </p>
     <p>
       <ul>
         <li><code>Communication</code> - add all tests of "Communication" specification category to the execution list.
@@ -196,3 +204,5 @@
     </p>
   </div>
 </div>
+ <div id="over" class="over"></div>
+ <div id="layout" class="layout">Loading...</div>
