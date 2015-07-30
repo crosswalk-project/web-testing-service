@@ -1915,6 +1915,72 @@ var waitForComposite = function(gl, callback) {
   countDown();
 };
 
+/**
+ * Starts playing a video and waits for it to be consumable.
+ * @param {!HTMLVideoElement} video An HTML5 Video element.
+ * @param {!function(!HTMLVideoElement): void>} callback Function to call when
+ *        video is ready.
+ */
+var startPlayingAndWaitForVideo = function(video, callback) {
+  var gotPlaying = false;
+  var gotTimeUpdate = false;
+
+  var maybeCallCallback = function() {
+    if (gotPlaying && gotTimeUpdate && callback) {
+      callback(video);
+      callback = undefined;
+      video.removeEventListener('playing', playingListener, true);
+      video.removeEventListener('timeupdate', timeupdateListener, true);
+    }
+  };
+
+  var playingListener = function() {
+    gotPlaying = true;
+    maybeCallCallback();
+  };
+
+  var timeupdateListener = function() {
+    // Checking to make sure the current time has advanced beyond
+    // the start time seems to be a reliable heuristic that the
+    // video element has data that can be consumed.
+    if (video.currentTime > 0.0) {
+      gotTimeUpdate = true;
+      maybeCallCallback();
+    }
+  };
+
+  video.addEventListener('playing', playingListener, true);
+  video.addEventListener('timeupdate', timeupdateListener, true);
+  video.loop = true;
+  video.play();
+};
+
+/**
+ * Draws a previously setupUnitQuad.
+ * @param {!WebGLRenderingContext} gl The WebGLRenderingContext to use.
+ */
+var drawUnitQuad = function(gl) {
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+};
+
+/**
+ * Clears then Draws a previously setupUnitQuad.
+ * @param {!WebGLRenderingContext} gl The WebGLRenderingContext to use.
+ * @param {!Array.<number>} opt_color The color to fill clear with before
+ *        drawing. A 4 element array where each element is in the range 0 to
+ *        255. Default [255, 255, 255, 255]
+ */
+var clearAndDrawUnitQuad = function(gl, opt_color) {
+  opt_color = opt_color || [255, 255, 255, 255];
+  gl.clearColor(
+      opt_color[0] / 255,
+      opt_color[1] / 255,
+      opt_color[2] / 255,
+      opt_color[3] / 255);
+  gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+  drawUnitQuad(gl);
+};
+
 return {
   addShaderSource: addShaderSource,
   cancelAnimFrame: cancelAnimFrame,
@@ -1924,6 +1990,7 @@ return {
   checkCanvas: checkCanvas,
   checkCanvasRect: checkCanvasRect,
   checkCanvasRectColor: checkCanvasRectColor,
+  clearAndDrawUnitQuad: clearAndDrawUnitQuad,
   createColoredTexture: createColoredTexture,
   createProgram: createProgram,
   drawQuad: drawQuad,
@@ -1984,6 +2051,7 @@ return {
   setupUnitQuadWithTexCoords: setupUnitQuadWithTexCoords,
   setFloatDrawColor: setFloatDrawColor,
   setUByteDrawColor: setUByteDrawColor,
+  startPlayingAndWaitForVideo: startPlayingAndWaitForVideo,
   startsWith: startsWith,
   shouldGenerateGLError: shouldGenerateGLError,
   readFile: readFile,
