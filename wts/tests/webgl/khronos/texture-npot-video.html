@@ -1,7 +1,7 @@
 <!--
 
 /*
-** Copyright (c) 2014 The Khronos Group Inc.
+** Copyright (c) 2012 The Khronos Group Inc.
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and/or associated documentation files (the
@@ -30,7 +30,6 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="./resources/js-test-style.css"/>
 <script src="./resources/js-test-pre.js"></script>
-<script src="./resources/webgl-test.js"></script>
 <script src="./resources/webgl-test-utils.js"></script>
 <script>
 "use strict";
@@ -39,7 +38,7 @@ var gl = null;
 var textureLoc = null;
 var successfullyParsed = false;
 
-initTestingHarnessWaitUntilDone();
+initTestingHarness();
 
 function init()
 {
@@ -51,33 +50,21 @@ function init()
 
     gl.clearColor(0,0,0,1);
     gl.clearDepth(1);
+    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    // Disable any writes to the alpha channel
+    gl.colorMask(1, 1, 1, 0);
 
     textureLoc = gl.getUniformLocation(program, "tex");
 
     var video = document.getElementById("vid");
-    video.addEventListener(
-        "playing", function() { runTest(video); }, true);
-    video.loop = true;
-    video.play();
+    wtu.startPlayingAndWaitForVideo(video, runTest);
 }
-
-// These two declarations need to be global for "shouldBe" to see them
-var buf = null;
-var idx = 0;
-var pixel = [0, 0, 0];
-var correctColor = null;
-var texture;
 
 function runOneIteration(videoElement, useTexSubImage2D, flipY, topColor, bottomColor, badMinFilter, badClamp, genMips)
 {
     debug('Testing ' + (useTexSubImage2D ? 'texSubImage2D' : 'texImage2D') +
           ' with flipY=' + flipY);
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-    // Disable any writes to the alpha channel
-    gl.colorMask(1, 1, 1, 0);
-    if (!texture) {
-        texture = gl.createTexture();
-    }
+    var texture = gl.createTexture();
     // Bind the texture to texture unit 0
     gl.bindTexture(gl.TEXTURE_2D, texture);
     // Set up pixel store parameters
@@ -86,13 +73,11 @@ function runOneIteration(videoElement, useTexSubImage2D, flipY, topColor, bottom
     debug("size: " + videoElement.videoWidth + "x" + videoElement.videoHeight);
     if (useTexSubImage2D) {
         // Initialize the texture to black first
-        debug("use texSubImage2D");
         gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA,
                       videoElement.videoWidth, videoElement.videoHeight, 0,
                       gl.RGBA, gl.UNSIGNED_BYTE, null);
         gl.texSubImage2D(gl.TEXTURE_2D, 0, 0, 0, gl.RGBA, gl.UNSIGNED_BYTE, videoElement);
     } else {
-        debug("use texImage2D");
         gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, videoElement);
     }
 
@@ -117,11 +102,8 @@ function runOneIteration(videoElement, useTexSubImage2D, flipY, topColor, bottom
     if (genMips) {
         debug("generate mips");
         gl.generateMipmap(gl.TEXTURE_2D);
-        glErrorShouldBe(gl, gl.INVALID_OPERATION, "should be INVALID_OPERATION");
+        wtu.glErrorShouldBe(gl, gl.INVALID_OPERATION, "should be INVALID_OPERATION");
     }
-
-    gl.bindTexture(gl.TEXTURE_2D, null);
-    gl.bindTexture(gl.TEXTURE_2D, texture);
 
 //    var c = document.createElement("canvas");
 //    c.width = 16;
@@ -134,15 +116,16 @@ function runOneIteration(videoElement, useTexSubImage2D, flipY, topColor, bottom
     // Point the uniform sampler to texture unit 0
     gl.uniform1i(textureLoc, 0);
     // Draw the triangles
-    wtu.drawQuad(gl, [0, 0, 0, 255]);
+    wtu.clearAndDrawUnitQuad(gl, [0, 0, 0, 255]);
     // Check a few pixels near the top and bottom and make sure they have
     // the right color.
+    var tolerance = 5;
     debug("Checking lower left corner");
     wtu.checkCanvasRect(gl, 4, 4, 2, 2, bottomColor,
-                        "shouldBe " + bottomColor);
+                        "shouldBe " + bottomColor, tolerance);
     debug("Checking upper left corner");
     wtu.checkCanvasRect(gl, 4, gl.canvas.height - 8, 2, 2, topColor,
-                        "shouldBe " + topColor);
+                        "shouldBe " + topColor, tolerance);
     debug("");
 }
 
@@ -160,8 +143,7 @@ function runTest(videoElement)
     runOneIteration(videoElement, true, true, green, red, false, false, false);
     runOneIteration(videoElement, true, false, red, green, false, false, false);
 
-    glErrorShouldBe(gl, gl.NO_ERROR, "should be no errors");
-    videoElement.removeEventListener("playing", runTest);
+    wtu.glErrorShouldBe(gl, gl.NO_ERROR, "should be no errors");
     finishTest();
 }
 </script>
