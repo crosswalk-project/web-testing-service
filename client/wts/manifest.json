@@ -10,5 +10,12 @@
     "orientation": "any",
     "start_url": "http://wts.crosswalk-project.org",
     "xwalk_description": "Web Test Client",
-    "xwalk_version": "0.1"
+    "xwalk_version": "0.1",
+    "xwalk_launch_screen": {
+        "ready_when": "custom",
+        "default": {
+            "background_color": "#ffffff",
+            "image": "images/logo.png"
+        }
+    }
 }

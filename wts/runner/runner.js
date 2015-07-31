@@ -1417,6 +1417,12 @@ function loadconfig(path,dom) {
 }
 
 function setup() {
+    try {
+        if (typeof(eval(window.screen.show)) == "function") {
+            window.screen.show()
+        }
+    } catch(e) {}
+
     var options = parseOptions();
 
     if (options.path) {
