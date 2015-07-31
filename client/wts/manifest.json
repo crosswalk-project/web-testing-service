@@ -8,7 +8,7 @@
     }],
     "name": "Web Test Client",
     "orientation": "any",
-    "start_url": "index.html",
-    "xwalk_description": "Web Test Client Application",
+    "start_url": "http://wts.crosswalk-project.org",
+    "xwalk_description": "Web Test Client",
     "xwalk_version": "0.1"
 }

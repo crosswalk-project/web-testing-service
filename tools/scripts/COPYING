@@ -1,12 +1,9 @@
-The file tests_scan.py comes from manifest.py of
+The file wts_scaner.py comes from manifest.py of
 https://github.com/w3c/web-platform-tests/tree/master/tools/scripts(commit 09686a27a24834df34b5cd9c3741c312732cff9a)
 with modification:
-
-tests_scan.py
-  update generate manifest1.json by scanning tests dir.
-  add generate manifest0.json.
-
-
+* Scan test folder and generate manifest1.json which records the tests URLs details
+* Scan test folder and generate manifest0.json which records the test category/specification URL details
+* Add optimizations of log/summary ...
 
 These scripts are copyright by W3C and/or the author listed in the script
 file. The scripts are dual-licensed under the W3C Test Suite License:
