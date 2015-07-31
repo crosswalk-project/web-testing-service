@@ -112,7 +112,6 @@ ManifestIterator.prototype = {
         this.test_index--;
         if (this.test_index>=0){
             var pre_case = this.next();
-            console.log('prev',pre_case);
             return pre_case;
         }
     },
