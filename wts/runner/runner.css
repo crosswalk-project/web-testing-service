@@ -142,7 +142,7 @@ html.done section + section {
     float: right;
 }
 
-.pass,.block,.fail,.prev,.fwd,.test,.ref,.start,.start_disabled{
+.pass,.block,.fail,.prev,.fwd,.test,.ref,.start,.start_disabled,.test_mismatch{
     width: 100%;
     outline:0 none !important; blr:expression(this.onFocus=this.blur());
     padding-top: 7px;
@@ -153,7 +153,8 @@ html.done section + section {
 .prev, .prev:active, .prev:hover, .prev:focus, 
 .fwd, .fwd:active, .fwd:hover, .fwd:focus , 
 .test, .test:active, .test:hover, .test:focus, 
-.ref, .ref:active, .ref:hover, .ref:focus {
+.ref, .ref:active, .ref:hover, .ref:focus,
+.test_mismatch, .test_mismatch:active, .test_mismatch:hover, .test_mismatch:focus {
     background-color: #1ebcba; 
     color: #fff;
 }
@@ -183,6 +184,12 @@ html.done section + section {
     color: #fff;
 }
 
+@media (max-width: 386px) {
+    .test_mismatch, .test_mismatch:active, .test_mismatch:hover, .test_mismatch:focus{
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+}
 .man-tab{
     display: inline-block;
 }
@@ -1043,8 +1050,8 @@ li.specname label{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #111;
-    opacity:0.5;
+    background-color: #aaa;
+    opacity: 0.5;
     z-index: 1000;
 }
 
@@ -1054,9 +1061,16 @@ li.specname label{
     top: 40%;
     left: 40%;
     width: 20%;
-    height: 20%;
     z-index: 1001;
-    text-align:center;
-    color: #fff;
-    font-size: 24px;
+}
+.layout .div_img{
+    background:0;
+    filter:Alpha(Opacity=18);
+    opacity:.18;
+    width: 48.1875px;
+    margin: 0px auto;
+    background-color:#000;
+    padding:.0625em;
+    -webkit-border-radius:2.25em;
+    border-radius:2.25em;
 }

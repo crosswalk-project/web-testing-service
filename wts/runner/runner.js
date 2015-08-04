@@ -9,7 +9,6 @@ function Manifest(path) {
     this.data = null;
     this.path = path;
     this.num_tests = null;
-    //this.load();
 }
 
 Manifest.prototype = {
@@ -51,7 +50,7 @@ Manifest.prototype = {
         xhr.open("GET", this.path);
         xhr.send(null);
     },
-    
+
     by_type:function(type) {
         if (this.data.items.hasOwnProperty(type)) {
             return this.data.items[type];
@@ -350,7 +349,7 @@ function ManualUI(elem, runner) {
     this.fail_button = this.elem.querySelector("button.fail");
     this.block_button = this.elem.querySelector("button.block");
     this.ref_buttons_div = this.elem.querySelector("div.reftestUI");
-    this.test_button = this.ref_buttons_div.querySelector("button.test");
+    this.test_button = this.ref_buttons_div.querySelector("button#btn_test");
     this.ref_button = this.ref_buttons_div.querySelector("button.ref");
     this.result_button_div = this.elem.querySelector("div.result_button");
 
@@ -446,6 +445,13 @@ ManualUI.prototype = {
             document.getElementById("start_btn_div").classList.add("start_btn_div_reftest");
             this.show_ref();
             this.ref_button.textContent = test.ref_type === "==" ? "Show Reference" : "Show Reference(mismatch)";
+            if (this.ref_button.textContent == "Show Reference") {
+                this.test_button.classList.remove("test_mismatch");
+                this.test_button.classList.add("test");
+            } else {
+                this.test_button.classList.remove("test");
+                this.test_button.classList.add("test_mismatch");
+            }
         } else {
             this.hide_ref();
         }
@@ -966,7 +972,6 @@ TestControl.prototype = {
         return input_spec
     },
     set_selection_status: function(suite_data){
-        //this.runner.suiteui.un_set_status();
         var input_value = this.filter_input.value.toLocaleLowerCase();
         if(this.filter_input.value.length>2){
             this.input_test_pp.style.display = "block";
