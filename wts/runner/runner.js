@@ -520,7 +520,7 @@ SuiteUI.prototype ={
             tab_html +='<div class="accordion-body collapse display_none"><div class="accordion-inner" id="index_'+index_num+'">';
             var data_item = suite_data[k];                
             for (var i in data_item){
-                tab_html += '<li class="specname"><label class="spec_list" for="'+i+'"><input type="checkbox" id="'+i+'"> '+data_item[i].spec_desc+'</label><a href="'+data_item[i].spec_url+'" target="_blank"> <span class="glyphicon glyphicon-home"></span></a></li>'
+                tab_html += '<li class="specname"><label class="spec_list" ><input type="checkbox" id="'+i+'"> '+data_item[i].spec_desc+'</label><a href="'+data_item[i].spec_url+'" target="_blank"> <span class="glyphicon glyphicon-home"></span></a></li>'
                 total_num++;
                 categry_num++;
             }
@@ -578,21 +578,14 @@ SuiteUI.prototype ={
     refresh_categry_input_and_test_number_by_li: function(e){
         var ev = e || window.event;
         var elm = ev.target || ev.srcElement;
-        if (elm.tagName == 'SPAN') {return;}
+        if (elm.tagName == 'SPAN' || elm.tagName == 'LABEL') {return;}
         var node_input = this.childNodes[0].childNodes[0];
-        if (elm.tagName == 'LABEL'){
+        if (elm.tagName == 'LI'){
             if(node_input.checked == true){
                 node_input.checked = false;
             }else{
                 node_input.checked = true;
             }
-            return;
-        }
-        
-        if(node_input.checked == true){
-            node_input.checked = false;
-        }else{
-            node_input.checked = true;
         }
         
         var node_num_div = this.parentNode.parentNode.parentNode.childNodes[0].childNodes[1];
