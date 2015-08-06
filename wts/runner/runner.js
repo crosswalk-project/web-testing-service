@@ -488,35 +488,19 @@ function SuiteUI(elem, runner){
     this.filter_selected = this.pelem.querySelector("#select_tests");
     this.filter_input = this.pelem.querySelector("input#input_tests");
     this.render_suite_list(this.runner.select_json.data);
-    this.select_category = this.elem.querySelectorAll(".accordion-heading>input");
-    this.all_input_box = this.packages_list.querySelectorAll("input");
     this.spec_list = Array.prototype.slice.call(this.packages_list.querySelectorAll("li>label>input"));
     this.spec_list_li = Array.prototype.slice.call(this.packages_list.querySelectorAll("li.specname"));
-    this.category_list = Array.prototype.slice.call(this.packages_list.querySelectorAll(".accordion-heading>input"));
     this.head_list = Array.prototype.slice.call(this.packages_list.querySelectorAll(".accordion-heading"));
     this.categry_num = Array.prototype.slice.call(this.packages_list.querySelectorAll("div.categry_num"));
 
     this.select_all.onclick = function(){
         this.refresh_select_list_all()
     }.bind(this);
-
-    for (var i = 0, t = this.select_category.length; i < t; i++) {
-        this.select_category[i].addEventListener('click', this.refresh_spec_list, false);
-    }
-
-    for(var i = 0,t = this.spec_list.length; i < t; i++){
-        this.spec_list[i].addEventListener('click', this.refresh_categry_input_and_test_number, false);
-    }
     
     for(var i = 0,t = this.spec_list_li.length; i < t; i++){
         this.spec_list_li[i].addEventListener('click', this.refresh_categry_input_and_test_number_by_li, false);
     }
 
-    for(var i = 0,t = this.all_input_box.length; i < t; i++){
-        this.all_input_box[i].onclick = function(){
-            this.refresh_selectall_input();
-        }.bind(this);
-    }
     for(var i = 0,t = this.head_list.length; i < t; i++){
         this.head_list[i].addEventListener('click', this.show_hide_spec_list, false);
     }
@@ -536,12 +520,12 @@ SuiteUI.prototype ={
             tab_html +='<div class="accordion-body collapse display_none"><div class="accordion-inner" id="index_'+index_num+'">';
             var data_item = suite_data[k];                
             for (var i in data_item){
-                tab_html += '<li class="specname"><label class="spec_list" for="'+i+'"><input type="checkbox" id="'+i+'"> '+data_item[i].spec_desc+'</label><a href="'+data_item[i].spec_url+'" target="_blank"> <span class="glyphicon glyphicon-home"></span></a></li>'
+                tab_html += '<li class="specname"><label class="spec_list" ><input type="checkbox" id="'+i+'"> '+data_item[i].spec_desc+'</label><a href="'+data_item[i].spec_url+'" target="_blank"> <span class="glyphicon glyphicon-home"></span></a></li>'
                 total_num++;
                 categry_num++;
             }
             tab_html +='</div ></div ></div >';
-            tab_html = '<div class="accordion-group"><div class="accordion-heading"><input type="checkbox" id="index_'+index_num+'" checked><label class="category_label"> '+k+'</label><div class="categry_num ctg_num_uncheck">0/'+categry_num+'</div></div>' + tab_html;
+            tab_html = '<div class="accordion-group"><div class="accordion-heading"><label class="category_label"> '+k+'</label><div class="categry_num ctg_num_uncheck">0/'+categry_num+'</div></div>' + tab_html;
             html += tab_html;
             index_num++;
         }
@@ -562,12 +546,12 @@ SuiteUI.prototype ={
                 dom.parentNode.classList.add("spec_list_check");
             });
             this.select_all_label.childNodes[3].innerHTML = arr1[1] + "/" + arr1[1];
-            this.category_list.forEach(function (dom) {
-                var category_str = dom.parentNode.childNodes[2].innerHTML;
+            this.head_list.forEach(function (dom) {
+                var category_str = dom.childNodes[1].innerHTML;
                 var arr1 = category_str.split("/");
-                dom.parentNode.childNodes[2].innerHTML = arr1[1] + "/" + arr1[1];
-                dom.parentNode.childNodes[2].classList.remove("ctg_num_uncheck");
-                dom.parentNode.childNodes[2].classList.add("ctg_num_check");
+                dom.childNodes[1].innerHTML = arr1[1] + "/" + arr1[1];
+                dom.childNodes[1].classList.remove("ctg_num_uncheck");
+                dom.childNodes[1].classList.add("ctg_num_check");
             });
         }else{
             this.select_all_label.classList.remove("select_all_label");
@@ -578,125 +562,80 @@ SuiteUI.prototype ={
                 dom.parentNode.classList.remove("spec_list_check");
             });
             this.select_all_label.childNodes[3].innerHTML = "0/" + arr1[1];
-            this.category_list.forEach(function (dom) {
-                var category_str = dom.parentNode.childNodes[2].innerHTML;
+            this.head_list.forEach(function (dom) {
+                var category_str = dom.childNodes[1].innerHTML;
                 var arr1 = category_str.split("/");
-                dom.parentNode.childNodes[2].innerHTML = "0/" + arr1[1];
-                dom.parentNode.childNodes[2].classList.remove("ctg_num_check");
-                dom.parentNode.childNodes[2].classList.add("ctg_num_uncheck");
+                dom.childNodes[1].innerHTML = "0/" + arr1[1];
+                dom.childNodes[1].classList.remove("ctg_num_check");
+                dom.childNodes[1].classList.add("ctg_num_uncheck");
             });
         }
         this.spec_list.forEach(function (dom) {
             dom.checked = status;
         });
-        this.category_list.forEach(function (dom) {
-            dom.checked = status;
-        });
-    },
-
-    refresh_spec_list: function(){
-        var status = this.checked;
-        var input_parent_node = this.parentNode.parentNode.querySelector("div#"+this.id);
-        var input_list = Array.prototype.slice.call(input_parent_node.querySelectorAll("li>label>input"));
-        input_list.forEach(function(dom){
-            dom.checked = status;
-        })
     },
     
-    refresh_selectall_input: function(){
-        var status = true;
-        Array.prototype.slice.call(this.all_input_box).forEach(function(dom){
-            status = status && dom.checked;
-        })
-        this.select_all.checked = status;
-    },
-    
-    refresh_categry_input_and_test_number: function(){
-        var this_status = this.checked;
-        var category_str = this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML;
+    refresh_categry_input_and_test_number_by_li: function(e){
+        var ev = e || window.event;
+        var elm = ev.target || ev.srcElement;
+        if (elm.tagName == 'SPAN' || elm.tagName == 'LABEL') {return;}
+        var node_input = this.childNodes[0].childNodes[0];
+        if (elm.tagName == 'LI'){
+            if(node_input.checked == true){
+                node_input.checked = false;
+            }else{
+                node_input.checked = true;
+            }
+        }
+        
+        var node_num_div = this.parentNode.parentNode.parentNode.childNodes[0].childNodes[1];
+        var category_str = node_num_div.innerHTML;
         var arr1 = category_str.split("/");
         
-        var select_all_str = document.getElementById("select_all_label").childNodes[3].innerHTML;
-        var all_arr1 = select_all_str.split("/");
-        var check_num = 0;
-        if(this_status == true){
-            this.parentNode.classList.add("spec_list_check");
-            check_num = parseInt(arr1[0]) + 1;
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML = check_num + "/" + arr1[1];
-            var all_check_num = parseInt(all_arr1[0]) + 1;
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
-        }else{
-            check_num = parseInt(arr1[0]) - 1;
-            this.parentNode.classList.remove("spec_list_check");
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML = check_num + "/" + arr1[1];
-            var all_check_num = parseInt(all_arr1[0]) - 1;
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
-        }
-        
-        if(check_num == 0){
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.remove("ctg_num_check");
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.add("ctg_num_uncheck");
-        }else{
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.remove("ctg_num_uncheck");
-            this.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.add("ctg_num_check");
-        }
-        
-        var status = true;
-        var spec_parent_id = this.parentNode.parentNode.parentNode.id;
-        Array.prototype.slice.call(this.parentNode.parentNode.parentNode.querySelectorAll("li>label>input")).forEach(function(dom){
-            status = status && dom.checked;
-        })
-        var spec_parent = this.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector("input#"+spec_parent_id)
-        spec_parent.checked = status;
-    },
-    
-    refresh_categry_input_and_test_number_by_li: function(){
-        if(this.childNodes[0].childNodes[0].checked == true){
-            this.childNodes[0].childNodes[0].checked = false;
-        }else{
-            this.childNodes[0].childNodes[0].checked = true;
-        }
-        var this_status = this.childNodes[0].childNodes[0].checked;
-        var category_str = this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML;
-        var arr1 = category_str.split("/");
-        
-        var select_all_str = document.getElementById("select_all_label").childNodes[3].innerHTML;
+        var node_select_all_label = document.getElementById("select_all_label");
+        var select_all_str = node_select_all_label.childNodes[3].innerHTML;
         var all_arr1 = select_all_str.split("/");
         
         var check_num = 0;
+        var all_check_num = 0;
+        
+        var this_status = node_input.checked;
         if(this_status == true){
             this.childNodes[0].classList.add("spec_list_check");
             check_num = parseInt(arr1[0]) + 1;
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML = check_num + "/" + arr1[1];
-            var all_check_num = parseInt(all_arr1[0]) + 1;
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
+            node_num_div.innerHTML = check_num + "/" + arr1[1];
+            all_check_num = parseInt(all_arr1[0]) + 1;
+            node_select_all_label.childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
         }else{
             check_num = parseInt(arr1[0]) - 1;
             this.childNodes[0].classList.remove("spec_list_check");
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].innerHTML = check_num + "/" + arr1[1];
-            var all_check_num = parseInt(all_arr1[0]) - 1;
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
+            node_num_div.innerHTML = check_num + "/" + arr1[1];
+            all_check_num = parseInt(all_arr1[0]) - 1;
+            node_select_all_label.childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
+        }
+        
+        if (all_check_num == all_arr1[1]){
+            node_select_all_label.classList.remove("unselect_all_label");
+            node_select_all_label.classList.add("select_all_label");
+            node_select_all_label.parentNode.childNodes[1].checked = true;
+        }else{
+            node_select_all_label.classList.remove("select_all_label");
+            node_select_all_label.classList.add("unselect_all_label");
+            node_select_all_label.parentNode.childNodes[1].checked = false;
         }
         
         if(check_num == 0){
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.remove("ctg_num_check");
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.add("ctg_num_uncheck");
+            node_num_div.classList.remove("ctg_num_check");
+            node_num_div.classList.add("ctg_num_uncheck");
         }else{
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.remove("ctg_num_uncheck");
-            this.parentNode.parentNode.parentNode.childNodes[0].childNodes[2].classList.add("ctg_num_check");
+            node_num_div.classList.remove("ctg_num_uncheck");
+            node_num_div.classList.add("ctg_num_check");
         }
-        var status = true;
-        var spec_parent_id = this.parentNode.id;
-        Array.prototype.slice.call(this.parentNode.querySelectorAll("li>label>input")).forEach(function(dom){
-            status = status && dom.checked;
-        })
-        var spec_parent = this.parentNode.parentNode.parentNode.querySelector("input#"+spec_parent_id)
-        spec_parent.checked = status;
     },
     
     show_hide_spec_list: function(){
         var node = this.parentNode.childNodes[1];
-        var status = this.parentNode.childNodes[1].style.display;
+        var status = node.style.display;
         var category_group_list = Array.prototype.slice.call(this.parentNode.parentNode.childNodes);
         for(var j = 0,k = category_group_list.length; j < k; j++){
             category_group_list[j].childNodes[1].style.display = "none";
@@ -713,9 +652,11 @@ SuiteUI.prototype ={
         var arr1 = category_str.split("/");
         var arr_li = Array.prototype.slice.call(this.parentNode.parentNode.querySelectorAll("li.specname"));
         
-        var select_all_str = document.getElementById("select_all_label").childNodes[3].innerHTML;
+        var node_select_all_label = document.getElementById("select_all_label");
+        var select_all_str = node_select_all_label.childNodes[3].innerHTML;
         var all_arr1 = select_all_str.split("/");
         
+        var all_check_num = 0;
         if (arr1[0] != arr1[1]){
             this.innerHTML = arr1[1] + "/" + arr1[1];
             this.classList.remove("ctg_num_uncheck");
@@ -724,8 +665,8 @@ SuiteUI.prototype ={
                 dom.childNodes[0].childNodes[0].checked = true;
                 dom.childNodes[0].classList.add("spec_list_check");
             });
-            var all_check_num = parseInt(all_arr1[0]) + parseInt(arr1[1]) - parseInt(arr1[0]);
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
+            all_check_num = parseInt(all_arr1[0]) + parseInt(arr1[1]) - parseInt(arr1[0]);
+            node_select_all_label.childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
         }else{
             this.innerHTML = "0/" + arr1[1];
             this.classList.remove("ctg_num_check");
@@ -734,11 +675,21 @@ SuiteUI.prototype ={
                 dom.childNodes[0].childNodes[0].checked = false;
                 dom.childNodes[0].classList.remove("spec_list_check");
             });
-            var all_check_num = parseInt(all_arr1[0]) - parseInt(arr1[1]);
-            document.getElementById("select_all_label").childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
+            all_check_num = parseInt(all_arr1[0]) - parseInt(arr1[1]);
+            node_select_all_label.childNodes[3].innerHTML = all_check_num + "/" + all_arr1[1];
         }
         if(this.parentNode.parentNode.childNodes[1].style.display == "block"){
             this.parentNode.parentNode.childNodes[1].style.display = "none";
+        }
+        
+        if (all_check_num == all_arr1[1]){
+            node_select_all_label.classList.remove("unselect_all_label");
+            node_select_all_label.classList.add("select_all_label");
+            node_select_all_label.parentNode.childNodes[1].checked = true;
+        }else{
+            node_select_all_label.classList.remove("select_all_label");
+            node_select_all_label.classList.add("unselect_all_label");
+            node_select_all_label.parentNode.childNodes[1].checked = false;
         }
     },
 }
