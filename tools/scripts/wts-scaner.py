@@ -217,8 +217,8 @@ def markup_type(ext):
 
 
 def get_manifest_items(path):
-    rel_path = os.path.join("/tests", path.split(scaner_opts.testsfolder)[1]).replace(os.sep, "/")
-    url = os.path.join("/tests", rel_path).replace(os.sep, "/")
+    rel_path = os.path.join("tests/", path.split(scaner_opts.testsfolder+os.sep)[1]).replace(os.sep, "/")
+    url = os.path.join("/", rel_path).replace(os.sep, "/")
 
     base_path, filename = os.path.split(path)
     name, ext = os.path.splitext(filename)
