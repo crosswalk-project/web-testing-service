@@ -1,6 +1,6 @@
 ## Introduction
 
-Please check [WIKI](https://github.com/crosswalk-project/web-testing-service/wiki) pages for details.
+Please check [Wiki](https://github.com/crosswalk-project/web-testing-service/wiki) pages for details.
 
 ## Documentation
 
