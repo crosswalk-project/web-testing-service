@@ -24,6 +24,15 @@ Manifest.prototype = {
             document.getElementById("over").style.display = "none";
             document.getElementById("layout").style.display = "none";
             document.getElementById("container").style.display = "block";
+            var popup_text = navigator.userAgent;
+            if (popup_text.indexOf("Android") != -1 && popup_text.indexOf("Crosswalk") == -1){
+                var cookie_item = get_popup_cookie("wts_client");
+                if (cookie_item == ""){
+                    set_popup_cookie("wts_client", "yes", 30);
+                    document.getElementById("popup").style.display = "block";
+                    document.getElementById("test_select_div").classList.add("margin_top_50");
+                }
+            }
             this.data = JSON.parse(xhr.responseText);
             loaded_callback();
         }.bind(this);
@@ -720,7 +729,21 @@ function TestControl(elem, runner) {
     this.advanced_link = this.elem.querySelector(".advanced_link");
     this.advanced_div = this.elem.querySelector(".advanced_div");
     this.start_error = this.elem.querySelector(".start_error");
-    this.set_start();
+    this.cancel_link = this.elem.querySelector("span.cancel_popup");
+    this.spec_link = this.elem.querySelector("span.link_popup");
+    this.popup_div = this.elem.querySelector("div.popup");
+    this.test_select_div = this.elem.querySelector("div#test_select_div");
+
+    this.set_start();  
+
+    this.cancel_link.onclick = function(){
+        this.popup_div.style.display = "none";
+        this.test_select_div.classList.remove("margin_top_50");
+    }.bind(this);
+    
+    this.spec_link.onclick = function(){
+        window.location.href = "https://github.com/crosswalk-project/web-testing-service/wiki#download";
+    }.bind(this);
 
     this.select_tab.onclick = function(){
         this.select_select_tab();
@@ -803,6 +826,8 @@ TestControl.prototype = {
             this.start_li.classList.remove("width_100");
             this.start_li.classList.add("width_49_75");
             this.pause_button.classList.remove("button_hidden");
+            this.popup_div.style.display = "none";
+            this.test_select_div.classList.remove("margin_top_50");
             window.scrollTo(0,0);
             var run_mode = "window";
             if (this.iframe_checkbox.checked) {
@@ -1347,6 +1372,26 @@ Runner.prototype = {
     }
 
 };
+
+function set_popup_cookie(cookie_name,cookie_value,cookie_exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (cookie_exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cookie_name + "=" + cookie_value + "; " + expires;
+}
+
+function get_popup_cookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 
 function parseOptions() {
     var options = {
