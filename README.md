@@ -1,11 +1,12 @@
 ## Introduction
-[Web Test Service WIKI](https://github.com/crosswalk-project/web-testing-service/wiki)
+
+Please review [WIKI](https://github.com/crosswalk-project/web-testing-service/wiki) pages for details.
 
 ## Documentation
 
 Check out our documents at `doc/`.
 
-* `doc/User_Guide_for_Web-Testing-Service_Setting_Up_v1.1.pdf`
+* `doc/User_Guide_for_Web-Testing-Service_Setting_Up_v*.*.pdf`
 
 The guide to build WTS client application hosts `wtsclient/`
 
