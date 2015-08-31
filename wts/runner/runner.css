@@ -215,6 +215,7 @@ body {
 
 .navbar{
     margin-bottom:0px;
+    border:0px;
 }
 
 .navbar-brand{
@@ -1073,4 +1074,36 @@ li.specname label{
     padding:.0625em;
     -webkit-border-radius:2.25em;
     border-radius:2.25em;
+}
+
+.popup {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    display: block;
+    background: #444;
+    color: #fff;
+    height: 60px;
+    padding-top: 20px;
+    display: none;
+    z-index: 1001;
+}
+.margin_top_50{
+    margin-top: 50px;
+}
+
+.cancel_popup{
+    float:right;
+    padding-right:15px;
+    padding-top:-15px;
+    cursor: pointer;
+}
+
+.link_popup{
+    background-color:#EC543B;
+    padding:7px;
+    color:#fff;
+    margin-left:40px;
+    cursor: pointer;
 }
