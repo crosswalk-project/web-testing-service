@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2013 Intel Corporation.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+* Redistributions of works must retain the original copyright notice, this list
+  of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the original copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+* Neither the name of Intel Corporation nor the names of its contributors
+  may be used to endorse or promote products derived from this work without
+  specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY INTEL CORPORATION "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL INTEL CORPORATION BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Authors:
+        Shentu. Jiazhen <jiazhenx.shentu@intel.com>
+
+-->
+
+<meta charset="utf-8">
+<title>Web Speech API Test: SpeechRecognitionResult length attribute</title>
+<link rel="author" title="Intel" href="http://www.intel.com">
+<link rel="help" href="http://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html">
+<meta name='flags' content='interact'>
+<meta name="timeout" content="long">
+<meta name="assert" content="Test if the length attribute represents how many n-best alternatives are represented in the item array">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<script src="support/webspeech_common.js"></script>
+<p>Speak "How are you" in 10 seconds</p>
+<div id="log"></div>
+<script>
+
+async_test(function(t) {
+  var speechReco = new speechRecognition();
+  speechReco.continuous = true;
+  speechReco.interimResults = true;
+  var results_length = 1;
+  var actual_length = 0;
+  speechReco.onresult = t.step_func(function (evt) {
+    for(var i = evt.resultIndex; i < evt.results.length; i++) {
+      var result = evt.results[i];
+      for(var j = 0; j < result.length; j++) {
+        actual_length++;
+      }
+    }
+    results_length = evt.results.length;
+  });
+  speechReco.onend = t.step_func(function (evt) {
+    assert_equals(actual_length, results_length);
+    t.done();
+  });
+  speechReco.onerror = t.step_func(function (evt) {
+    assert_unreached("Error:" + evt.error);
+    t.done();
+  });
+  speechReco.start();
+  setTimeout(function () {
+    speechReco.stop();
+  }, 10000);
+}, document.getElementsByName("assert")[0].content);
+
+</script>
