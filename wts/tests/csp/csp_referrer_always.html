@@ -1,5 +1,6 @@
-/*
-Copyright (c) 2013 Intel Corporation.
+<!DOCTYPE html>
+<!--
+Copyright (c) 2015 Intel Corporation.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -23,48 +24,25 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
 OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
 NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
 
-Authors:
-        Xin, liu <xinx.liu@intel.com>
+<meta charset="utf-8">
+<title>CSP Test: referrer set "unsafe-url"/"always"</title>
+<link rel="author" title="Intel" href="http://www.intel.com">
+<link rel="author" title="Chunyan Wang" href="mailto:chunyanx.wang@intel.com">
+<link rel="help" href="http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html#referrer">
+<meta http-equiv="content-security-policy" content="referrer unsafe-url">
+<script src="../resources/testharness.js"></script>
+<script src="../resources/testharnessreport.js"></script>
+<div id="log"></div>
+<iframe id="ifr" src="support/referrer.html" onload="init()"></iframe>
 
-*/
-var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-function init() {
-  browserStatusSuccess();
-  connectionSuccess();
-}
+<script>
+  function init() {
+    test(function() {
+      var iframe = document.getElementById("ifr").contentWindow;
+      assert_equals(iframe.document.referrer, window.location.href);
+    }, "when referrer is set to value 'unsafe-url'/'always',it returns referrerURL");
+  }
+</script>
 
-window.onload = init;
-
-function make1lineListItem(value) {
-  return '<div id ="isonline" class="panel-body">' + value + '</div>';
-}
-
-function makeDividerListItem(value) {
-  return '<div class="panel-heading">' + value + '</div>';
-}
-
-function browserStatusSuccess() {
-  gInfo = makeDividerListItem("Browser status")
-          + make1lineListItem("online status is " + navigator.onLine);
-  $("#info-list1").html(gInfo);
-}
-
-function connectionSuccess() {
-  var bandwidth = connection == undefined ? "N/A" : connection.bandwidth;
-  var metered = connection == undefined ? "N/A" : connection.metered;
-  gInfo = makeDividerListItem("Connection status")
-          + make1lineListItem("bandwidth : " + bandwidth)
-          + make1lineListItem("metered : " + metered);
-  $("#info-list2").html(gInfo);
-}
-
-window.ononline = function () {
-  browserStatusSuccess();
-  connectionSuccess();
-};
-
-window.onoffline = function () {
-  browserStatusSuccess();
-  connectionSuccess();
-};
