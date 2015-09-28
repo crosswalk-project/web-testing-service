@@ -27,34 +27,44 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
 <meta charset="utf-8">
-<title>Getting real path of virtual root API has been exposed to native file system</title>
+<title>PresentationSession basic attributes</title>
 <link rel="author" title="Intel" href="http://www.intel.com">
 <link rel="author" title="Chunyan Wang" href="mailto:chunyanx.wang@intel.com">
-<link rel="help" href="https://crosswalk-project.org/jira/browse/XWALK-2455">
+<link rel="help" href="http://www.w3.org/TR/2015/WD-presentation-api-20150701/#interface-presentationsession">
 <script src="../resources/testharness.js"></script>
 <script src="../resources/testharnessreport.js"></script>
+<div id="precondition">
+  <p>Turn on 'Simulate Secondary Display' by 'Setting' app.</p>
+</div>
 <div id="log"></div>
 <script>
-  test(function() {
-    assert_true("native_file_system" in xwalk.experimental,
-      "xwalk.experimental should implement native_file_system");
-    assert_true("getRealPath" in xwalk.experimental.native_file_system,
-      "xwalk.experimental.native_file_system should implement getRealPath");
 
-    test(function() {
-      var realPath = xwalk.experimental.native_file_system.getRealPath("DOWNLOADS");
-      assert_regexp_match(realPath, /^(\/storage)(\/\w+)+(\/Download)$/);
-    }, "Get full path of DOWNLOADS");
+setup({ explicit_timeout: true })
 
-    test(function() {
-      var realPath = xwalk.experimental.native_file_system.getRealPath("Downloads");
-      var excepted = xwalk.experimental.native_file_system.getRealPath("DOWNLOADS");
-      assert_equals(realPath, excepted);
-    }, "Insensitive to virtual root character that Downloads has same full path with DOWNLOADS");
+var presUrl = location.protocol + "//" + location.host
+            + "/opt/webapi-presentation-xwalk-tests/presentation/display/presentation.html";
 
-    test(function() {
-      var realPath = xwalk.experimental.native_file_system.getRealPath("MUSIC");
-      assert_regexp_match(realPath, /^(\/storage)(\/\w+)+(\/Music)$/);
-    }, "Get full path of MUSIC");
+async_test(function(t) {
+  navigator.presentation.startSession(presUrl)
+  .then(function(newSession) {
+    t.step(function() {
+      assert_true("id" in newSession, "PresentationSession should implement id attribute");
+      assert_true("state" in newSession, "PresentationSession should implement state attribute");
+      assert_true("close" in newSession, "PresentationSession should implement close method");
+      assert_true("onstatechange" in newSession, "PresentationSession should implement onstatechange event");
+      assert_true("binaryType" in newSession, "PresentationSession should implement binaryType attribute");
+      assert_true("onmessage" in newSession, "PresentationSession should implement onmessage event");
+      assert_true("send" in newSession, "PresentationSession should implement id send mehtod");
+    });
+    t.done();
+  }, function(error) {
+    t.step(function() {
+      assert_unreached(error.name);
+    });
+    t.done();
   });
+
+});
+
 </script>
+
