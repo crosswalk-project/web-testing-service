@@ -1,11 +1,16 @@
-All files in this folder come from
-https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/sdk/tests/conformance/
+All test cases in this folder and subfolder resources/ come from
+https://github.com/KhronosGroup/WebGL/tree/master/conformance-suites/1.0.2
+(commit 565caccd32ad10d4ffc268049c0ef4219e2ffbe4)
 with modification:
 
 origin-clean-conformance.html
 readPixelsBadArgs.html
 
- Update cross domain with server.js.
+Update cross domain with server.js.
+
+Update khronos harness for web testing service: js-test-pre.js, unit.js, unit.css
+https://github.com/crosswalk-project/crosswalk-test-suite/pull/2986
+
 
 These tests are copyright by the Khronos Group under MIT License:
 https://www.khronos.org/registry/webgl/sdk/tests/test-guidelines.md

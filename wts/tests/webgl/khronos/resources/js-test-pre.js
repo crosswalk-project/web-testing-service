@@ -49,7 +49,13 @@ statusObj.status = 0;
     }
     testHarnessInitialized = true;
 
+    /* -- plaform specific code -- */
+
     // WebKit Specific code. Add your code here.
+    if (window.testRunner && !window.layoutTestController) {
+      window.layoutTestController = window.testRunner;
+    }
+
     if (window.layoutTestController) {
       layoutTestController.overridePreference("WebKitWebGLEnabled", "1");
       layoutTestController.dumpAsText();
@@ -57,6 +63,21 @@ statusObj.status = 0;
         layoutTestController.waitUntilDone();
       }
     }
+    if (window.internals) {
+      // The WebKit testing system compares console output.
+      // Because the output of the WebGL Tests is GPU dependent
+      // we turn off console messages.
+      window.console.log = function() { };
+      window.console.error = function() { };
+      window.internals.settings.setWebGLErrorsToConsoleEnabled(false);
+
+      // RAF doesn't work in LayoutTests. Disable it so the tests will
+      // use setTimeout instead.
+      window.requestAnimationFrame = undefined;
+      window.webkitRequestAnimationFrame = undefined;
+    }
+
+    /* -- end platform specific code --*/
   }
 
   this.initTestingHarnessWaitUntilDone = function() {
@@ -88,6 +109,9 @@ function notifyFinishedToHarness() {
 
   if (window.parent.webglTestHarness) {
     window.parent.webglTestHarness.notifyFinished(window.location.pathname);
+  }
+  if (window.nonKhronosFrameworkNotifyDone) {
+    window.nonKhronosFrameworkNotifyDone();
   }
 }
 
@@ -491,11 +515,6 @@ function gc() {
 function finishTest() {
   successfullyParsed = true;
   var epilogue = document.createElement("script");
-  epilogue.onload = function() {
-    if (window.nonKhronosFrameworkNotifyDone) {
-      window.nonKhronosFrameworkNotifyDone();
-    }
-  };
 
   var basePath = "";
   var expectedBase = "js-test-pre.js";
