@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "spec_category": "DOM, Forms and Styles",
+    "spec_desc": "HTML Imports",
+    "spec_maturity": "ED",
+    "spec_url": "http://w3c.github.io/webcomponents/spec/imports/"
+  }
+}
