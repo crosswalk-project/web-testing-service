@@ -1,0 +1,8 @@
+{
+  "deviceadaptation": {
+    "spec_category": "DOM, Forms and Styles",
+    "spec_desc": "CSS Device Adaptation",
+    "spec_maturity": "ED",
+    "spec_url": "https://drafts.csswg.org/css-device-adapt/"
+  }
+}
