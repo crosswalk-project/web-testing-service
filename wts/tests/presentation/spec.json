@@ -1,8 +1,0 @@
-{
-  "presentation": {
-    "spec_category": "Experimental",
-    "spec_desc": "Presentation API",
-    "spec_maturity": "ED",
-    "spec_url": "http://w3c.github.io/presentation-api/"
-  }
-}
