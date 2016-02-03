@@ -1,5 +1,5 @@
 This pywebsocket comes from
-https://github.com/w3c/pywebsocket/tree/8c285d9015121e8c1c40be852439fc03b4a18112
+https://github.com/w3c/pywebsocket/commit/b2e1d11086fdf00b33a0d30c504f227e7d4fa86b
 with some modifications:
 1. Remove example/
 2. Remove tests/
@@ -7,6 +7,7 @@ with some modifications:
 - recursive-include example *.py
 - recursive-include test *.py
 4. src/mod_pywebsocket/standalone.py
+   src/mod_pywebsocket/xhr_benchmark_handler.py
   Add security checking
 
 These tests are copyright by W3C and/or the author listed in the test
