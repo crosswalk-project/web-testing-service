@@ -1,5 +1,5 @@
 This pywebsocket comes from
-https://github.com/w3c/pywebsocket/commit/b2e1d11086fdf00b33a0d30c504f227e7d4fa86b
+https://github.com/w3c/pywebsocket/tree/b2e1d11086fdf00b33a0d30c504f227e7d4fa86b
 with some modifications:
 1. Remove example/
 2. Remove tests/
