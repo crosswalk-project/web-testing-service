@@ -1,13 +1,10 @@
 This wptserve comes from
-https://github.com/w3c/wptserve(commit cfc61924eeabab7460459199447c2570c3694c0a)
+https://github.com/w3c/wptserve(commit b12d799c0be4fab1055df9a1e4dd5e45646b46ea)
 with modification:
 
 wptserve/handlers.py
 
   add two new handlers
-  add view port to tests browser page to support mobile device
-
-
 
 These scripts are copyright by W3C and/or the author listed in the script
 file. The scripts are dual-licensed under the W3C Test Suite License:
