@@ -5,12 +5,12 @@ import json
 import logging
 import types
 import uuid
-import socket
 
 from constants import response_codes
 
 logger = logging.getLogger("wptserve")
 missing = object()
+
 
 class Response(object):
     """Object representing the response to a HTTP request
@@ -68,7 +68,6 @@ class Response(object):
         self.add_required_headers = True
         self.send_body_for_head_request = False
         self.explicit_flush = False
-        self.close_connection = False
 
         self.writer = ResponseWriter(handler, self)
 
@@ -208,7 +207,7 @@ class Response(object):
                "message": message}
         data = json.dumps({"error": err})
         self.status = code
-        self.headers = [("Content-Type", "application/json"),
+        self.headers = [("Content-Type", "text/json"),
                         ("Content-Length", len(data))]
         self.content = data
         if code == 500:
@@ -402,8 +401,6 @@ class ResponseWriter(object):
             self.write_default_headers()
 
         self.write("\r\n")
-        if "content-length" not in self._headers_seen:
-            self._response.close_connection = True
         if not self._response.explicit_flush:
             self.flush()
         self._headers_complete = True
@@ -418,11 +415,7 @@ class ResponseWriter(object):
         """Write directly to the response, converting unicode to bytes
         according to response.encoding. Does not flush."""
         self.content_written = True
-        try:
-            self._wfile.write(self.encode(data))
-        except socket.error:
-            # This can happen if the socket got closed by the remote end
-            pass
+        self._wfile.write(self.encode(data))
 
     def encode(self, data):
         """Convert unicode to bytes according to response.encoding."""
@@ -435,8 +428,4 @@ class ResponseWriter(object):
 
     def flush(self):
         """Flush the output."""
-        try:
-            self._wfile.flush()
-        except socket.error:
-            # This can happen if the socket got closed by the remote end
-            pass
+        self._wfile.flush()
