@@ -4,6 +4,8 @@ TIME_STAMP=$(date +%Y-%m-%d-%H-%M-%S)
 SERVICE_DIR=$(cd `dirname $0`; pwd)
 SERVICE_LOG_DIR="$SERVICE_DIR/log/"
 SERVICE_LOG_FILE="$SERVICE_LOG_DIR/$TIME_STAMP.log"
+CERTIFICATE_FILE="$SERVICE_DIR/_certs/cacert.pem"
+SHARED_CERTIFICATE_FILE="$SERVICE_DIR/wts/resources/certificate/cacert.pem"
 
 service_msg(){
     echo "* $*"
@@ -74,6 +76,43 @@ update_service(){
         return 0
 }
 
+copy_certificate_file(){
+	if [ -f "$CERTIFICATE_FILE" ]; then
+		if [ -f "$SHARED_CERTIFICATE_FILE" ]; then
+			mv "$SHARED_CERTIFICATE_FILE" "$SHARED_CERTIFICATE_FILE.bak"
+			if [ $? -ne 0 ]; then
+				service_msg "Fail to backup the old certificate file"
+				return 1
+			fi
+		fi
+		cp "$CERTIFICATE_FILE" "$SHARED_CERTIFICATE_FILE"
+		if [ $? -ne 0 ]; then
+		        service_msg "Fail to copy the new certificate file"
+			if [ -f "$SHARED_CERTIFICATE_FILE.bak" ]; then
+				mv "$SHARED_CERTIFICATE_FILE.bak" "$SHARED_CERTIFICATE_FILE"
+				if [ $? -ne 0 ]; then
+					service_msg "Fail to restore the old certificate file"
+					return 1
+				fi
+			fi
+		        return 1
+		else
+			if [ -f "$SHARED_CERTIFICATE_FILE.bak" ]; then
+				rm "$SHARED_CERTIFICATE_FILE.bak"
+				if [ $? -ne 0 ]; then
+					service_msg "Fail to remove the old certificate file"
+					return 1
+				fi
+			fi
+		fi
+	fi
+	if [ ! -f "$SHARED_CERTIFICATE_FILE" ]; then
+		service_msg "Fail to create the certificate file"
+		return 1
+	fi
+	return 0
+}
+
 case $1 in
         stop)
                 service_msg "Stoping service ..."
@@ -93,6 +132,10 @@ case $1 in
                 if [ $? -ne 0 ]; then
                         exit 1
                 fi
+		copy_certificate_file
+                if [ $? -ne 0 ]; then
+                        exit 1
+                fi
         ;;
         upgrade)
                 service_msg "Stoping service ..."
@@ -107,6 +150,10 @@ case $1 in
                 fi
                 service_msg "Starting service ..."
                 start_service
+                if [ $? -ne 0 ]; then
+                        exit 1
+                fi
+		copy_certificate_file
                 if [ $? -ne 0 ]; then
                         exit 1
                 fi
