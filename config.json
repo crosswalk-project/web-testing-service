@@ -1,6 +1,14 @@
 {"host": "wts.test",
  "ports":{"http":[80, 8000],
+          "https":[443],
           "ws":[8001],
           "wss":[8002]},
  "log_level":"debug",
- "bind_hostname": true}
+ "bind_hostname": true,
+ "ssl": {"type": "pregenerated",
+         "pregenerated": {
+             "host_key_path": "",
+             "host_cert_path": ""
+         }
+        }
+}
