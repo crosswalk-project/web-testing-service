@@ -57,8 +57,6 @@
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="WebStorage" purpose="Web Storage">
       </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="SetCookie" purpose="SetCookie">
-      </testcase>
     </set>
     <set background="brand-danger" icon="glyphicon-th-large" name="Performance &amp;amp; Optimization">
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="AnimationTiming" purpose="Animation Timing">
@@ -88,7 +86,7 @@
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="BatteryStatus" purpose="Battery Status">
       </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="BrowserState" purpose="Browser State">
+      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="BrowserState" purpose="Browser State">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="Camera" purpose="Camera">
       </testcase>
@@ -107,7 +105,7 @@
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="Geolocation" purpose="Geolocation">
       </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="Notifications" purpose="Notifications">
+      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="Notifications" purpose="Notifications">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="ScreenOrientation" purpose="Screen Orientation">
       </testcase>
@@ -118,8 +116,6 @@
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="WebAudio" purpose="WebAudio">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="WebGL" purpose="WebGL">
-      </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="WebCL" purpose="WebCL">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="WebCrypto" purpose="WebCrypto">
       </testcase>
@@ -133,8 +129,6 @@
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="Sandbox" purpose="Sandbox">
       </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="PermissionsAPI" purpose="PermissionsAPI">
-      </testcase>
     </set>
     <set background="brand-success3" icon="glyphicon-adjust" name="Experimental API">
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="DeviceCapabilities" purpose="Device Capabilities">
@@ -143,18 +137,8 @@
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="SIMD" purpose="SIMD">
       </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="WifiDirect" purpose="WifiDirect">
-      </testcase>
     </set>
     <set background="brand-danger3" icon="glyphicon-gift" name="Others APIs">
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="Advertising" purpose="Advertising">
-      </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="IAPGooglePlay" purpose="IAPGooglePlay">
-      </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="IAPXiaomiStore" purpose="IAPXiaomiStore">
-      </testcase>
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="Fingerprint" purpose="Fingerprint">
-      </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="Es6NumericLiterals" purpose="Es6NumericLiterals">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="FileApiPersistent" purpose="FileApiPersistent">
