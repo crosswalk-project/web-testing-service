@@ -27,13 +27,35 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
 <meta charset="utf-8">
-<title>Tests Crosswalk Project Extensions for Depth Enabled Photography</title>
+<title>WebAudio Test: decodeAudioData() basic</title>
 <link rel="author" title="Intel" href="http://www.intel.com">
 <link rel="author" title="Chunyan Wang" href="mailto:chunyanx.wang@intel.com">
-<link rel="help" href="https://crosswalk-project.github.io/realsense-extensions-crosswalk/spec/depth-enabled-photography.html">
+<link rel="help" href="http://webaudio.github.io/web-audio-api/#widl-BaseAudioContext-decodeAudioData-Promise-AudioBuffer--ArrayBuffer-audioData-DecodeSuccessCallback-successCallback-DecodeErrorCallback-errorCallback">
 <script src="../resources/testharness.js"></script>
 <script src="../resources/testharnessreport.js"></script>
-<script src="support/adapter.js"></script>
-
 <div id="log"></div>
-<script src="enhancedphotography.js"></script>
+<script>
+promise_test(function(t) {
+  var url = "./support/sound_5.oga";
+  return new Promise(function(resolve) {
+    var request = new XMLHttpRequest();
+    request.open("GET", url, true);
+    request.responseType = "arraybuffer";
+    request.onload = function() {
+      resolve(request.response);
+    };
+    request.send();
+  })
+  .then(function(audioData) {
+    var context = new AudioContext();
+    return context.decodeAudioData(audioData);
+  })
+  .then(function(audio) {
+    assert_true(audio instanceof AudioBuffer);
+  })
+  .catch(function(ex) {
+    assert_unreached("unreached here, get anexpected exception: " + ex.message);
+  });
+}, "Check that decodeAudioData method returns a Promise");
+</script>
+
