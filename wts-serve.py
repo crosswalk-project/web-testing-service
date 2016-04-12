@@ -335,10 +335,52 @@ def load_config(path):
     set_computed_defaults(rv)
     return rv
 
+class WPTFileHandler(logging.handlers.BaseRotatingHandler):
+    def __init__(self, filename, mode='a', maxBytes=0, backupCount=0, encoding=None, delay=0, wpt_type="access"):
+        if maxBytes > 0:
+            mode = 'a'
+        logging.handlers.BaseRotatingHandler.__init__(self, filename, mode, encoding, delay)
+        self.maxBytes = maxBytes
+        self.backupCount = backupCount
+        self.wpt_type = wpt_type
+
+    def doRollover(self):
+        if self.stream:
+            self.stream.close()
+            self.stream = None
+        if self.backupCount > 0:
+            datatime = time.strftime("%Y-%m-%d-%H-%M-%S")
+            self.baseFilename = os.path.abspath("log/wpt_"+self.wpt_type+str(datatime)+".log")
+        self.mode = 'w'
+        self.stream = self._open()
+
+    def shouldRollover(self, record):
+        if self.stream is None:
+            self.stream = self._open()
+        if self.maxBytes > 0:
+            msg = "%s\n" % self.format(record)
+            self.stream.seek(0, 2)
+            if self.stream.tell() + len(msg) >= self.maxBytes:
+                return 1
+        return 0
+
 def main():
     global logger
+    datatime = time.strftime("%Y-%m-%d-%H-%M-%S")
 
     config = load_config(os.path.join(repo_root, "config.json"))
+
+    logger_access = logging.getLogger("access")
+    logger_access.setLevel(logging.DEBUG)
+    rhandler_access = WPTFileHandler("log/wpt_access"+datatime+".log", maxBytes=3*1024*1024,backupCount=5, wpt_type="access")
+    logger_access.addHandler(rhandler_access)
+    logger_access.propagate = False
+
+    logger_error = logging.getLogger("error")
+    logger_error.setLevel(logging.DEBUG)
+    rhandler_error = WPTFileHandler("log/wpt_error"+datatime+".log", maxBytes=10*1024,backupCount=5, wpt_type="error")
+    logger_error.addHandler(rhandler_error)
+
     logger = default_logger(config["log_level"])
 
     with stash.StashServer((config["host"], get_port()), authkey=str(uuid.uuid4())):
