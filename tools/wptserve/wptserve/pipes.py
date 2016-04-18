@@ -4,10 +4,7 @@ import re
 import time
 import types
 import uuid
-import logging
 from cStringIO import StringIO
-
-logger = logging.getLogger("wptserve")
 
 def resolve_content(response):
     rv = "".join(item for item in response.iter_content())

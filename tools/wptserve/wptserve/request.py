@@ -1,7 +1,6 @@
 import base64
 import cgi
 import Cookie
-import logging
 import os
 import StringIO
 import tempfile
@@ -10,7 +9,6 @@ import urlparse
 import stash
 from utils import HTTPException
 
-logger = logging.getLogger("wptserve")
 missing = object()
 
 
@@ -247,6 +245,9 @@ class Request(object):
 
         self.protocol_version = request_handler.protocol_version
         self.method = request_handler.command
+
+        self.client_address = request_handler.client_address[0]
+        self.user_agent = request_handler.headers.get("User-Agent")
 
         scheme = request_handler.server.scheme
         host = request_handler.headers.get("Host")

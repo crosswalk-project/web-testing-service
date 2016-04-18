@@ -20,6 +20,8 @@ from router import Router
 from utils import HTTPException
 
 
+logger_access = logging.getLogger("access")
+logger_error = logging.getLogger("error")
 logger = logging.getLogger("wptserve")
 logger.setLevel(logging.DEBUG)
 
@@ -194,7 +196,8 @@ class WebTestServer(ThreadingMixIn, BaseHTTPServer.HTTPServer):
              error.errno in self.acceptable_errors)):
             pass  # remote hang up before the result is sent
         else:
-            logger.error(traceback.format_exc())
+            datatime = time.strftime("%d/%b/%Y:%H:%M:%S %z")
+            logger_error.error("[%s] [error] [client %s] %s" % (datatime, client_address, traceback.format_exc()))
 
 
 class WebTestRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
@@ -230,7 +233,6 @@ class WebTestRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 response.write()
                 return
 
-            logger.debug("%s %s" % (request.method, request.request_path))
             handler = self.server.router.get_handler(request)
 
             # If the handler we used for the request had a non-default base path
@@ -262,11 +264,16 @@ class WebTestRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                         err = []
                     err.append(traceback.format_exc())
                     response.set_error(500, "\n".join(err))
-            logger.debug("%i %s %s (%s) %i" % (response.status[0],
+            datatime = time.strftime("%d/%b/%Y:%H:%M:%S %z")
+            logger_access.debug("%s - - [%s] \"%s %s %s\" %i %i %s" % (
+                                                    request.client_address,
+                                                    datatime,
                                                     request.method,
                                                     request.request_path,
-                                                    request.headers.get('Referer'),
-                                                    request.raw_input.length))
+                                                    request.protocol_version,
+                                                    response.status[0],
+                                                    request.raw_input.length,
+                                                    request.user_agent))
 
             if not response.writer.content_written:
                 response.write()
@@ -283,7 +290,7 @@ class WebTestRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 request.raw_input.read()
 
         except socket.timeout, e:
-            log_error("Request timed out: %r", e)
+            self.log_error("Request timed out: %r", e)
             self.close_connection = True
             return
 
@@ -292,8 +299,8 @@ class WebTestRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             if response:
                 response.set_error(500, err)
                 response.write()
-            logger.error(err)
-
+            datatime = time.strftime("%a %b %d %H:%M:%S %Y")
+            logger_error.error("[%s] [error] [client -] %s" % (datatime, err))
     def get_request_line(self):
         try:
             self.raw_requestline = self.rfile.readline(65537)

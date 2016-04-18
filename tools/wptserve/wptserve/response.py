@@ -9,7 +9,7 @@ import socket
 
 from constants import response_codes
 
-logger = logging.getLogger("wptserve")
+logger_error = logging.getLogger("error")
 missing = object()
 
 class Response(object):
@@ -212,7 +212,7 @@ class Response(object):
                         ("Content-Length", len(data))]
         self.content = data
         if code == 500:
-            logger.error(message)
+            logger_error.error(message)
 
 
 class MultipartContent(object):

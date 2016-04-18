@@ -1,6 +1,5 @@
 import cgi
 import json
-import logging
 import os
 import traceback
 import urllib
@@ -13,7 +12,6 @@ from request import Authentication
 from response import MultipartContent
 from utils import HTTPException
 
-logger = logging.getLogger("wptserve")
 
 __all__ = ["file_handler", "python_script_handler",
            "FunctionHandler", "handler", "json_handler",

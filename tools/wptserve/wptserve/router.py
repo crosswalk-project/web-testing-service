@@ -157,7 +157,6 @@ class Router(object):
                         name = handler.__name__
                     else:
                         name = handler.__class__.__name__
-                    logger.debug("Found handler %s" % name)
 
                     match_parts = m.groupdict().copy()
                     if len(match_parts) < len(m.groups()):
