@@ -305,7 +305,7 @@ def get_manifest_items(path):
                 ".//{http://www.w3.org/1999/xhtml}script"):
             if script_el.get('src'):
                 if script_el.get('src').find("testharness.js") != -1 \
-                        or script_el.get('src').find("resources/unit.js") != -1 \
+                        or script_el.get('src').find("/unit.js") != -1 \
                         or script_el.get('src').find("js-test-pre.js") != -1 \
                         or script_el.get('src').find("qunit.js") != -1:
                     return [TestharnessTest(url)]
