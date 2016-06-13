@@ -162,6 +162,7 @@ function VisualOutput(elem, runner) {
     this.runner = runner;
     this.results_table = null;
     this.section_wrapper = null;
+    this.top_scroll_div = this.elem.querySelector(".top_scroll > div");
     this.results_table = this.elem.querySelector(".results > div > table");
     this.section = null;
     this.progress = this.elem.querySelector(".summary .progress");
@@ -172,6 +173,7 @@ function VisualOutput(elem, runner) {
     this.runner.start_callbacks.push(this.on_start.bind(this));
     this.runner.result_callbacks.push(this.on_result.bind(this));
     this.runner.done_callbacks.push(this.on_done.bind(this));
+    this.sync_scroll();
 }
 
 VisualOutput.prototype = {
@@ -290,6 +292,7 @@ VisualOutput.prototype = {
         }
 
         this.results_table.tBodies[0].appendChild(row);
+        this.top_scroll_div.style.width = this.results_table.scrollWidth + 'px';
         this.update_meter(this.runner.progress(), this.runner.results.count(), this.runner.test_count());
     },
 
@@ -345,6 +348,17 @@ VisualOutput.prototype = {
         this.meter.setAttribute("aria-valuenow", count);
         this.meter.setAttribute("aria-valuemax", total);
         this.meter.textContent = this.meter.style.width = (progress * 100).toFixed(1) + "%";
+    },
+
+    sync_scroll: function() {
+        var scrollbar = document.getElementById("top_scroll");
+        var element = document.getElementById("detail");
+        scrollbar.onscroll= function() {
+            element.scrollLeft= scrollbar.scrollLeft;
+        };
+        element.onscroll= function() {
+            scrollbar.scrollLeft= element.scrollLeft;
+        };
     }
 
 };
