@@ -1040,8 +1040,19 @@ li.specname label{
     display: none;
 }
 
+.top_scroll{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 10px;
+}
+
+.top_scroll div{
+    padding-top: 1px;
+}
+
 .detail{
-    overflow-x: scroll;
+    overflow: auto;
+    overflow-y: hidden;
 }
 
 .over {
