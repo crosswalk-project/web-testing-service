@@ -183,6 +183,8 @@ class WebTestServer(ThreadingMixIn, BaseHTTPServer.HTTPServer):
             self.socket = ssl.wrap_socket(self.socket,
                                           keyfile=self.key_file,
                                           certfile=self.certificate,
+                                          ssl_version=3,
+                                          ciphers="ALL:!COMPLEMENTOFDEFAULT:!eNULL:!aNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS:!DH:!RC4;",
                                           server_side=True)
 
     def handle_error(self, request, client_address):
