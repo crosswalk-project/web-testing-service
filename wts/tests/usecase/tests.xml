@@ -133,8 +133,6 @@
       </testcase>
     </set>
     <set background="brand-success3" icon="glyphicon-adjust" name="Experimental API">
-      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="DeviceCapabilities" purpose="Device Capabilities">
-      </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="Presentation" purpose="Presentation">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="SIMD" purpose="SIMD">
@@ -144,6 +142,8 @@
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="Es6NumericLiterals" purpose="Es6NumericLiterals">
       </testcase>
       <testcase component="Crosswalk Use Cases/WebAPI" execution_type="auto" id="FileApiPersistent" purpose="FileApiPersistent">
+      </testcase>
+      <testcase component="Crosswalk Use Cases/WebAPI" execution_type="manual" id="WebAssembly" purpose="WebAssembly">
       </testcase>
     </set>
   </suite>
